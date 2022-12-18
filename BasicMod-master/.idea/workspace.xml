@@ -4,39 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc187df0-56e9-4cd2-841c-1dd2e740a0f1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/basicmod/BasicMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/BasicMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/basicmod/cards/BaseCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/BaseCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/basicmod/cards/MyCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/MyCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/basicmod/powers/BasePower.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/powers/BasePower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/basicmod/relics/BaseRelic.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/relics/BaseRelic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/basicmod/util/CardInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/util/CardInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/basicmod/util/GeneralUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/util/GeneralUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/basicmod/util/KeywordInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/util/KeywordInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/basicmod/util/TextureLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/util/TextureLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/basicmod/badge.png" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/badge.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/basicmod/cards/attack/default.png" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/cards/attack/default.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/basicmod/cards/attack/default_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/cards/attack/default_p.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/basicmod/cards/power/default.png" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/cards/power/default.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/basicmod/cards/power/default_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/cards/power/default_p.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/basicmod/cards/skill/default.png" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/cards/skill/default.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/basicmod/cards/skill/default_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/cards/skill/default_p.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/basicmod/localization/eng/CardStrings.json" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/localization/eng/CardStrings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/basicmod/localization/eng/CharacterStrings.json" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/localization/eng/CharacterStrings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/basicmod/localization/eng/EventStrings.json" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/localization/eng/EventStrings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/basicmod/localization/eng/Keywords.json" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/localization/eng/Keywords.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/basicmod/localization/eng/OrbStrings.json" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/localization/eng/OrbStrings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/basicmod/localization/eng/PotionStrings.json" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/localization/eng/PotionStrings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/basicmod/localization/eng/PowerStrings.json" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/localization/eng/PowerStrings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/basicmod/localization/eng/RelicStrings.json" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/localization/eng/RelicStrings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/basicmod/localization/eng/UIStrings.json" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/localization/eng/UIStrings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/basicmod/missing.png" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/missing.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/basicmod/powers/example.png" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/powers/example.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/basicmod/powers/large/example.png" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/powers/large/example.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/basicmod/relics/example.png" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/relics/example.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/basicmod/relics/large/example.png" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/relics/large/example.png" afterDir="false" />
-    </list>
+    <list default="true" id="fc187df0-56e9-4cd2-841c-1dd2e740a0f1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
