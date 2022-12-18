@@ -18,5 +18,15 @@
       "If you need to use it for stuff.",
       "Blizzard is a good example for this."
     ]
+  },
+  "${modID}:DoASpookCard": {
+    "NAME": "Do A Spook",
+    "DESCRIPTION": "Apply !M! *Frail. NL *Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply !M! *Frail. NL *Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "You can put more text in here.",
+      "If you need to use it for stuff.",
+      "Blizzard is a good example for this."
+    ]
   }
 }
