@@ -27,6 +27,7 @@ import java.util.Set;
 
 @SpireInitializer
 public class BasicMod implements
+        EditCardsSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
         PostInitializeSubscriber {
@@ -50,6 +51,15 @@ public class BasicMod implements
     public BasicMod() {
         BaseMod.subscribe(this); //This will make BaseMod trigger all the subscribers at their appropriate times.
         logger.info(modID + " subscribed to BaseMod.");
+    }
+
+    @Override
+    public void receiveEditCards() { //somewhere in the class
+        new AutoAdd(modID) //Loads files from this mod
+                .packageFilter(BaseCard.class) //In the same package as this class
+                .setDefaultSeen(true) //And marks them as seen in the compendium
+                .cards(); //Adds the cards
+
     }
 
     @Override
