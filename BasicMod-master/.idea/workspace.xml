@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc187df0-56e9-4cd2-841c-1dd2e740a0f1" name="Changes" comment="" />
+    <list default="true" id="fc187df0-56e9-4cd2-841c-1dd2e740a0f1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/basicmod/BasicMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/basicmod/BasicMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/basicmod/cards/BaseCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/basicmod/cards/BaseCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/basicmod/powers/BasePower.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/basicmod/powers/BasePower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/basicmod/relics/BaseRelic.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/basicmod/relics/BaseRelic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/basicmod/util/CardInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/basicmod/util/CardInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/basicmod/util/GeneralUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/basicmod/util/GeneralUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/basicmod/util/KeywordInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/basicmod/util/KeywordInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/basicmod/util/TextureLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/basicmod/util/TextureLoader.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,16 +31,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Maybe/OneDrive/Documents/Git/stsmods/charactermod1/stsmod1/BasicMod-master",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Maybe/OneDrive/Documents/Git/stsmods/charactermod1/stsmod1/BasicMod-master&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
