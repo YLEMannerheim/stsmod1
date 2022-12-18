@@ -1,4 +1,4 @@
-package basicmod.util;
+package dannyandjannymod.util;
 
 public class KeywordInfo {
     public String ID = "";

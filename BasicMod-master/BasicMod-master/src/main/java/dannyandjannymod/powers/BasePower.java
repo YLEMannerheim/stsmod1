@@ -1,6 +1,6 @@
-package basicmod.powers;
+package dannyandjannymod.powers;
 
-import basicmod.util.TextureLoader;
+import dannyandjannymod.util.TextureLoader;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.core.AbstractCreature;

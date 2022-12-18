@@ -1,4 +1,4 @@
-package basicmod.util;
+package dannyandjannymod.util;
 
 import com.megacrit.cardcrawl.cards.AbstractCard;
 

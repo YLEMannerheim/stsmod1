@@ -1,14 +1,14 @@
-package basicmod.cards;
+package dannyandjannymod.cards;
 
 import basemod.abstracts.CustomCard;
-import basicmod.BasicMod;
-import basicmod.util.CardInfo;
+import dannyandjannymod.BasicMod;
+import dannyandjannymod.util.CardInfo;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 
-import static basicmod.BasicMod.makeID;
-import static basicmod.util.TextureLoader.getCardTextureString;
+import static dannyandjannymod.BasicMod.makeID;
+import static dannyandjannymod.util.TextureLoader.getCardTextureString;
 
 
 public abstract class BaseCard extends CustomCard {

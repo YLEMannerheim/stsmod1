@@ -8,5 +8,15 @@
       "If you need to use it for stuff.",
       "Blizzard is a good example for this."
     ]
+  },
+  "${modID}:MyCard": {
+    "NAME": "Am Ghost",
+    "DESCRIPTION": "big spook for !D!. NL big hide for !B!.",
+    "UPGRADE_DESCRIPTION": "big spook for !D!. NL big hide for !B!.",
+    "EXTENDED_DESCRIPTION": [
+      "You can put more text in here.",
+      "If you need to use it for stuff.",
+      "Blizzard is a good example for this."
+    ]
   }
 }

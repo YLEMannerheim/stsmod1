@@ -1,12 +1,12 @@
-package basicmod.relics;
+package dannyandjannymod.relics;
 
 import basemod.abstracts.CustomRelic;
 import basemod.helpers.RelicType;
-import basicmod.util.TextureLoader;
+import dannyandjannymod.util.TextureLoader;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 
-import static basicmod.BasicMod.relicPath;
+import static dannyandjannymod.BasicMod.relicPath;
 
 public abstract class BaseRelic extends CustomRelic {
     public AbstractCard.CardColor pool = null;
