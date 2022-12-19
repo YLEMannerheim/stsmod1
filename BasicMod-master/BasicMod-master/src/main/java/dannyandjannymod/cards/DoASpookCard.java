@@ -32,6 +32,8 @@ public class DoASpookCard extends BaseCard {
         super(cardInfo);
 
         setMagic(MAGIC, UPG_MAGIC);
+
+        setExhaust(true, true);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
