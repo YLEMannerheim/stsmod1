@@ -4,10 +4,7 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.DexterityPower;
-import com.megacrit.cardcrawl.powers.FrailPower;
-import com.megacrit.cardcrawl.powers.StrengthPower;
-import com.megacrit.cardcrawl.powers.WeakPower;
+import com.megacrit.cardcrawl.powers.*;
 import dannyandjannymod.powers.SpareBucketPower;
 import dannyandjannymod.util.CardInfo;
 
@@ -33,11 +30,13 @@ public class SpareBucketCard extends BaseCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new WeakPower(p, this.magicNumber, false), this.magicNumber));
-        addToBot(new ApplyPowerAction(p, p, new FrailPower(p, this.magicNumber, false), this.magicNumber));
+        //addToBot(new ApplyPowerAction(p, p, new WeakPower(p, this.magicNumber, false), this.magicNumber));
+        //addToBot(new ApplyPowerAction(p, p, new FrailPower(p, this.magicNumber, false), this.magicNumber));
 
-        this.addToBot(new ApplyPowerAction(p, p, new SpareBucketPower(p, 2) 2));
-        this.addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, 2), 2));
+        //this.addToBot(new ApplyPowerAction(p, p, new DoubleTapPower(p, this.magicNumber), this.magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new SpareBucketPower(), 1));
+        //this.addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, 2), 2));
+        //this.addToBot(new ApplyPowerAction(p, p, new SpareBucketPower(p, 2), 2));
     }
 
     public void upgrade() {
