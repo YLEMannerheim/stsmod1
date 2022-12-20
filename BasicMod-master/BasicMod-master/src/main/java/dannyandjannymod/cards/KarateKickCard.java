@@ -3,20 +3,18 @@ package dannyandjannymod.cards;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
 
-public class KarateKick extends BaseCard {
+public class KarateKickCard extends BaseCard {
     private final static CardInfo cardInfo = new CardInfo(
-            "KarateKick",
+            "KarateKickCard",
             3,
             CardType.ATTACK,
             CardTarget.ENEMY,
@@ -28,7 +26,7 @@ public class KarateKick extends BaseCard {
     private static final int MAGIC_NUM = 1;
     private static final int DAMAGE = 10;
 
-    public KarateKick() {
+    public KarateKickCard() {
         super(cardInfo);
         setMagic(MAGIC_NUM);
         setDamage(DAMAGE);
@@ -49,6 +47,6 @@ public class KarateKick extends BaseCard {
 
     @Override
     public AbstractCard makeCopy() { //Optional
-        return new KarateKick();
+        return new KarateKickCard();
     }
 }

@@ -1,20 +1,18 @@
 package dannyandjannymod.cards;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.MetallicizePower;
 import com.megacrit.cardcrawl.powers.PlatedArmorPower;
 import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
 
-public class Refrigerate extends BaseCard {
+public class RefrigerateCard extends BaseCard {
     private final static CardInfo cardInfo = new CardInfo(
-            "Refrigerate",
+            "RefrigerateCard",
             3,
             CardType.SKILL,
             CardTarget.NONE,
@@ -26,7 +24,7 @@ public class Refrigerate extends BaseCard {
     private static final int MAGIC_NUM = 2;
     private static final int UPG_MAGIC_NUM = 1;
 
-    public Refrigerate() {
+    public RefrigerateCard() {
         super(cardInfo);
         setMagic(MAGIC_NUM, UPG_MAGIC_NUM);
     }
@@ -38,6 +36,6 @@ public class Refrigerate extends BaseCard {
 
     @Override
     public AbstractCard makeCopy() { //Optional
-        return new Refrigerate();
+        return new RefrigerateCard();
     }
 }
