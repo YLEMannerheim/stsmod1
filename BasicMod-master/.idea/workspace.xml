@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc187df0-56e9-4cd2-841c-1dd2e740a0f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/CustomTags.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/SpareBucketCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/powers/SpareBucketPower.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/BucketHeadbuttCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/BucketHeadbuttCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/BucketStrikeCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/BucketStrikeCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/BucketSwingCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/BucketSwingCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/KickTheBucketCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/KickTheBucketCard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +59,7 @@
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="dannyandjannymod.cards" />
+      <recent name="dannyandjannymod.powers" />
       <recent name="basicmod.cards" />
     </key>
   </component>
