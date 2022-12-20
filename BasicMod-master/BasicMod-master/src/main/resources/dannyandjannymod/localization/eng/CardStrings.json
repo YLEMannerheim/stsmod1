@@ -49,5 +49,33 @@
     "UPGRADE_DESCRIPTION": "Gain 2 Metallicize. Gain 2 plated armor.",
     "EXTENDED_DESCRIPTION": [
     ]
+  },
+  "${modID}:BucketStrikeCard": {
+    "NAME": "BucketStrikeCard",
+    "DESCRIPTION": "Deal 12 damage.",
+    "UPGRADE_DESCRIPTION": "Deal 18 damage.",
+    "EXTENDED_DESCRIPTION": [
+    ]
+  },
+  "${modID}:BucketSwingCard": {
+    "NAME": "BucketSwingCard",
+    "DESCRIPTION": "Deal 14 damage to all enemies",
+    "UPGRADE_DESCRIPTION": "Deal 18 damage to all enemies",
+    "EXTENDED_DESCRIPTION": [
+    ]
+  },
+  "${modID}:KickTheBucketCard": {
+    "NAME": "KickTheBucketCard",
+    "DESCRIPTION": "Deal 25 damage. Retain.",
+    "UPGRADE_DESCRIPTION": "Deal 32 damage. Retain.",
+    "EXTENDED_DESCRIPTION": [
+    ]
+  },
+  "${modID}:_Card": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+    ]
   }
 }
