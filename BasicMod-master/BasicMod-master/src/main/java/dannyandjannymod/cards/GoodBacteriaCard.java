@@ -1,49 +1,41 @@
 package dannyandjannymod.cards;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.DexterityPower;
+import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
+import com.megacrit.cardcrawl.powers.RegenPower;
 import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
 
-public class HardenCard extends BaseCard {
+public class GoodBacteriaCard extends BaseCard {
     private final static CardInfo cardInfo = new CardInfo(
-            "HardenCard",
-            3,
+            "GoodBacteriaCard",
+            0,
             CardType.SKILL,
             CardTarget.NONE,
             CardRarity.UNCOMMON,
             CardColor.RED);
 
     public static final String ID = makeID(cardInfo.baseId);
+    public static final int MAGIC = 2;
+    public static final int UPG_MAGIC = 1;
 
-    private static final int MAGIC_NUM = 1;
-    private static final int BLOCK = 10;
 
-    public HardenCard() {
+    public GoodBacteriaCard() {
         super(cardInfo);
-        setMagic(MAGIC_NUM);
-        setBlock(BLOCK);
+        setMagic(MAGIC, UPG_MAGIC);
+        setExhaust(true);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new GainBlockAction(p, p, block));
-        this.addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, this.magicNumber), this.magicNumber));
-    }
-
-    public void upgrade() {
-        if (!this.upgraded) {
-            this.upgradeName();
-            this.upgradeBaseCost(2);
-        }
+        this.addToBot(new ApplyPowerAction(p, p, new RegenPower(p, this.magicNumber), this.magicNumber));
     }
 
     @Override
     public AbstractCard makeCopy() { //Optional
-        return new HardenCard();
+        return new GoodBacteriaCard();
     }
 }
