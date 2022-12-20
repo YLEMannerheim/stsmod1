@@ -25,7 +25,7 @@ public class LastDropCard extends BaseCard {
 
     private static final int MAGIC_NUM = -3;
     private static final int DAMAGE = 40;
-    private static final int UPG_DAMAGE = 50;
+    private static final int UPG_DAMAGE = 10;
 
     public LastDropCard() {
         super(cardInfo);
