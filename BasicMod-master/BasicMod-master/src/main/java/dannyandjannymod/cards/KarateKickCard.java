@@ -42,7 +42,6 @@ public class KarateKickCard extends BaseCard {
             this.upgradeName();
             this.upgradeBaseCost(2);
         }
-
     }
 
     @Override

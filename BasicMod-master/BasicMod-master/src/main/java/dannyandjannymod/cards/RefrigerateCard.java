@@ -34,6 +34,13 @@ public class RefrigerateCard extends BaseCard {
         this.addToBot(new ApplyPowerAction(p, p, new PlatedArmorPower(p, this.magicNumber), this.magicNumber));
     }
 
+    public void upgrade() {
+        if (!this.upgraded) {
+            this.upgradeName();
+            this.upgradeBaseCost(2);
+        }
+    }
+
     @Override
     public AbstractCard makeCopy() { //Optional
         return new RefrigerateCard();
