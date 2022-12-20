@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
+import dannyandjannymod.CustomTags;
 import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
@@ -32,6 +33,7 @@ public class BucketSwingCard extends BaseCard {
     public BucketSwingCard() {
         super(cardInfo);
         setDamage(DAMAGE, UPG_DAMAGE);
+        this.tags.add(CustomTags.BUCKET);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import dannyandjannymod.CustomTags;
 import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
@@ -28,6 +29,7 @@ public class KickTheBucketCard extends BaseCard {
         super(cardInfo);
         setDamage(DAMAGE, UPG_DAMAGE);
         setSelfRetain(true);
+        this.tags.add(CustomTags.BUCKET);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

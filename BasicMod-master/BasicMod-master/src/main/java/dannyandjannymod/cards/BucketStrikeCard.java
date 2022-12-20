@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StrengthPower;
+import dannyandjannymod.CustomTags;
 import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
@@ -29,6 +30,7 @@ public class BucketStrikeCard extends BaseCard {
     public BucketStrikeCard() {
         super(cardInfo);
         setDamage(DAMAGE, UPG_DAMAGE);
+        this.tags.add(CustomTags.BUCKET);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
