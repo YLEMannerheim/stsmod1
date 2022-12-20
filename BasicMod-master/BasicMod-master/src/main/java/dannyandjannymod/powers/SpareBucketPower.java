@@ -16,7 +16,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import dannyandjannymod.CustomTags;
 import dannyandjannymod.util.TextureLoader;
 
-public abstract class SpareBucketPower extends AbstractPower {
+public class SpareBucketPower extends AbstractPower {
     private static PowerStrings getPowerStrings(String ID)
     {
         return CardCrawlGame.languagePack.getPowerStrings(ID);
