@@ -28,5 +28,26 @@
       "If you need to use it for stuff.",
       "Blizzard is a good example for this."
     ]
+  },
+  "${modID}:HardenCard": {
+    "NAME": "Harden",
+    "DESCRIPTION": "Gain 10 block. Gain 1 dexterity.",
+    "UPGRADE_DESCRIPTION": "Gain 10 block. Gain 1 dexterity.",
+    "EXTENDED_DESCRIPTION": [
+    ]
+  },
+  "${modID}:KarateKickCard": {
+    "NAME": "Karate Kick",
+    "DESCRIPTION": "Deal 10 damage. Gain 1 strength.",
+    "UPGRADE_DESCRIPTION": "Deal 10 damage. Gain 1 strength.",
+    "EXTENDED_DESCRIPTION": [
+    ]
+  },
+  "${modID}:RefrigerateCard": {
+    "NAME": "Refrigerate",
+    "DESCRIPTION": "Gain 2 Metallicize. Gain 2 plated armor.",
+    "UPGRADE_DESCRIPTION": "Gain 2 Metallicize. Gain 2 plated armor.",
+    "EXTENDED_DESCRIPTION": [
+    ]
   }
 }
