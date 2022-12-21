@@ -34,7 +34,7 @@ public class SpareBucketCard extends BaseCard {
         //addToBot(new ApplyPowerAction(p, p, new FrailPower(p, this.magicNumber, false), this.magicNumber));
 
         //this.addToBot(new ApplyPowerAction(p, p, new DoubleTapPower(p, this.magicNumber), this.magicNumber));
-        addToBot(new ApplyPowerAction(p, p, new SpareBucketPower(), 1));
+        addToBot(new ApplyPowerAction(p, p, new SpareBucketPower(1), 1));
         //this.addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, 2), 2));
         //this.addToBot(new ApplyPowerAction(p, p, new SpareBucketPower(p, 2), 2));
     }
