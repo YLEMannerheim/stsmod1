@@ -3,7 +3,7 @@
 // (powered by FernFlower decompiler)
 //
 
-package com.megacrit.cardcrawl.actions.unique;
+package dannyandjannymod;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.ActionType;
