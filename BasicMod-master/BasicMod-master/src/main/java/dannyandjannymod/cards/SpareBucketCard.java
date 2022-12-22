@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.*;
+import dannyandjannymod.CustomTags;
 import dannyandjannymod.powers.SpareBucketPower;
 import dannyandjannymod.util.CardInfo;
 
@@ -27,6 +28,7 @@ public class SpareBucketCard extends BaseCard {
     public SpareBucketCard() {
         super(cardInfo);
         setMagic(MAGIC);
+        this.tags.add(CustomTags.BUCKET);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

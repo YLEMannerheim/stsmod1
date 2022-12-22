@@ -21,11 +21,12 @@ public class BottleHolderAction extends AbstractGameAction {
     }
 
     public void update() {
-        int toDraw = this.amount - AbstractDungeon.player.hand.size();
-        if (toDraw > 0) {
-            this.addToBot(new MakeTempCardInHandAction(new EmptyBottleCard(), 1));
+        int toCreate = this.amount - AbstractDungeon.player.hand.size();
+        if (toCreate > 0) {
+            this.addToBot(new MakeTempCardInHandAction(new EmptyBottleCard(), toCreate));
         }
 
         this.isDone = true;
+
     }
 }
