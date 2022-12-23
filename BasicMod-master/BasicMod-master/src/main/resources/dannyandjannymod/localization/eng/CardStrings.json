@@ -1,81 +1,297 @@
 {
-  "${modID}:ExampleCard": {
-    "NAME": "Name",
-    "DESCRIPTION": "Description.",
-    "UPGRADE_DESCRIPTION": "If you change the constructor of your card to use super(cardInfo, true); this will be the card's description when it is upgraded.",
-    "EXTENDED_DESCRIPTION": [
-      "You can put more text in here.",
-      "If you need to use it for stuff.",
-      "Blizzard is a good example for this."
-    ]
+  "${modID}:StrikeCard": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage."
   },
-  "${modID}:MyCard": {
-    "NAME": "Am Ghost",
-    "DESCRIPTION": "big spook for !D!. NL big hide for !B!.",
-    "UPGRADE_DESCRIPTION": "big spook for !D!. NL big hide for !B!.",
-    "EXTENDED_DESCRIPTION": [
-      "You can put more text in here.",
-      "If you need to use it for stuff.",
-      "Blizzard is a good example for this."
-    ]
+  "${modID}:DefendCard": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block."
   },
-  "${modID}:DoASpookCard": {
-    "NAME": "Do A Spook",
-    "DESCRIPTION": "Apply !M! *Frail. NL *Exhaust.",
-    "UPGRADE_DESCRIPTION": "Apply !M! *Frail. NL *Exhaust.",
-    "EXTENDED_DESCRIPTION": [
-      "You can put more text in here.",
-      "If you need to use it for stuff.",
-      "Blizzard is a good example for this."
-    ]
+  "${modID}:StrongBonesCard": {
+    "NAME": "Strong Bones",
+    "DESCRIPTION": "Gain !M! Calcium.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Calcium."
+  },
+  "${modID}:EmptyBottleCard": {
+    "NAME": "Empty Bottle",
+    "DESCRIPTION": "Retain. Deal !D! damage. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. Deal !D! damage. Exhaust."
+  },
+  "${modID}:BottleHolderCard": {
+    "NAME": "Bottle Holder",
+    "DESCRIPTION": "Add Empty Bottles to your hand until your hand is full.",
+    "UPGRADE_DESCRIPTION": "Add Empty Bottles to your hand until your hand is full."
+  },
+  "${modID}:MilkInfiltrationCard": {
+    "NAME": "Milk Infiltration",
+    "DESCRIPTION": "Do !D! damage. Ignore block. (poison damage)",
+    "UPGRADE_DESCRIPTION": "Do !D! damage. Ignore block. (poison damage)"
+  },
+  "${modID}:MilkSplashCard": {
+    "NAME": "Milk Splash",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. Add an Empty Bottle to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. Add an Empty Bottle to your hand. NL Exhaust."
+  },
+  "${modID}:MilkChugCard": {
+    "NAME": "Milk Chug",
+    "DESCRIPTION": "Gain !M! Calcium. Add an Empty Bottle to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Calcium. Add an Empty Bottle to your hand. NL Exhaust."
+  },
+  "${modID}:MilkCoatingCard": {
+    "NAME": "Milk Coating",
+    "DESCRIPTION": "Gain !B! Block. Add an Empty Bottle to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Add an Empty Bottle to your hand. NL Exhaust."
+  },
+  "${modID}:MilkSpillCard": {
+    "NAME": "Milk Spill",
+    "DESCRIPTION": "Apply !M! Vulnerable to ALL enemies. Add an Empty Bottle to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable to ALL enemies. Add an Empty Bottle to your hand. NL Exhaust."
+  },
+  "${modID}:Long-LifeMilkCard": {
+    "NAME": "Long-Life Milk",
+    "DESCRIPTION": "Retain. Gain !B! Block. Add an Empty Bottle to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. Gain !B! Block. Add an Empty Bottle to your hand. NL Exhaust."
+  },
+  "${modID}:OffMilkCard": {
+    "NAME": "Off Milk",
+    "DESCRIPTION": "Enemy loses !M! Strength for the rest of this turn. Add an Empty Bottle to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Enemy loses !M! Strength for the rest of this turn. Add an Empty Bottle to your hand. NL Exhaust."
+  },
+  "${modID}:CattleFarmCard": {
+    "NAME": "Cattle Farm",
+    "DESCRIPTION": "Add !M! random Milk card(s) to your hand every turn.",
+    "UPGRADE_DESCRIPTION": "Add !M! random Milk card(s) to your hand every turn."
+  },
+  "${modID}:DiscountDairyCard": {
+    "NAME": "Discount Dairy",
+    "DESCRIPTION": "Add X+!M! random Milk cards to your hand. They cost 0 this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add X+!M! random Milk cards to your hand. They cost 0 this turn. NL Exhaust."
+  },
+  "${modID}:MilkersCard": {
+    "NAME": "Milkers",
+    "DESCRIPTION": "Add 3 random Milk cards to your hand.",
+    "UPGRADE_DESCRIPTION": "Add 3 random Milk cards to your hand."
+  },
+  "${modID}:MilkmansRoundsCard": {
+    "NAME": "Milkman's Rounds",
+    "DESCRIPTION": "Shuffle 5 random Milk cards into your draw pile.",
+    "UPGRADE_DESCRIPTION": "Shuffle 5 random Milk cards into your draw pile."
   },
   "${modID}:HardenCard": {
     "NAME": "Harden",
-    "DESCRIPTION": "Gain 10 block. Gain 1 dexterity.",
-    "UPGRADE_DESCRIPTION": "Gain 10 block. Gain 1 dexterity.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "DESCRIPTION": "Gain !B! Block. Gain !M! Dexterity.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Gain !M! Dexterity."
   },
   "${modID}:KarateKickCard": {
     "NAME": "Karate Kick",
-    "DESCRIPTION": "Deal 10 damage. Gain 1 strength.",
-    "UPGRADE_DESCRIPTION": "Deal 10 damage. Gain 1 strength.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "DESCRIPTION": "Deal !D! damage. Gain !M! Strength.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Gain !M! Strength."
   },
   "${modID}:RefrigerateCard": {
     "NAME": "Refrigerate",
-    "DESCRIPTION": "Gain 2 Metallicize. Gain 2 plated armor.",
-    "UPGRADE_DESCRIPTION": "Gain 2 Metallicize. Gain 2 plated armor.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "DESCRIPTION": "Gain !M! Metallicize. Gain !M! Plated Armor.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Metallicize. Gain !M! Plated Armor."
   },
   "${modID}:BucketStrikeCard": {
-    "NAME": "BucketStrikeCard",
-    "DESCRIPTION": "Deal 12 damage.",
-    "UPGRADE_DESCRIPTION": "Deal 18 damage.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "NAME": "Bucket Strike",
+    "DESCRIPTION": "Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage."
   },
   "${modID}:BucketSwingCard": {
-    "NAME": "BucketSwingCard",
-    "DESCRIPTION": "Deal 14 damage to all enemies",
-    "UPGRADE_DESCRIPTION": "Deal 18 damage to all enemies",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "NAME": "Bucket Swing",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies."
   },
   "${modID}:KickTheBucketCard": {
-    "NAME": "KickTheBucketCard",
-    "DESCRIPTION": "Deal 25 damage. Retain.",
-    "UPGRADE_DESCRIPTION": "Deal 32 damage. Retain.",
-    "EXTENDED_DESCRIPTION": [
-    ]
+    "NAME": "Kick The Bucket",
+    "DESCRIPTION": "Retain. Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Retain. Deal !D! damage."
   },
-  "${modID}:_Card": {
-    "NAME": "",
-    "DESCRIPTION": "",
-    "UPGRADE_DESCRIPTION": "",
-    "EXTENDED_DESCRIPTION": [
-    ]
+  "${modID}:BucketHeadbuttCard": {
+    "NAME": "Bucket Headbutt",
+    "DESCRIPTION": "Gain !B! Block. Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Deal !D! damage."
+  },
+  "${modID}:SpareBucketCard": {
+    "NAME": "Spare Bucket",
+    "DESCRIPTION": "Your Bucket cards are played !M! additional time.",
+    "UPGRADE_DESCRIPTION": "Your Bucket cards are played !M! additional time."
+  },
+  "${modID}:FlickMilkTopCard": {
+    "NAME": "Flick Milk Top",
+    "DESCRIPTION": "Deal !D! damage. Shuffle this card into your draw pile.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Shuffle this card into your draw pile."
+  },
+  "${modID}:MissingPersonCard": {
+    "NAME": "Missing Person",
+    "DESCRIPTION": "Intangible. Exhaust. ",
+    "UPGRADE_DESCRIPTION": "Intangible. Exhaust. "
+  },
+  "${modID}:MilkinesisCard": {
+    "NAME": "Milkinesis",
+    "DESCRIPTION": "Lose 1 HP. Gain !B! Block. Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Lose 1 HP. Gain !B! Block. Deal !D! damage."
+  },
+  "${modID}:LastDropCard": {
+    "NAME": "Last Drop",
+    "DESCRIPTION": "Deal !D! damage. Lose !M! Strength.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Lose !M! Strength."
+  },
+  "${modID}:ExpirationDateCard": {
+    "NAME": "Expiration Date",
+    "DESCRIPTION": "Gain !B! Block. Gain !B! Block next turn. Lose !M! Dexterity.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Gain !B! Block next turn. Lose !M! Dexterity."
+  },
+  "${modID}:WorkOutCard": {
+    "NAME": "Work Out",
+    "DESCRIPTION": "Gain !M! Weak and !M! Frail. Gain 2 Strength and 2 Dexterity.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Weak and !M! Frail. Gain 2 Strength and 2 Dexterity."
+  },
+  "${modID}:AroundTheHousesCard": {
+    "NAME": "Around the Houses",
+    "DESCRIPTION": "(Innate.) Draw !M! cards per enemy. Exhaust.",
+    "UPGRADE_DESCRIPTION": "(Innate.) Draw !M! cards per enemy. Exhaust."
+  },
+  "${modID}:GoodBacteriaCard": {
+    "NAME": "Good Bacteria",
+    "DESCRIPTION": "Gain !M! Regen. Exhaust",
+    "UPGRADE_DESCRIPTION": "Gain !M! Regen. Exhaust"
+  },
+  "${modID}:PasteurizeCard": {
+    "NAME": "Pasteurize",
+    "DESCRIPTION": "Remove all debuffs. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Remove all debuffs. Exhaust."
+  },
+  "${modID}:SkimmingProcessCard": {
+    "NAME": "Skimming Process",
+    "DESCRIPTION": "Draw !M! card(s). Exhaust 1 card.",
+    "UPGRADE_DESCRIPTION": "Draw !M! card(s). Exhaust 1 card."
+  },
+  "${modID}:MultivitaminsCard": {
+    "NAME": "Multivitamins",
+    "DESCRIPTION": "(Retain.) Deal !D! damage !M! times. Exhaust.",
+    "UPGRADE_DESCRIPTION": "(Retain.) Deal !D! damage !M! times. Exhaust."
+  },
+  "${modID}:RepeatOnCard": {
+    "NAME": "Repeat On",
+    "DESCRIPTION": "Deal 5 damage X+!M! times. Can be upgraded any number of times.",
+    "UPGRADE_DESCRIPTION": "Deal 5 damage X+!M! times. Can be upgraded any number of times."
+  },
+  "${modID}:CrossArmsCard": {
+    "NAME": "Cross Arms",
+    "DESCRIPTION": "Gain !B! Block twice.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block twice."
+  },
+  "${modID}:GrowthSpurtCard": {
+    "NAME": "Growth Spurt",
+    "DESCRIPTION": "Gain X Calcium each turn.",
+    "UPGRADE_DESCRIPTION": "Gain X Calcium each turn."
+  },
+  "${modID}:GrowingPainsCard": {
+    "NAME": "Growing Pains",
+    "DESCRIPTION": "Deal !D! damage. Gain Calcium equal to unblocked damage dealt.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Gain Calcium equal to unblocked damage dealt."
+  },
+  "${modID}:BoneBraceCard": {
+    "NAME": "Bone Brace",
+    "DESCRIPTION": "Gain !B! Block. If you have Calcium, gain !M! additional Block.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. If you have Calcium, gain !M! additional Block."
+  },
+  "${modID}:BullyCard": {
+    "NAME": "Bully",
+    "DESCRIPTION": "Gain 2 Calcium. Apply !M! Weak to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Gain 2 Calcium. Apply !M! Weak to ALL enemies."
+  },
+  "${modID}:MarathonRunnerCard": {
+    "NAME": "Marathon Runner",
+    "DESCRIPTION": "Gain !M! Calcium. Gain !M! [E] next turn.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Calcium. Gain !M! [E] next turn."
+  },
+  "${modID}:FemurCard": {
+    "NAME": "Femur",
+    "DESCRIPTION": "Gain !M! Calcium, then draw 1 card for each Calcium you have.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Calcium, then draw 1 card for each Calcium you have."
+  },
+  "${modID}:ProteinPunchCard": {
+    "NAME": "Protein Punch",
+    "DESCRIPTION": "Deal damage equal to !M!x your Calcium.",
+    "UPGRADE_DESCRIPTION": "Deal damage equal to !M!x your Calcium."
+  },
+  "${modID}:SkullCrackCard": {
+    "NAME": "Skull Crack",
+    "DESCRIPTION": "Deal !D! damage. Lose 5 health, unless you have at least !M! Calcium.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Lose 5 health, unless you have at least !M! Calcium."
+  },
+  "${modID}:GoodHabitsCard": {
+    "NAME": "Good Habits",
+    "DESCRIPTION": "Gain !M!X Calcium.",
+    "UPGRADE_DESCRIPTION": "Gain !M!X Calcium."
+  },
+  "${modID}:AnticipateCard": {
+    "NAME": "Anticipate",
+    "DESCRIPTION": "Next turn gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "Next turn gain !B! Block."
+  },
+  "${modID}:DuckAndDiveCard": {
+    "NAME": "Duck and Dive",
+    "DESCRIPTION": "Gain !B! Block. Next turn gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Next turn gain !B! Block."
+  },
+  "${modID}:ShakeCard": {
+    "NAME": "Shake",
+    "DESCRIPTION": "Next turn gain !M! [E].",
+    "UPGRADE_DESCRIPTION": "Next turn gain !M! [E]."
+  },
+  "${modID}:NapCard": {
+    "NAME": "Nap",
+    "DESCRIPTION": "Next turn draw !M! more card(s).",
+    "UPGRADE_DESCRIPTION": "Next turn draw !M! more card(s)."
+  },
+  "${modID}:GoodNightsRestCard": {
+    "NAME": "Good Night's Rest",
+    "DESCRIPTION": "Next turn draw !M! more cards.",
+    "UPGRADE_DESCRIPTION": "Next turn draw !M! more cards."
+  },
+  "${modID}:ShatterGlassCard": {
+    "NAME": "Shatter Glass",
+    "DESCRIPTION": "Gain !M! Thorns.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Thorns."
+  },
+  "${modID}:GlassFormCard": {
+    "NAME": "Glass Form",
+    "DESCRIPTION": "Gain !M! Thorns when attacked.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Thorns when attacked."
+  },
+  "${modID}:ReflectiveSurfaceCard": {
+    "NAME": "Reflective Surface",
+    "DESCRIPTION": "Gain Block equal to the target's Block. Can be used on yourself.",
+    "UPGRADE_DESCRIPTION": "Gain Block equal to the target's Block. Can be used on yourself."
+  },
+  "${modID}:TrailOfGlassCard": {
+    "NAME": "Trail of Glass",
+    "DESCRIPTION": "(Gain 2 Thorns.) Gain Block equal to your Thorns.",
+    "UPGRADE_DESCRIPTION": "(Gain 2 Thorns.) Gain Block equal to your Thorns."
+  },
+  "${modID}:ShieldOfShardsCard": {
+    "NAME": "Shield of Shards",
+    "DESCRIPTION": "Transform your Thorns into Intangible. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Transform your Thorns into Intangible. Exhaust."
+  },
+  "${modID}:GlassBottlesCard": {
+    "NAME": "Glass Bottles",
+    "DESCRIPTION": "Gain 1 thorns when you play empty bottle",
+    "UPGRADE_DESCRIPTION": "Gain 1 thorns when you play empty bottle"
+  },
+  "${modID}:GlassBankCard": {
+    "NAME": "Glass Bank",
+    "DESCRIPTION": "Gain 1 Thorns for every !M! cards in your Exhaust pile. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain 1 Thorns for every !M! cards in your Exhaust pile. Exhaust."
+  },
+  "${modID}:GlassCutCard": {
+    "NAME": "Glass Cut",
+    "DESCRIPTION": "Apply 3 weak. Gain 1 thorns.",
+    "UPGRADE_DESCRIPTION": "Apply 3 weak. Gain 1 thorns."
   }
 }
