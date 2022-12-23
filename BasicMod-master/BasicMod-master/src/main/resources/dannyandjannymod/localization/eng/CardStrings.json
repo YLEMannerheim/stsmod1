@@ -49,7 +49,7 @@
     "DESCRIPTION": "Apply !M! Vulnerable to ALL enemies. Add an Empty Bottle to your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable to ALL enemies. Add an Empty Bottle to your hand. NL Exhaust."
   },
-  "${modID}:Long-LifeMilkCard": {
+  "${modID}:LongLifeMilkCard": {
     "NAME": "Long-Life Milk",
     "DESCRIPTION": "Retain. Gain !B! Block. Add an Empty Bottle to your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Retain. Gain !B! Block. Add an Empty Bottle to your hand. NL Exhaust."
@@ -131,8 +131,8 @@
   },
   "${modID}:MilkinesisCard": {
     "NAME": "Milkinesis",
-    "DESCRIPTION": "Lose 1 HP. Gain !B! Block. Deal !D! damage.",
-    "UPGRADE_DESCRIPTION": "Lose 1 HP. Gain !B! Block. Deal !D! damage."
+    "DESCRIPTION": "(Lose 1 HP. Gain !B! Block. Deal !D! damage. (Draw !M! card.)",
+    "UPGRADE_DESCRIPTION": "(Lose 1 HP. Gain !B! Block. Deal !D! damage. (Draw !M! card.)"
   },
   "${modID}:LastDropCard": {
     "NAME": "Last Drop",
@@ -186,8 +186,8 @@
   },
   "${modID}:GrowthSpurtCard": {
     "NAME": "Growth Spurt",
-    "DESCRIPTION": "Gain X Calcium each turn.",
-    "UPGRADE_DESCRIPTION": "Gain X Calcium each turn."
+    "DESCRIPTION": "Gain X Calcium each turn. / (calc doesn't expire??) ",
+    "UPGRADE_DESCRIPTION": "Gain X Calcium each turn. / (calc doesn't expire??) "
   },
   "${modID}:GrowingPainsCard": {
     "NAME": "Growing Pains",
@@ -198,6 +198,11 @@
     "NAME": "Bone Brace",
     "DESCRIPTION": "Gain !B! Block. If you have Calcium, gain !M! additional Block.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. If you have Calcium, gain !M! additional Block."
+  },
+  "${modID}:KnuckleSandwichCard": {
+    "NAME": "Knuckle Sandwich",
+    "DESCRIPTION": "Deal !D! damage. Apply !M! Calcium to the target.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Apply !M! Calcium to the target."
   },
   "${modID}:BullyCard": {
     "NAME": "Bully",
@@ -216,8 +221,8 @@
   },
   "${modID}:ProteinPunchCard": {
     "NAME": "Protein Punch",
-    "DESCRIPTION": "Deal damage equal to !M!x your Calcium.",
-    "UPGRADE_DESCRIPTION": "Deal damage equal to !M!x your Calcium."
+    "DESCRIPTION": "Deal damage equal to !M! x your Calcium.",
+    "UPGRADE_DESCRIPTION": "Deal damage equal to !M! x your Calcium."
   },
   "${modID}:SkullCrackCard": {
     "NAME": "Skull Crack",
@@ -291,7 +296,7 @@
   },
   "${modID}:GlassCutCard": {
     "NAME": "Glass Cut",
-    "DESCRIPTION": "Apply 3 weak. Gain 1 thorns.",
-    "UPGRADE_DESCRIPTION": "Apply 3 weak. Gain 1 thorns."
+    "DESCRIPTION": "Gain 1 + !M! Thorns. Deal !D! damage. Apply 3 + !M! Weak.",
+    "UPGRADE_DESCRIPTION": "Gain 1 + !M! Thorns. Deal !D! damage. Apply 3 + !M! Weak."
   }
 }
