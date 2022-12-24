@@ -34,11 +34,11 @@ public class RepeatOnCard extends BaseCard {
     }
 
     public void upgrade() {
-        this.upgradeDamage(4 + this.timesUpgraded);
         ++this.timesUpgraded;
         this.upgraded = true;
         this.name = cardStrings.NAME + "+" + this.timesUpgraded;
         this.initializeTitle();
+        this.magicNumber += this.magicUpgrade;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
