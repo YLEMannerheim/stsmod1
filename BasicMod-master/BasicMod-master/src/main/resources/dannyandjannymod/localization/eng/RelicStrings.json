@@ -5,5 +5,13 @@
     "DESCRIPTIONS": [
       "Gain [E] at the start of your turn. [E] is an energy icon."
     ]
+  },
+  "${modID}:BreakfastRelic": {
+    "NAME": "My Relic",
+    "FLAVOR": "I followed a tutorial!",
+    "DESCRIPTIONS": [
+      "At the start of each battle, gain #b",
+      " #yCalcium."
+    ]
   }
 }
