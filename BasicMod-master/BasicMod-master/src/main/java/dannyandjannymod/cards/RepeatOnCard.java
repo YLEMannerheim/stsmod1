@@ -42,7 +42,7 @@ public class RepeatOnCard extends BaseCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new SkewerAction(p, m, this.damage, DamageInfo.DamageType.NORMAL, true, this.energyOnUse + this.magicNumber));
+        addToBot(new SkewerAction(p, m, this.damage, DamageInfo.DamageType.NORMAL, this.freeToPlayOnce, this.energyOnUse + this.magicNumber));
     }
 
     public boolean canUpgrade() {
