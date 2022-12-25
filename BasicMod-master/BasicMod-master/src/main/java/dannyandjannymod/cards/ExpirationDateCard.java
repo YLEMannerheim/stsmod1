@@ -22,7 +22,7 @@ public class ExpirationDateCard extends BaseCard {
 
     public static final String ID = makeID(cardInfo.baseId);
 
-    private static final int MAGIC_NUM = -3;
+    private static final int MAGIC_NUM = 3;
     private static final int BLOCK = 20;
     private static final int UPG_BLOCK = 5;
 
@@ -35,7 +35,7 @@ public class ExpirationDateCard extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, block));
         this.addToBot(new ApplyPowerAction(p, p, new NextTurnBlockPower(p, this.block), this.block));
-        this.addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, this.magicNumber), this.magicNumber));
+        this.addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, -this.magicNumber), -this.magicNumber));
     }
 
     @Override
