@@ -209,6 +209,11 @@
     "DESCRIPTION": "Deal !D! damage. Apply !M! Calcium to the target.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. Apply !M! Calcium to the target."
   },
+  "${modID}:SupersizeCard": {
+    "NAME": "Supersize",
+    "DESCRIPTION": "Gain !M! Max HP.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Max HP."
+  },
   "${modID}:BullyCard": {
     "NAME": "Bully",
     "DESCRIPTION": "Gain 2 Calcium. Apply !M! Weak to ALL enemies.",
@@ -216,8 +221,8 @@
   },
   "${modID}:MarathonRunnerCard": {
     "NAME": "Marathon Runner",
-    "DESCRIPTION": "Gain !M! Calcium. Gain !M! [E] next turn.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Calcium. Gain !M! [E] next turn."
+    "DESCRIPTION": "Gain !M! Calcium. Gain !M! [E]  next turn.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Calcium. Gain !M! [E]  next turn."
   },
   "${modID}:FemurCard": {
     "NAME": "Femur",
@@ -234,10 +239,10 @@
     "DESCRIPTION": "Lose 5 health, unless you have at least !M! Calcium. NL Deal !D! damage.",
     "UPGRADE_DESCRIPTION": "Lose 5 health, unless you have at least !M! Calcium. NL Deal !D! damage."
   },
-  "${modID}:GoodHabitsCard": {
-    "NAME": "Good Habits",
-    "DESCRIPTION": "Gain !M!X Calcium.",
-    "UPGRADE_DESCRIPTION": "Gain !M!X Calcium."
+  "${modID}:ControlledIntakeCard": {
+    "NAME": "Controlled Intake",
+    "DESCRIPTION": "Gain !M! Calcium X times.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Calcium X times."
   },
   "${modID}:AnticipateCard": {
     "NAME": "Anticipate",
@@ -271,8 +276,8 @@
   },
   "${modID}:GlassFormCard": {
     "NAME": "Glass Form",
-    "DESCRIPTION": "Gain !M! Thorns when attacked.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Thorns when attacked."
+    "DESCRIPTION": "Gain !M! Thorns whenever you lose HP.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Thorns whenever you lose HP."
   },
   "${modID}:ReflectiveSurfaceCard": {
     "NAME": "Reflective Surface",
@@ -281,8 +286,8 @@
   },
   "${modID}:TrailOfGlassCard": {
     "NAME": "Trail of Glass",
-    "DESCRIPTION": "(Gain 2 Thorns.) Gain Block equal to your Thorns.",
-    "UPGRADE_DESCRIPTION": "(Gain 2 Thorns.) Gain Block equal to your Thorns."
+    "DESCRIPTION": "Gain !M! Thorns. Gain Block equal to your Thorns.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Thorns. Gain Block equal to your Thorns."
   },
   "${modID}:ShieldOfShardsCard": {
     "NAME": "Shield of Shards",
@@ -301,7 +306,7 @@
   },
   "${modID}:GlassCutCard": {
     "NAME": "Glass Cut",
-    "DESCRIPTION": "Gain 1 + !M! Thorns. Deal !D! damage. Apply 3 + !M! Weak.",
-    "UPGRADE_DESCRIPTION": "Gain 1 + !M! Thorns. Deal !D! damage. Apply 3 + !M! Weak."
+    "DESCRIPTION": "Gain 1 Thorns. Deal !D! damage that ignores block. Apply !M! Weak.",
+    "UPGRADE_DESCRIPTION": "Gain 1 Thorns. Deal !D! damage that ignores block. Apply !M! Weak."
   }
 }

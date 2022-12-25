@@ -19,7 +19,7 @@ public class GrowingPainsCard extends BaseCard {
             1,
             CardType.ATTACK,
             CardTarget.ENEMY,
-            CardRarity.COMMON,
+            CardRarity.UNCOMMON,
             CardColor.RED);
 
     public static final String ID = makeID(cardInfo.baseId);
