@@ -131,8 +131,8 @@
   },
   "${modID}:MilkinesisCard": {
     "NAME": "Milkinesis",
-    "DESCRIPTION": "(Lose 1 HP. Gain !B! Block. Deal !D! damage. (Draw !M! card.)",
-    "UPGRADE_DESCRIPTION": "(Lose 1 HP. Gain !B! Block. Deal !D! damage. (Draw !M! card.)"
+    "DESCRIPTION": "Lose 1 HP. Gain !B! Block. Deal !D! damage. (Draw !M! card.)",
+    "UPGRADE_DESCRIPTION": "Lose 1 HP. Gain !B! Block. Deal !D! damage. (Draw !M! card.)"
   },
   "${modID}:LastDropCard": {
     "NAME": "Last Drop",
@@ -176,8 +176,8 @@
   },
   "${modID}:RepeatOnCard": {
     "NAME": "Repeat On",
-    "DESCRIPTION": "Deal 5 damage X+!M! times. Can be upgraded any number of times.",
-    "UPGRADE_DESCRIPTION": "Deal 5 damage X+!M! times. Can be upgraded any number of times."
+    "DESCRIPTION": "Deal !D! damage X+!M! times. Can be upgraded any number of times.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage X+!M! times. Can be upgraded any number of times."
   },
   "${modID}:CrossArmsCard": {
     "NAME": "Cross Arms",
@@ -189,15 +189,20 @@
     "DESCRIPTION": "Gain X Calcium each turn. / (calc doesn't expire??) ",
     "UPGRADE_DESCRIPTION": "Gain X Calcium each turn. / (calc doesn't expire??) "
   },
+  "${modID}:OvergrownCard": {
+    "NAME": "Overgrown",
+    "DESCRIPTION": "(Innate.) At the end of your turn, gain Block equal to your Calcium.",
+    "UPGRADE_DESCRIPTION": "(Innate.) At the end of your turn, gain Block equal to your Calcium."
+  },
   "${modID}:GrowingPainsCard": {
     "NAME": "Growing Pains",
     "DESCRIPTION": "Deal !D! damage. Gain Calcium equal to unblocked damage dealt.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. Gain Calcium equal to unblocked damage dealt."
   },
-  "${modID}:BoneBraceCard": {
-    "NAME": "Bone Brace",
-    "DESCRIPTION": "Gain !B! Block. If you have Calcium, gain !M! additional Block.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. If you have Calcium, gain !M! additional Block."
+  "${modID}:ThickSkullCard": {
+    "NAME": "Thick Skull",
+    "DESCRIPTION": "Gain !B! Block. If you have at least 1 Calcium, gain !M! additional Block.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. If you have at least 1 Calcium, gain !M! additional Block."
   },
   "${modID}:KnuckleSandwichCard": {
     "NAME": "Knuckle Sandwich",
@@ -226,8 +231,8 @@
   },
   "${modID}:SkullCrackCard": {
     "NAME": "Skull Crack",
-    "DESCRIPTION": "Deal !D! damage. Lose 5 health, unless you have at least !M! Calcium.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Lose 5 health, unless you have at least !M! Calcium."
+    "DESCRIPTION": "Lose 5 health, unless you have at least !M! Calcium. NL Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Lose 5 health, unless you have at least !M! Calcium. NL Deal !D! damage."
   },
   "${modID}:GoodHabitsCard": {
     "NAME": "Good Habits",

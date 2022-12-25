@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc187df0-56e9-4cd2-841c-1dd2e740a0f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/GrowingPainsAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/GrowingPainsCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/ThickSkullCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/relics/AbstractEasyRelic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/relics/BreakfastRelic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/OvergrownCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/powers/OvergrownPower.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/BasicMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/BasicMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/ExpirationDateCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/ExpirationDateCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/MilkersCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/MilkersCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/localization/eng/RelicStrings.json" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/localization/eng/RelicStrings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/localization/eng/CardStrings.json" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/localization/eng/CardStrings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,9 +60,9 @@
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="dannyandjannymod.cards" />
+      <recent name="dannyandjannymod.powers" />
       <recent name="dannyandjannymod" />
       <recent name="dannyandjannymod.relics" />
-      <recent name="dannyandjannymod.powers" />
       <recent name="basicmod.cards" />
     </key>
   </component>
