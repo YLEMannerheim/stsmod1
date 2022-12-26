@@ -6,22 +6,21 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.*;
-import com.megacrit.cardcrawl.powers.AbstractPower.PowerType;
 
-public class CalciumPower extends AbstractPower {
-    public static final String POWER_ID = "CalciumPower";
+public class CalciumComedownPower extends AbstractPower {
+    public static final String POWER_ID = "CalciumComedownPower";
     private static final PowerStrings powerStrings;
     public static final String NAME;
     public static final String[] DESCRIPTIONS;
 
-    public CalciumPower(AbstractCreature owner, int newAmount) {
+    public CalciumComedownPower(AbstractCreature owner, int newAmount) {
         this.name = NAME;
-        this.ID = "CalciumPower";
+        this.ID = "CalciumComedownPower";
         this.owner = owner;
         this.amount = newAmount;
-        this.type = PowerType.BUFF;
+        this.type = PowerType.DEBUFF;
         this.updateDescription();
-        this.loadRegion("mantra");
+        this.loadRegion("flex");
         if (this.amount >= 999) {
             this.amount = 999;
         }
@@ -76,17 +75,16 @@ public class CalciumPower extends AbstractPower {
 
     public void atEndOfTurn(boolean isPlayer) {
         this.flash();
-        this.addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, this.amount), this.amount));
-        this.addToBot(new ApplyPowerAction(this.owner, this.owner, new DexterityPower(this.owner, this.amount), this.amount));
-        this.addToBot(new ApplyPowerAction(this.owner, this.owner, new CalciumComedownPower(this.owner, this.amount), this.amount));
-        this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, "CalciumPower"));
+        this.addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, -this.amount), -this.amount));
+        this.addToBot(new ApplyPowerAction(this.owner, this.owner, new DexterityPower(this.owner, -this.amount), -this.amount));
+        this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, "CalciumComedownPower"));
     }
 
     static {
-        powerStrings = CardCrawlGame.languagePack.getPowerStrings("CalciumPower");
+        powerStrings = CardCrawlGame.languagePack.getPowerStrings("CalciumComedownPower");
         //NAME = powerStrings.NAME;
         //DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-        NAME = "Calcium";
-        DESCRIPTIONS = new String[] {"Gain ", " Strength and Dexterity next turn, for one turn."} ;
+        NAME = "Calcium Comedown";
+        DESCRIPTIONS = new String[] {"Lose ", " Strength and Dexterity at the end of the turn."} ;
     }
 }
