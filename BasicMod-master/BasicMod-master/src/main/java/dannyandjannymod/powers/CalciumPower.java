@@ -1,12 +1,19 @@
 package dannyandjannymod.powers;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.*;
 import com.megacrit.cardcrawl.powers.AbstractPower.PowerType;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
+import dannyandjannymod.relics.CheeseWheelRelic;
+import sun.security.util.Debug;
 
 public class CalciumPower extends AbstractPower {
     public static final String POWER_ID = "CalciumPower";
@@ -51,6 +58,38 @@ public class CalciumPower extends AbstractPower {
             this.amount = -999;
         }
 
+
+    }
+
+    @Override
+    public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
+        if (power instanceof CalciumPower)
+            triggerCheeseWheelRelic(power.amount);
+        super.onApplyPower(power, target, source);
+    }
+
+    @Override
+    public void onInitialApplication() {
+        triggerCheeseWheelRelic(this.amount);
+        super.onInitialApplication();
+    }
+
+    private void triggerCheeseWheelRelic(int chargeAmount) {
+        Debug d = new Debug();
+        d.println("Triggered! AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+        if (chargeAmount > 0) {
+            AbstractPlayer p = AbstractDungeon.player;
+            if (p.hasRelic("dannyandjanny:CheeseWheelRelic")) {
+            CheeseWheelRelic r = (CheeseWheelRelic) p.getRelic("dannyandjanny:CheeseWheelRelic");
+            r.counter++;
+                if (r.counter == 1) {
+                    r.flash();
+                    this.addToBot(new RelicAboveCreatureAction(p, r));
+                    this.addToBot(new DrawCardAction(p, r.getDrawAmount()));
+                } else d.println("not 1 stack");
+            } else d.println("doesn't have relic");
+        } else d.println("Charge too small");
+        super.onGainCharge(chargeAmount);
     }
 
     public void reducePower(int reduceAmount) {
