@@ -29,5 +29,69 @@
       "At the start of each battle, gain #b",
       " #yStrength and #yDexterity."
     ]
+  },
+  "${modID}:FrozenYogurtRelic": {
+    "NAME": "FrozenYogurtRelic",
+    "FLAVOR": "I followed a tutorial!",
+    "DESCRIPTIONS": [
+      "At the start of each battle, gain #b",
+      " #yStrength and #yDexterity."
+    ]
+  },
+  "${modID}:LassoRelic": {
+    "NAME": "LassoRelic",
+    "FLAVOR": "I followed a tutorial!",
+    "DESCRIPTIONS": [
+      "At the start of each battle, gain #b",
+      " #yStrength and #yDexterity."
+    ]
+  },
+  "${modID}:ButterDishRelic": {
+    "NAME": "ButterDishRelic",
+    "FLAVOR": "I followed a tutorial!",
+    "DESCRIPTIONS": [
+      "At the start of each battle, gain #b",
+      " #yStrength and #yDexterity."
+    ]
+  },
+  "${modID}:WheyProteinRelic": {
+    "NAME": "WheyProteinRelic",
+    "FLAVOR": "I followed a tutorial!",
+    "DESCRIPTIONS": [
+      "At the start of each battle, gain #b",
+      " #yStrength and #yDexterity."
+    ]
+  },
+  "${modID}:MechanicalWhiskRelic": {
+    "NAME": "MechanicalWhiskRelic",
+    "FLAVOR": "I followed a tutorial!",
+    "DESCRIPTIONS": [
+      "At the start of each battle, gain #b",
+      " #yStrength and #yDexterity."
+    ]
+  },
+  "${modID}:WhippedCreamRelic": {
+    "NAME": "WhippedCreamRelic",
+    "FLAVOR": "I followed a tutorial!",
+    "DESCRIPTIONS": [
+      "At the start of each battle, gain #b",
+      " #yStrength and #yDexterity."
+    ]
+  },
+  "${modID}:SpottedFingernailRelic": {
+    "NAME": "SpottedFingernailRelic",
+    "FLAVOR": "I followed a tutorial!",
+    "DESCRIPTIONS": [
+      "At the start of each battle, gain #b",
+      " #yStrength and #yDexterity."
+    ]
+  },
+  "${modID}:ButterKnifeRelic": {
+    "NAME": "ButterKnifeRelic",
+    "FLAVOR": "I followed a tutorial!",
+    "DESCRIPTIONS": [
+      "At the start of each battle, gain #b",
+      " #yStrength and #yDexterity."
+    ]
   }
 }

@@ -1,4 +1,9 @@
 {
+  "${modID}:CalciumDeficiencyCard": {
+    "NAME": "Calcium Deficiency",
+    "DESCRIPTION": "At the end of the turn, lose 3 Calcium.",
+    "UPGRADE_DESCRIPTION": "At the end of the turn, lose 3 Calcium."
+  },
   "${modID}:StrikeCard": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage.",
@@ -126,8 +131,8 @@
   },
   "${modID}:MissingPersonCard": {
     "NAME": "Missing Person",
-    "DESCRIPTION": "Intangible. Exhaust. ",
-    "UPGRADE_DESCRIPTION": "Intangible. Exhaust. "
+    "DESCRIPTION": "Intangible. Exhaust. (Retain.)",
+    "UPGRADE_DESCRIPTION": "Intangible. Exhaust. (Retain.)"
   },
   "${modID}:MilkinesisCard": {
     "NAME": "Milkinesis",

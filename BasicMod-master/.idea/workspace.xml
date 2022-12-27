@@ -5,11 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc187df0-56e9-4cd2-841c-1dd2e740a0f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/relics/BigBreakfastRelic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/relics/CheeseWheelRelic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/CalciumDeficiencyCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/powers/NextTurnCalciumPower.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/relics/ButterDishRelic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/relics/ButterKnifeRelic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/relics/FrozenYogurtRelic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/relics/LassoRelic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/relics/MechanicalWhiskRelic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/relics/SpottedFingernailRelic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/relics/WheyProteinRelic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/relics/WhippedCreamRelic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/GlassCutCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/GlassCutCard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/powers/CalciumPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/powers/CalciumPower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/relics/CheeseWheelRelic.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/relics/CheeseWheelRelic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/localization/eng/CardStrings.json" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/localization/eng/CardStrings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/localization/eng/RelicStrings.json" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/localization/eng/RelicStrings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,8 +71,8 @@
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="dannyandjannymod.relics" />
-      <recent name="dannyandjannymod.powers" />
       <recent name="dannyandjannymod.cards" />
+      <recent name="dannyandjannymod.powers" />
       <recent name="dannyandjannymod" />
       <recent name="basicmod.cards" />
     </key>

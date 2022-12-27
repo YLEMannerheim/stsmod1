@@ -16,12 +16,7 @@ public class CheeseWheelRelic extends BaseRelic {
     public static final String ID = makeID(NAME);
 
     public CheeseWheelRelic() {
-        super(ID, NAME, RelicTier.STARTER, LandingSound.FLAT);
-    }
-
-    @Override
-    public void atBattleStart() {
-        this.flash();
+        super(ID, NAME, RelicTier.COMMON, LandingSound.SOLID);
     }
 
     public int getDrawAmount() {

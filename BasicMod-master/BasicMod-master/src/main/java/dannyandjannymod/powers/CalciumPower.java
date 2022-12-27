@@ -63,14 +63,17 @@ public class CalciumPower extends AbstractPower {
 
     @Override
     public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
-        if (power instanceof CalciumPower)
+        if (power instanceof CalciumPower && target instanceof AbstractPlayer) {
             triggerCheeseWheelRelic(power.amount);
+            triggerButterDishRelic(this.amount);
+        }
         super.onApplyPower(power, target, source);
     }
 
     @Override
     public void onInitialApplication() {
         triggerCheeseWheelRelic(this.amount);
+        triggerButterDishRelic(this.amount);
         super.onInitialApplication();
     }
 
@@ -80,8 +83,8 @@ public class CalciumPower extends AbstractPower {
         if (chargeAmount > 0) {
             AbstractPlayer p = AbstractDungeon.player;
             if (p.hasRelic("dannyandjanny:CheeseWheelRelic")) {
-            CheeseWheelRelic r = (CheeseWheelRelic) p.getRelic("dannyandjanny:CheeseWheelRelic");
-            r.counter++;
+                CheeseWheelRelic r = (CheeseWheelRelic) p.getRelic("dannyandjanny:CheeseWheelRelic");
+                r.counter++;
                 if (r.counter == 1) {
                     r.flash();
                     this.addToBot(new RelicAboveCreatureAction(p, r));
@@ -89,8 +92,20 @@ public class CalciumPower extends AbstractPower {
                 } else d.println("not 1 stack");
             } else d.println("doesn't have relic");
         } else d.println("Charge too small");
-        super.onGainCharge(chargeAmount);
     }
+
+    private void triggerButterDishRelic(int chargeAmount) {
+        if (chargeAmount > 0) {
+            AbstractPlayer p = AbstractDungeon.player;
+            if (p.hasRelic("dannyandjanny:ButterDishRelic")) {
+                AbstractRelic r = p.getRelic("dannyandjanny:ButterDishRelic");
+                r.flash();
+                this.addToBot(new RelicAboveCreatureAction(p, r));
+                this.addToTop(new ApplyPowerAction(this.owner, this.owner, new NextTurnCalciumPower(this.owner, chargeAmount), chargeAmount));
+            }
+        }
+    }
+
 
     public void reducePower(int reduceAmount) {
         this.fontScale = 8.0F;
