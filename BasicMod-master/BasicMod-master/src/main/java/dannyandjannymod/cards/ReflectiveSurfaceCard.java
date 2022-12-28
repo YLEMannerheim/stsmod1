@@ -28,7 +28,17 @@ public class ReflectiveSurfaceCard extends BaseCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ReflectiveSurfaceAction(p, m));
+        if (m.currentBlock < 1)
+            this.addToBot(new DoubleYourBlockAction(p));
+        else
+            this.addToBot(new ReflectiveSurfaceAction(p, m));
+    }
+
+    public void upgrade() {
+        if (!this.upgraded) {
+            this.upgradeName();
+            this.upgradeBaseCost(0);
+        }
     }
 
     @Override

@@ -23,7 +23,7 @@ public class LastDropCard extends BaseCard {
 
     public static final String ID = makeID(cardInfo.baseId);
 
-    private static final int MAGIC_NUM = -3;
+    private static final int MAGIC_NUM = 3;
     private static final int DAMAGE = 40;
     private static final int UPG_DAMAGE = 10;
 
@@ -35,7 +35,7 @@ public class LastDropCard extends BaseCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        this.addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, this.magicNumber), this.magicNumber));
+        this.addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, -this.magicNumber), -this.magicNumber));
     }
 
     @Override

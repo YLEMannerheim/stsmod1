@@ -13,9 +13,9 @@ import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
 
-public class MilkinesisCard extends BaseCard {
+public class LactokinesisCard extends BaseCard {
     private final static CardInfo cardInfo = new CardInfo(
-            "MilkinesisCard",
+            "LactokinesisCard",
             0,
             CardType.ATTACK,
             CardTarget.ENEMY,
@@ -30,7 +30,7 @@ public class MilkinesisCard extends BaseCard {
     private static final int UPG_MAGIC_NUM = 1;
     private static final int SELF_DAMAGE = 1;
 
-    public MilkinesisCard() {
+    public LactokinesisCard() {
         super(cardInfo);
         setDamage(DAMAGE);
         setBlock(BLOCK);
@@ -46,6 +46,6 @@ public class MilkinesisCard extends BaseCard {
 
     @Override
     public AbstractCard makeCopy() { //Optional
-        return new MilkinesisCard();
+        return new LactokinesisCard();
     }
 }

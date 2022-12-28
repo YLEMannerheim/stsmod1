@@ -33,10 +33,14 @@ public class BigBreakfastRelic extends BaseRelic {
     @Override
     public void onEquip() {
         AbstractPlayer p = AbstractDungeon.player;
-        if (p.hasRelic("BreakfastRelic")) {
-            p.loseRelic("BreakfastRelic");
-        }
-        super.onEquip();
+        /*
+        if (p.hasRelic("dannyandjanny:BreakfastRelic"))
+            p.loseRelic("dannyandjanny:BreakfastRelic");
+         */
+    }
+
+    public boolean canSpawn() {
+        return AbstractDungeon.player.hasRelic("dannyandjanny:BreakfastRelic");
     }
 
     @Override

@@ -71,8 +71,8 @@
   },
   "${modID}:DiscountDairyCard": {
     "NAME": "Discount Dairy",
-    "DESCRIPTION": "Add X+!M! random Milk cards to your hand. They cost 0 this turn. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Add X+!M! random Milk cards to your hand. They cost 0 this turn. NL Exhaust."
+    "DESCRIPTION": "Add X (+ 1) random Milk cards to your hand. They cost 0 this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add X (+ 1) random Milk cards to your hand. They cost 0 this turn. NL Exhaust."
   },
   "${modID}:MilkersCard": {
     "NAME": "Milkers",
@@ -134,8 +134,8 @@
     "DESCRIPTION": "Intangible. Exhaust. (Retain.)",
     "UPGRADE_DESCRIPTION": "Intangible. Exhaust. (Retain.)"
   },
-  "${modID}:MilkinesisCard": {
-    "NAME": "Milkinesis",
+  "${modID}:LactokinesisCard": {
+    "NAME": "Lactokinesis",
     "DESCRIPTION": "Lose 1 HP. Gain !B! Block. Deal !D! damage. (Draw !M! card.)",
     "UPGRADE_DESCRIPTION": "Lose 1 HP. Gain !B! Block. Deal !D! damage. (Draw !M! card.)"
   },
@@ -286,8 +286,8 @@
   },
   "${modID}:ReflectiveSurfaceCard": {
     "NAME": "Reflective Surface",
-    "DESCRIPTION": "Gain Block equal to the target's Block. Can be used on yourself.",
-    "UPGRADE_DESCRIPTION": "Gain Block equal to the target's Block. Can be used on yourself."
+    "DESCRIPTION": "Gain Block equal to the target's Block. If the target has no Block, double your Block instead.",
+    "UPGRADE_DESCRIPTION": "Gain Block equal to the target's Block. If the target has no Block, double your Block instead."
   },
   "${modID}:TrailOfGlassCard": {
     "NAME": "Trail of Glass",
