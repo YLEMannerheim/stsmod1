@@ -86,8 +86,8 @@
       " #yStrength and #yDexterity."
     ]
   },
-  "${modID}:ButterKnifeRelic": {
-    "NAME": "ButterKnifeRelic",
+  "${modID}:GlassCafetiereRelic": {
+    "NAME": "GlassCafetiereRelic",
     "FLAVOR": "I followed a tutorial!",
     "DESCRIPTIONS": [
       "At the start of each battle, gain #b",

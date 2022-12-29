@@ -1,21 +1,19 @@
 package dannyandjannymod.relics;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.ThornsPower;
-import dannyandjannymod.cards.CalciumDeficiencyCard;
 
 import static dannyandjannymod.BasicMod.makeID;
 
-public class ButterKnifeRelic extends BaseRelic {
-    public static final String NAME = "ButterKnifeRelic";
+public class GlassCafetiereRelic extends BaseRelic {
+    public static final String NAME = "GlassCafetiereRelic";
     public static final String ID = makeID(NAME);
     public static final int THORNS_AMT = 5;
 
-    public ButterKnifeRelic() {
+    public GlassCafetiereRelic() {
         super(ID, NAME, RelicTier.SHOP, LandingSound.MAGICAL);
     }
 
