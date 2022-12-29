@@ -24,13 +24,10 @@ public class RepeatOnCard extends BaseCard {
     public static final String ID = makeID(cardInfo.baseId);
 
     private static final int DAMAGE = 5;
-    private static final int MAGIC = 0;
-    private static final int UPG_MAGIC = 1;
 
     public RepeatOnCard() {
         super(cardInfo);
         setDamage(DAMAGE);
-        setMagic(MAGIC, UPG_MAGIC);
     }
 
     public void upgrade() {
@@ -38,11 +35,10 @@ public class RepeatOnCard extends BaseCard {
         this.upgraded = true;
         this.name = cardStrings.NAME + "+" + this.timesUpgraded;
         this.initializeTitle();
-        this.magicNumber += this.magicUpgrade;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new SkewerAction(p, m, this.damage, DamageInfo.DamageType.NORMAL, this.freeToPlayOnce, this.energyOnUse + this.magicNumber));
+        addToBot(new SkewerAction(p, m, this.damage, DamageInfo.DamageType.NORMAL, this.freeToPlayOnce, this.energyOnUse + this.timesUpgraded));
     }
 
     public boolean canUpgrade() {
