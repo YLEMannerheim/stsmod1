@@ -38,6 +38,6 @@ public class SpottedFingernailRelic extends BaseRelic {
 
     @Override
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0] + "" + DESCRIPTIONS[1]; // TODO
+        return DESCRIPTIONS[0]; // TODO
     }
 }

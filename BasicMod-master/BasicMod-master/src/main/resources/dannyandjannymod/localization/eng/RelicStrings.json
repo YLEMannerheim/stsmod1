@@ -1,11 +1,4 @@
 {
-  "${modID}:RelicID": {
-    "NAME": "Good Relic",
-    "FLAVOR": "Flavor text displayed in detailed relic view.",
-    "DESCRIPTIONS": [
-      "Gain [E] at the start of your turn. [E] is an energy icon."
-    ]
-  },
   "${modID}:BreakfastRelic": {
     "NAME": "Breakfast",
     "FLAVOR": "I followed a tutorial!",
@@ -23,75 +16,75 @@
     ]
   },
   "${modID}:CheeseWheelRelic": {
-    "NAME": "CheeseWheelRelic",
+    "NAME": "Cheese Wheel",
     "FLAVOR": "I followed a tutorial!",
     "DESCRIPTIONS": [
-      "At the start of each battle, gain #b",
-      " #yStrength and #yDexterity."
+      "The first time you gain #yCalcium each turn, draw #b",
+      " card."
     ]
   },
   "${modID}:FrozenYogurtRelic": {
-    "NAME": "FrozenYogurtRelic",
+    "NAME": "Frozen Yogurt",
     "FLAVOR": "I followed a tutorial!",
     "DESCRIPTIONS": [
-      "At the start of each battle, gain #b",
-      " #yStrength and #yDexterity."
+      "At the end of each turn, gain #b",
+      " #yBlock for each retained card."
     ]
   },
   "${modID}:LassoRelic": {
-    "NAME": "LassoRelic",
+    "NAME": "Lasso",
     "FLAVOR": "I followed a tutorial!",
     "DESCRIPTIONS": [
-      "At the start of each battle, gain #b",
-      " #yStrength and #yDexterity."
+      "At the start of each battle, add #b",
+      " random #yMilk cards to your hand."
     ]
   },
   "${modID}:ButterDishRelic": {
-    "NAME": "ButterDishRelic",
+    "NAME": "Butter Dish",
     "FLAVOR": "I followed a tutorial!",
     "DESCRIPTIONS": [
-      "At the start of each battle, gain #b",
-      " #yStrength and #yDexterity."
+      "Your #yCalcium bonuses last for two turns instead of one."
     ]
   },
   "${modID}:WheyProteinRelic": {
-    "NAME": "WheyProteinRelic",
+    "NAME": "Whey Protein",
     "FLAVOR": "I followed a tutorial!",
     "DESCRIPTIONS": [
-      "At the start of each battle, gain #b",
+      "Every #b",
+      "th card you play grants you #b",
       " #yStrength and #yDexterity."
     ]
   },
   "${modID}:MechanicalWhiskRelic": {
-    "NAME": "MechanicalWhiskRelic",
+    "NAME": "Mechanical Whisk",
     "FLAVOR": "I followed a tutorial!",
     "DESCRIPTIONS": [
-      "At the start of each battle, gain #b",
-      " #yStrength and #yDexterity."
+      "Whenever you #yExhaust a card, gain #b",
+      " #yCalcium."
     ]
   },
   "${modID}:WhippedCreamRelic": {
-    "NAME": "WhippedCreamRelic",
+    "NAME": "Whipped Cream",
     "FLAVOR": "I followed a tutorial!",
     "DESCRIPTIONS": [
-      "At the start of each battle, gain #b",
-      " #yStrength and #yDexterity."
+      "If you play at least #b",
+      " cards in a turn, gain #b",
+      " #yEnergy next turn."
     ]
   },
   "${modID}:SpottedFingernailRelic": {
-    "NAME": "SpottedFingernailRelic",
+    "NAME": "Spotted Fingernail",
     "FLAVOR": "I followed a tutorial!",
     "DESCRIPTIONS": [
-      "At the start of each battle, gain #b",
-      " #yStrength and #yDexterity."
+      "Gain #b1 #yEnergy each turn. At the start of combat, shuffle 1 Calcium Deficiency curse into your deck."
     ]
   },
   "${modID}:GlassCafetiereRelic": {
-    "NAME": "GlassCafetiereRelic",
+    "NAME": "Glass Cafetiere",
     "FLAVOR": "I followed a tutorial!",
     "DESCRIPTIONS": [
-      "At the start of each battle, gain #b",
-      " #yStrength and #yDexterity."
+      "Start each Elite encounter with #b",
+      " #yThorns."
     ]
   }
 }

@@ -9,7 +9,7 @@ import static dannyandjannymod.BasicMod.makeID;
 
 public class ButterDishRelic extends BaseRelic {
     public static final String NAME = "ButterDishRelic";
-    private static final int CARD_AMT = 3;
+
     public static final String ID = makeID(NAME);
 
     public ButterDishRelic() {
@@ -19,6 +19,6 @@ public class ButterDishRelic extends BaseRelic {
 
     @Override
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0] + CARD_AMT + DESCRIPTIONS[1];
+        return DESCRIPTIONS[0];
     }
 }

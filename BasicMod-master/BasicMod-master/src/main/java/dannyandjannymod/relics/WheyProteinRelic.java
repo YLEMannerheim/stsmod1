@@ -18,6 +18,7 @@ import static dannyandjannymod.BasicMod.makeID;
 public class WheyProteinRelic extends BaseRelic {
     public static final String NAME = "WheyProteinRelic";
     public static final String ID = makeID(NAME);
+    public static final int STATS_GAIN = 1;
 
     public WheyProteinRelic() {
         super(ID, NAME, RelicTier.RARE, LandingSound.HEAVY);
@@ -31,8 +32,8 @@ public class WheyProteinRelic extends BaseRelic {
             this.pulse = false;
             AbstractPlayer p = AbstractDungeon.player;
             this.addToBot(new RelicAboveCreatureAction(p, this));
-            this.addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, 1), 1));
-            this.addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, 1), 1));
+            this.addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, STATS_GAIN), STATS_GAIN));
+            this.addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, STATS_GAIN), STATS_GAIN));
         } else if (this.counter == 9) {
             this.beginPulse();
             this.pulse = true;
@@ -50,6 +51,6 @@ public class WheyProteinRelic extends BaseRelic {
 
     @Override
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0] + 1 + DESCRIPTIONS[1];
+        return DESCRIPTIONS[0] + 10 + DESCRIPTIONS[1] + STATS_GAIN + DESCRIPTIONS[2];
     }
 }

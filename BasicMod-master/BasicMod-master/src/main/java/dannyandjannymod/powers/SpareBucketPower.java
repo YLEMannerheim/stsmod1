@@ -30,7 +30,7 @@ public class SpareBucketPower extends AbstractPower {
     }
 
     public void updateDescription() {
-        description = "Bucket cards are played twice.";
+        description = "Bucket cards are played " + this.amount + " additional time" + (this.amount == 1 ? "" : "s") + ".";
     }
 
     public void onUseCard(AbstractCard card, UseCardAction action) {

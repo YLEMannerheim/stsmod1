@@ -19,6 +19,11 @@
     "DESCRIPTION": "Gain !M! Calcium.",
     "UPGRADE_DESCRIPTION": "Gain !M! Calcium."
   },
+  "${modID}:OneTwoPunchCard": {
+    "NAME": "One-Two Punch",
+    "DESCRIPTION": "Deal !D! damage twice.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage twice."
+  },
   "${modID}:EmptyBottleCard": {
     "NAME": "Empty Bottle",
     "DESCRIPTION": "Retain. Deal !D! damage. Exhaust.",
@@ -123,6 +128,11 @@
     "NAME": "Spare Bucket",
     "DESCRIPTION": "Your Bucket cards are played !M! additional time.",
     "UPGRADE_DESCRIPTION": "Your Bucket cards are played !M! additional time."
+  },
+  "${modID}:DentedBucketCard": {
+    "NAME": "Dented Bucket",
+    "DESCRIPTION": "Deal !D! damage. Whenever you use this card, permanently reduce this card's damage by 1. ",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Whenever you use this card, permanently reduce this card's damage by 1. "
   },
   "${modID}:FlickMilkTopCard": {
     "NAME": "Flick Milk Top",
