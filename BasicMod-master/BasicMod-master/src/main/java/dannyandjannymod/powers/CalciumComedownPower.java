@@ -32,7 +32,6 @@ public class CalciumComedownPower extends AbstractPower {
             this.amount = -999;
         }
 
-
         String unPrefixed = ID;
         Texture normalTexture = TextureLoader.getPowerTexture(unPrefixed);
         Texture hiDefImage = TextureLoader.getHiDefPowerTexture(unPrefixed);
@@ -47,8 +46,6 @@ public class CalciumComedownPower extends AbstractPower {
             this.img = normalTexture;
             region48 = new TextureAtlas.AtlasRegion(normalTexture, 0, 0, normalTexture.getWidth(), normalTexture.getHeight());
         }
-
-
     }
 
     public void playApplyPowerSfx() {
@@ -105,6 +102,6 @@ public class CalciumComedownPower extends AbstractPower {
         //NAME = powerStrings.NAME;
         //DESCRIPTIONS = powerStrings.DESCRIPTIONS;
         NAME = "Calcium Comedown";
-        DESCRIPTIONS = new String[] {"Lose ", " Strength and Dexterity at the end of the turn."} ;
+        DESCRIPTIONS = new String[] {"At the end of this turn, lose #b", " #yStrength and #yDexterity."} ;
     }
 }

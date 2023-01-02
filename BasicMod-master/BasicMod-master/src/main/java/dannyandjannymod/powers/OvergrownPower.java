@@ -1,5 +1,7 @@
 package dannyandjannymod.powers;
 
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -10,6 +12,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.*;
 import dannyandjannymod.CardWithTagGenerationAction;
 import dannyandjannymod.CustomTags;
+import dannyandjannymod.util.TextureLoader;
 
 public class OvergrownPower extends AbstractPower {
     public static final String POWER_ID = "OvergrownPower";
@@ -25,6 +28,21 @@ public class OvergrownPower extends AbstractPower {
         //this.type = PowerType.BUFF;
         this.updateDescription();
         this.loadRegion("barricade");
+
+        String unPrefixed = ID;
+        Texture normalTexture = TextureLoader.getPowerTexture(unPrefixed);
+        Texture hiDefImage = TextureLoader.getHiDefPowerTexture(unPrefixed);
+        if (hiDefImage != null)
+        {
+            region128 = new TextureAtlas.AtlasRegion(hiDefImage, 0, 0, hiDefImage.getWidth(), hiDefImage.getHeight());
+            if (normalTexture != null)
+                region48 = new TextureAtlas.AtlasRegion(normalTexture, 0, 0, normalTexture.getWidth(), normalTexture.getHeight());
+        }
+        else if (normalTexture != null)
+        {
+            this.img = normalTexture;
+            region48 = new TextureAtlas.AtlasRegion(normalTexture, 0, 0, normalTexture.getWidth(), normalTexture.getHeight());
+        }
     }
 
     public void playApplyPowerSfx() {
@@ -32,7 +50,7 @@ public class OvergrownPower extends AbstractPower {
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
+        this.description = DESCRIPTIONS[0];
     }
 
     public void atEndOfTurn(boolean isPlayer) {
@@ -50,6 +68,6 @@ public class OvergrownPower extends AbstractPower {
         //NAME = powerStrings.NAME;
         //DESCRIPTIONS = powerStrings.DESCRIPTIONS;
         NAME = "Overgrown";
-        DESCRIPTIONS = new String[] {"At the end of your turn, gain Block equal to your Calcium.", ""} ;
+        DESCRIPTIONS = new String[] {"At the end of your turn, gain Block equal to your Calcium."} ;
     }
 }

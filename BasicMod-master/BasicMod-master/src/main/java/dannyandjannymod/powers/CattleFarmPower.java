@@ -1,5 +1,7 @@
 package dannyandjannymod.powers;
 
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardQueueItem;
@@ -17,10 +19,11 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import dannyandjannymod.util.TextureLoader;
 
 public class CattleFarmPower extends AbstractPower {
     public static final String POWER_ID = "CattleFarmPower";
-    private static final PowerStrings powerStrings;
+    //private static final PowerStrings powerStrings;
     public static final String NAME;
     public static final String SINGULAR_DESCRIPTION;
     public static final String PLURAL_DESCRIPTION;
@@ -32,6 +35,21 @@ public class CattleFarmPower extends AbstractPower {
         this.amount = cardAmount;
         this.updateDescription();
         this.loadRegion("confusion");
+
+        String unPrefixed = ID;
+        Texture normalTexture = TextureLoader.getPowerTexture(unPrefixed);
+        Texture hiDefImage = TextureLoader.getHiDefPowerTexture(unPrefixed);
+        if (hiDefImage != null)
+        {
+            region128 = new TextureAtlas.AtlasRegion(hiDefImage, 0, 0, hiDefImage.getWidth(), hiDefImage.getHeight());
+            if (normalTexture != null)
+                region48 = new TextureAtlas.AtlasRegion(normalTexture, 0, 0, normalTexture.getWidth(), normalTexture.getHeight());
+        }
+        else if (normalTexture != null)
+        {
+            this.img = normalTexture;
+            region48 = new TextureAtlas.AtlasRegion(normalTexture, 0, 0, normalTexture.getWidth(), normalTexture.getHeight());
+        }
     }
 
     public void atStartOfTurn() {
@@ -61,11 +79,12 @@ public class CattleFarmPower extends AbstractPower {
     }
 
     static {
-        powerStrings = CardCrawlGame.languagePack.getPowerStrings("Magnetism");
-        NAME = powerStrings.NAME;
+        //powerStrings = CardCrawlGame.languagePack.getPowerStrings("Magnetism");
+        //NAME = powerStrings.NAME;
+        NAME = "Cattle Farm";
         //SINGULAR_DESCRIPTION = powerStrings.DESCRIPTIONS[0];
-        SINGULAR_DESCRIPTION = "Put X Milk cards in your hand at the start of your turn.";
-        //PLURAL_DESCRIPTION = powerStrings.DESCRIPTIONS[1];
-        PLURAL_DESCRIPTION = "Put X Milk cards in your hand at the start of your turn.";
+        //DESCRIPTIONS = new String[] {"Put #b{0} random #yMilk card in your hand at the start of your turn."} ;
+        SINGULAR_DESCRIPTION = "At the start of your turn, add #b%d random #yMilk card into your hand.";
+        PLURAL_DESCRIPTION = "At the start of your turn, add #b%d random #yMilk cards into your hand.";
     }
 }

@@ -20,17 +20,31 @@ import static dannyandjannymod.BasicMod.makeID;
 
 public class SpareBucketPower extends AbstractPower {
 
+    public static final String NAME;
+    public static final String SINGULAR_DESCRIPTION;
+    public static final String PLURAL_DESCRIPTION;
     public SpareBucketPower(int amount) {
-        this.name = "Spare Bucket";
-        this.ID = makeID("Spare Bucket");
+        this.name = NAME;
+        this.ID = "SpareBucketPower";
         this.owner = AbstractDungeon.player;
         this.amount = amount;
         this.updateDescription();
         this.loadRegion("confusion");
-    }
 
-    public void updateDescription() {
-        description = "Bucket cards are played " + this.amount + " additional time" + (this.amount == 1 ? "" : "s") + ".";
+        String unPrefixed = ID;
+        Texture normalTexture = TextureLoader.getPowerTexture(unPrefixed);
+        Texture hiDefImage = TextureLoader.getHiDefPowerTexture(unPrefixed);
+        if (hiDefImage != null)
+        {
+            region128 = new TextureAtlas.AtlasRegion(hiDefImage, 0, 0, hiDefImage.getWidth(), hiDefImage.getHeight());
+            if (normalTexture != null)
+                region48 = new TextureAtlas.AtlasRegion(normalTexture, 0, 0, normalTexture.getWidth(), normalTexture.getHeight());
+        }
+        else if (normalTexture != null)
+        {
+            this.img = normalTexture;
+            region48 = new TextureAtlas.AtlasRegion(normalTexture, 0, 0, normalTexture.getWidth(), normalTexture.getHeight());
+        }
     }
 
     public void onUseCard(AbstractCard card, UseCardAction action) {
@@ -56,7 +70,20 @@ public class SpareBucketPower extends AbstractPower {
                 AbstractDungeon.actionManager.addCardQueueItem(new CardQueueItem(tmp, m, card.energyOnUse, true, true), true);
             }
         }
+    }
 
+    public void updateDescription() {
+        if (this.amount > 1) {
+            this.description = String.format(PLURAL_DESCRIPTION, this.amount);
+        } else {
+            this.description = String.format(SINGULAR_DESCRIPTION, this.amount);
+        }
 
+    }
+
+    static {
+        NAME = "Spare Bucket";
+        SINGULAR_DESCRIPTION = "Bucket cards are played #b%d additional time.";
+        PLURAL_DESCRIPTION = "Bucket cards are played #b%d additional times.";
     }
 }

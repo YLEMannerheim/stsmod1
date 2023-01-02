@@ -1,5 +1,7 @@
 package dannyandjannymod.powers;
 
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -8,10 +10,11 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
+import dannyandjannymod.util.TextureLoader;
 
 public class NextTurnCalciumPower extends AbstractPower {
     public static final String POWER_ID = "NextTurnCalciumPower";
-    private static final PowerStrings powerStrings;
+    //private static final PowerStrings powerStrings;
     public static final String NAME;
     public static final String[] DESCRIPTIONS;
 
@@ -29,6 +32,21 @@ public class NextTurnCalciumPower extends AbstractPower {
 
         if (this.amount <= -999) {
             this.amount = -999;
+        }
+
+        String unPrefixed = ID;
+        Texture normalTexture = TextureLoader.getPowerTexture(unPrefixed);
+        Texture hiDefImage = TextureLoader.getHiDefPowerTexture(unPrefixed);
+        if (hiDefImage != null)
+        {
+            region128 = new TextureAtlas.AtlasRegion(hiDefImage, 0, 0, hiDefImage.getWidth(), hiDefImage.getHeight());
+            if (normalTexture != null)
+                region48 = new TextureAtlas.AtlasRegion(normalTexture, 0, 0, normalTexture.getWidth(), normalTexture.getHeight());
+        }
+        else if (normalTexture != null)
+        {
+            this.img = normalTexture;
+            region48 = new TextureAtlas.AtlasRegion(normalTexture, 0, 0, normalTexture.getWidth(), normalTexture.getHeight());
         }
 
     }
@@ -82,10 +100,10 @@ public class NextTurnCalciumPower extends AbstractPower {
     }
 
     static {
-        powerStrings = CardCrawlGame.languagePack.getPowerStrings("NextTurnCalciumPower");
+        //powerStrings = CardCrawlGame.languagePack.getPowerStrings("NextTurnCalciumPower");
         //NAME = powerStrings.NAME;
         //DESCRIPTIONS = powerStrings.DESCRIPTIONS;
         NAME = "Next Turn Calcium";
-        DESCRIPTIONS = new String[] {"Gain ", " Calcium at the end of the turn."} ;
+        DESCRIPTIONS = new String[] {"At the end of the turn, gain #b", " #yCalcium."} ;
     }
 }

@@ -1,5 +1,7 @@
 package dannyandjannymod.powers;
 
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
@@ -13,6 +15,7 @@ import com.megacrit.cardcrawl.powers.*;
 import com.megacrit.cardcrawl.powers.AbstractPower.PowerType;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import dannyandjannymod.relics.CheeseWheelRelic;
+import dannyandjannymod.util.TextureLoader;
 import sun.security.util.Debug;
 
 public class CalciumPower extends AbstractPower {
@@ -37,6 +40,20 @@ public class CalciumPower extends AbstractPower {
             this.amount = -999;
         }
 
+        String unPrefixed = ID;
+        Texture normalTexture = TextureLoader.getPowerTexture(unPrefixed);
+        Texture hiDefImage = TextureLoader.getHiDefPowerTexture(unPrefixed);
+        if (hiDefImage != null)
+        {
+            region128 = new TextureAtlas.AtlasRegion(hiDefImage, 0, 0, hiDefImage.getWidth(), hiDefImage.getHeight());
+            if (normalTexture != null)
+                region48 = new TextureAtlas.AtlasRegion(normalTexture, 0, 0, normalTexture.getWidth(), normalTexture.getHeight());
+        }
+        else if (normalTexture != null)
+        {
+            this.img = normalTexture;
+            region48 = new TextureAtlas.AtlasRegion(normalTexture, 0, 0, normalTexture.getWidth(), normalTexture.getHeight());
+        }
     }
 
     public void playApplyPowerSfx() {
@@ -141,6 +158,6 @@ public class CalciumPower extends AbstractPower {
         //NAME = powerStrings.NAME;
         //DESCRIPTIONS = powerStrings.DESCRIPTIONS;
         NAME = "Calcium";
-        DESCRIPTIONS = new String[] {"Gain ", " Strength and Dexterity next turn, for one turn."} ;
+        DESCRIPTIONS = new String[] {"Gain #b", " temporary #yStrength and #yDexterity next turn."} ;
     }
 }

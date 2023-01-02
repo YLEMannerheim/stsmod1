@@ -7,6 +7,26 @@
     <list default="true" id="fc187df0-56e9-4cd2-841c-1dd2e740a0f1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/powers/CalciumComedownPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/powers/CalciumComedownPower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/powers/CalciumPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/powers/CalciumPower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/powers/CattleFarmPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/powers/CattleFarmPower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/powers/GlassFormPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/powers/GlassFormPower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/powers/NextTurnCalciumPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/powers/NextTurnCalciumPower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/powers/OvergrownPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/powers/OvergrownPower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/powers/SpareBucketPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/powers/SpareBucketPower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/powers/CalciumComedownPower.png" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/powers/CalciumComedownPower.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/powers/calcium.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/powers/cow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/powers/glass_form.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/powers/large/CalciumComedownPower.png" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/powers/large/CalciumComedownPower.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/powers/large/calcium.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/powers/large/cow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/powers/large/glass_form.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/powers/large/next_turn_calcium.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/powers/large/overgrown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/powers/large/spare_bucket.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/powers/next_turn_calcium.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/powers/overgrown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/powers/spare_bucket.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +54,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2J5hA39Ni4XTIJ5uhYgu36A7Ct9" />
   <component name="ProjectLevelVcsManager">
@@ -44,17 +64,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Program Files (x86)/Steam/steamapps/workshop/content/646570/1605060445/ModTheSpire.jar",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Program Files (x86)/Steam/steamapps/workshop/content/646570/1605060445/ModTheSpire.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="dannyandjannymod.cards" />
