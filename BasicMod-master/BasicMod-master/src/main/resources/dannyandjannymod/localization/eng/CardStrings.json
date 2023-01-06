@@ -19,6 +19,11 @@
     "DESCRIPTION": "Gain !M! Calcium.",
     "UPGRADE_DESCRIPTION": "Gain !M! Calcium."
   },
+  "${modID}:StrongerBonesCard": {
+    "NAME": "Stronger Bones",
+    "DESCRIPTION": "Gain !M! Calcium.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Calcium."
+  },
   "${modID}:OneTwoPunchCard": {
     "NAME": "One-Two Punch",
     "DESCRIPTION": "Deal !D! damage twice.",
@@ -33,11 +38,6 @@
     "NAME": "Bottle Holder",
     "DESCRIPTION": "Add Empty Bottles to your hand until your hand is full.",
     "UPGRADE_DESCRIPTION": "Add Empty Bottles to your hand until your hand is full."
-  },
-  "${modID}:MilkInfiltrationCard": {
-    "NAME": "Milk Infiltration",
-    "DESCRIPTION": "Do !D! damage. Ignore block. (poison damage)",
-    "UPGRADE_DESCRIPTION": "Do !D! damage. Ignore block. (poison damage)"
   },
   "${modID}:MilkSplashCard": {
     "NAME": "Milk Splash",
@@ -191,8 +191,8 @@
   },
   "${modID}:RepeatOnCard": {
     "NAME": "Repeat On",
-    "DESCRIPTION": "Deal !D! damage X+!M! times. Can be upgraded any number of times.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage X+!M! times. Can be upgraded any number of times."
+    "DESCRIPTION": "Deal !D! damage X + !M! times. Can be upgraded any number of times.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage X + !M! times. Can be upgraded any number of times."
   },
   "${modID}:CrossArmsCard": {
     "NAME": "Cross Arms",
@@ -201,8 +201,8 @@
   },
   "${modID}:GrowthSpurtCard": {
     "NAME": "Growth Spurt",
-    "DESCRIPTION": "Gain X Calcium each turn. / (calc doesn't expire??) ",
-    "UPGRADE_DESCRIPTION": "Gain X Calcium each turn. / (calc doesn't expire??) "
+    "DESCRIPTION": "Gain X Calcium each turn.",
+    "UPGRADE_DESCRIPTION": "Gain X Calcium each turn."
   },
   "${modID}:OvergrownCard": {
     "NAME": "Overgrown",
@@ -301,8 +301,8 @@
   },
   "${modID}:TrailOfGlassCard": {
     "NAME": "Trail of Glass",
-    "DESCRIPTION": "Gain !M! Thorns. Gain Block equal to your Thorns.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Thorns. Gain Block equal to your Thorns."
+    "DESCRIPTION": "Gain 2 Thorns. Gain Block equal to !M! times your Thorns.",
+    "UPGRADE_DESCRIPTION": "Gain 2 Thorns. Gain Block equal to !M! times your Thorns."
   },
   "${modID}:ShieldOfShardsCard": {
     "NAME": "Shield of Shards",
@@ -323,5 +323,15 @@
     "NAME": "Glass Cut",
     "DESCRIPTION": "Gain 1 Thorns. Deal !D! damage that ignores block. Apply !M! Weak.",
     "UPGRADE_DESCRIPTION": "Gain 1 Thorns. Deal !D! damage that ignores block. Apply !M! Weak."
+  },
+  "${modID}:FreshnessCard": {
+    "NAME": "Freshness",
+    "DESCRIPTION": "Heal !M! HP. Exhaust. Ethereal.",
+    "UPGRADE_DESCRIPTION": "Heal !M! HP. Exhaust. Ethereal."
+  },
+  "${modID}:SafekeepingCard": {
+    "NAME": "Safekeeping",
+    "DESCRIPTION": "Lose all your current Block and gain it next turn instead. (Retain.)",
+    "UPGRADE_DESCRIPTION": "Lose all your current Block and gain it next turn instead. (Retain.)"
   }
 }

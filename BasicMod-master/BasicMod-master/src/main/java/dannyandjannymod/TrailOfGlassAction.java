@@ -17,7 +17,7 @@ public class TrailOfGlassAction extends AbstractGameAction {
         if (source.getPower("Thorns") != null) {
             int thornsAmt = source.getPower("Thorns").amount;
             if (thornsAmt > 0) {
-                addToBot(new GainBlockAction(source, source, thornsAmt));
+                addToBot(new GainBlockAction(source, source, thornsAmt * amount));
             }
         }
 

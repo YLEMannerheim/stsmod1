@@ -1,4 +1,11 @@
 {
+  "${modID}:MilkmanRelic": {
+    "NAME": "Milkman Relic",
+    "FLAVOR": "I followed a tutorial!",
+    "DESCRIPTIONS": [
+      "Gives you the proper starting loadout for the Milkman."
+    ]
+  },
   "${modID}:BreakfastRelic": {
     "NAME": "Breakfast",
     "FLAVOR": "I followed a tutorial!",

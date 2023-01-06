@@ -25,8 +25,8 @@ public class TrailOfGlassCard extends BaseCard {
 
     public static final String ID = makeID(cardInfo.baseId);
 
-    private static final int MAGIC = 0;
-    private static final int UPG_MAGIC = 2;
+    private static final int MAGIC = 2;
+    private static final int UPG_MAGIC = 1;
 
     public TrailOfGlassCard() {
         super(cardInfo);
@@ -34,10 +34,9 @@ public class TrailOfGlassCard extends BaseCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (this.magicNumber > 0)
-            this.addToBot(new ApplyPowerAction(p, p, new ThornsPower(p, this.magicNumber), this.magicNumber));
+        this.addToBot(new ApplyPowerAction(p, p, new ThornsPower(p, 2), 2));
 
-        this.addToBot(new TrailOfGlassAction(p, 99));
+        this.addToBot(new TrailOfGlassAction(p, this.magicNumber));
     }
 
     @Override

@@ -58,7 +58,7 @@ public class GlassFormPower extends AbstractPower {
     public int onAttacked(DamageInfo info, int damageAmount) {
         if (damageAmount < this.owner.currentHealth && damageAmount > 0 && info.owner != null && info.type == DamageInfo.DamageType.NORMAL && info.type != DamageInfo.DamageType.HP_LOSS) {
             this.flash();
-            this.addToBot(new ApplyPowerAction(this.owner, this.owner, new ThornsPower(this.owner, this.amount), this.amount));
+            this.addToTop(new ApplyPowerAction(this.owner, this.owner, new ThornsPower(this.owner, this.amount), this.amount));
             this.updateDescription();
         }
 
