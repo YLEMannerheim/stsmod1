@@ -20,7 +20,7 @@ public class GlassBankAction extends AbstractGameAction {
     public void update() {
         if (this.duration == Settings.ACTION_DUR_FAST) {
             AbstractPlayer p = AbstractDungeon.player;
-            int thornsAmt = p.exhaustPile.size() / this.divideAmount;
+            int thornsAmt = p.drawPile.size() / this.divideAmount;
             this.addToBot(new ApplyPowerAction(p, p, new ThornsPower(p, thornsAmt), thornsAmt));
         }
 

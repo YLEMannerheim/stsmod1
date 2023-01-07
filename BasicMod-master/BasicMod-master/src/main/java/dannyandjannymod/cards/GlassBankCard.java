@@ -27,7 +27,6 @@ public class GlassBankCard extends BaseCard {
     public GlassBankCard() {
         super(cardInfo);
         setMagic(MAGIC, UPG_MAGIC);
-        setExhaust(true);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

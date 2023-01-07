@@ -71,8 +71,8 @@
   },
   "${modID}:CattleFarmCard": {
     "NAME": "Cattle Farm",
-    "DESCRIPTION": "Add !M! random Milk card(s) to your hand every turn.",
-    "UPGRADE_DESCRIPTION": "Add !M! random Milk card(s) to your hand every turn."
+    "DESCRIPTION": "Add !M! random Milk card to your hand every turn.",
+    "UPGRADE_DESCRIPTION": "Add !M! random Milk card to your hand every turn."
   },
   "${modID}:DiscountDairyCard": {
     "NAME": "Discount Dairy",
@@ -311,18 +311,18 @@
   },
   "${modID}:GlassBottlesCard": {
     "NAME": "Glass Bottles",
-    "DESCRIPTION": "Gain 1 thorns when you play empty bottle",
-    "UPGRADE_DESCRIPTION": "Gain 1 thorns when you play empty bottle"
+    "DESCRIPTION": "Gain 1 thorns when you play empty bottle.",
+    "UPGRADE_DESCRIPTION": "Gain 1 thorns when you play empty bottle."
   },
   "${modID}:GlassBankCard": {
     "NAME": "Glass Bank",
-    "DESCRIPTION": "Gain 1 Thorns for every !M! cards in your Exhaust pile. Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain 1 Thorns for every !M! cards in your Exhaust pile. Exhaust."
+    "DESCRIPTION": "Gain 1 Thorns for every !M! cards in your Draw pile. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain 1 Thorns for every !M! cards in your Draw pile. Exhaust."
   },
   "${modID}:GlassCutCard": {
     "NAME": "Glass Cut",
-    "DESCRIPTION": "Gain 1 Thorns. Deal !D! damage that ignores block. Apply !M! Weak.",
-    "UPGRADE_DESCRIPTION": "Gain 1 Thorns. Deal !D! damage that ignores block. Apply !M! Weak."
+    "DESCRIPTION": "Gain 1 Thorns. Deal !D! damage that ignores Block. Apply !M! Weak.",
+    "UPGRADE_DESCRIPTION": "Gain 1 Thorns. Deal !D! damage that ignores Block. Apply !M! Weak."
   },
   "${modID}:FreshnessCard": {
     "NAME": "Freshness",
