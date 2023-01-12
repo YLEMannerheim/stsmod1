@@ -1,0 +1,27 @@
+
+MilkmanTest.png
+size: 128,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+upperarm
+  rotate: false
+  xy: 1, 1
+  size: 64, 181
+  orig: 71, 191
+  offset: 3, 5
+  index: -1
+hand
+  rotate: false
+  xy: 67, 144
+  size: 32, 54
+  orig: 47, 70
+  offset: 12, 15
+  index: -1
+forearm
+  rotate: false
+  xy: 67, 1
+  size: 35, 141
+  orig: 38, 154
+  offset: 1, 8
+  index: -1

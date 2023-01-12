@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
@@ -18,7 +19,7 @@ public class MilkmanDefendCard extends BaseCard {
             CardType.SKILL,
             CardTarget.NONE,
             CardRarity.BASIC,
-            CardColor.RED);
+            AbstractCardEnum.MILKMAN_WHITE);
 
     public static final String ID = makeID(cardInfo.baseId);
 
@@ -29,6 +30,10 @@ public class MilkmanDefendCard extends BaseCard {
         super(cardInfo);
         setBlock(BLOCK, UPG_BLOCK);
         this.tags.add(CardTags.STARTER_DEFEND);
+
+        //setBackgroundTexture("dannyandjannymod/character/char_button.png", "dannyandjannymod/character/char_button.png");
+        //setOrbTexture("dannyandjannymod/character/char_button.png", "dannyandjannymod/character/char_button.png");
+        //setBannerTexture("dannyandjannymod/character/char_button.png", "dannyandjannymod/character/char_button.png");
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
