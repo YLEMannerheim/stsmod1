@@ -181,8 +181,8 @@
   },
   "${modID}:SkimmingProcessCard": {
     "NAME": "Skimming Process",
-    "DESCRIPTION": "Draw !M! card(s). Exhaust 1 card.",
-    "UPGRADE_DESCRIPTION": "Draw !M! card(s). Exhaust 1 card."
+    "DESCRIPTION": "Exhaust your hand. Add 1 random Milk card to your hand for each Exhausted card.",
+    "UPGRADE_DESCRIPTION": "Exhaust your hand. Add 1 random Milk card to your hand for each Exhausted card."
   },
   "${modID}:MultivitaminsCard": {
     "NAME": "Multivitamins",
@@ -316,8 +316,8 @@
   },
   "${modID}:GlassBankCard": {
     "NAME": "Glass Bank",
-    "DESCRIPTION": "Gain 1 Thorns for every !M! cards in your Draw pile. Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain 1 Thorns for every !M! cards in your Draw pile. Exhaust."
+    "DESCRIPTION": "Gain 1 Thorns for every !M! cards in your draw pile.",
+    "UPGRADE_DESCRIPTION": "Gain 1 Thorns for every !M! cards in your draw pile."
   },
   "${modID}:GlassCutCard": {
     "NAME": "Glass Cut",

@@ -76,14 +76,14 @@
     "DESCRIPTIONS": [
       "If you play at least #b",
       " cards in a turn, gain #b",
-      " #yEnergy next turn."
+      " [E] next turn."
     ]
   },
   "${modID}:SpottedFingernailRelic": {
     "NAME": "Spotted Fingernail",
     "FLAVOR": "I followed a tutorial!",
     "DESCRIPTIONS": [
-      "Gain #b1 #yEnergy each turn. At the start of combat, shuffle 1 Calcium Deficiency curse into your deck."
+      "Gain #b1 [E] at the start of each turn. At the start of combat, shuffle 1 Calcium Deficiency curse into your deck."
     ]
   },
   "${modID}:GlassCafetiereRelic": {

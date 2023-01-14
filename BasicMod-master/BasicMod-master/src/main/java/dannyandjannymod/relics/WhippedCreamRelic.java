@@ -41,6 +41,6 @@ public class WhippedCreamRelic extends BaseRelic {
 
     @Override
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0] + CARD_REQUIREMENT + DESCRIPTIONS[1] + ENERGY_GAIN; // TODO
+        return DESCRIPTIONS[0] + CARD_REQUIREMENT + DESCRIPTIONS[1] + ENERGY_GAIN + DESCRIPTIONS[2];
     }
 }
