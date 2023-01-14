@@ -30,16 +30,16 @@ public class MilkmanMod implements EditCharactersSubscriber {
     }
 
     public static final String MY_CHARACTER_BUTTON = "dannyandjannymod/character/char_button.png";
-    public static final String MY_CHARACTER_PORTRAIT = "dannyandjannymod/character/char_button.png";
-    public static final String POWER_BG = "dannyandjannymod/character/char_button.png";
-    public static final String ATTACK_BG = "dannyandjannymod/character/char_button.png";
-    public static final String SKILL_BG = "dannyandjannymod/character/char_button.png";
-    public static final String POWER_BG_PORT = "dannyandjannymod/character/char_button.png";
-    public static final String ATTACK_BG_PORT = "dannyandjannymod/character/char_button.png";
-    public static final String SKILL_BG_PORT = "dannyandjannymod/character/char_button.png";
-    public static final String ENERGY_ORB = "dannyandjannymod/character/char_button.png";
-    public static final String ENERGY_ORB_PORT = "dannyandjannymod/character/char_button.png";
-    public static final String ENERGY_ORB_CARD = "dannyandjannymod/character/char_button.png";
+    public static final String MY_CHARACTER_PORTRAIT = "dannyandjannymod/character/shoulder1.png";
+    public static final String POWER_BG = "dannyandjannymod/character/powerCardSmall.png";
+    public static final String ATTACK_BG = "dannyandjannymod/character/attackCardSmall.png";
+    public static final String SKILL_BG = "dannyandjannymod/character/skillCardSmall.png";
+    public static final String POWER_BG_PORT = "dannyandjannymod/character/powerCard.png";
+    public static final String ATTACK_BG_PORT = "dannyandjannymod/character/attackCard.png";
+    public static final String SKILL_BG_PORT = "dannyandjannymod/character/skillCard.png";
+    public static final String ENERGY_ORB = "dannyandjannymod/character/energyOrbCardSmall.png";
+    public static final String ENERGY_ORB_PORT = "dannyandjannymod/character/energyOrbCard.png";
+    public static final String ENERGY_ORB_CARD = "dannyandjannymod/character/energyOrbCardSmall.png";
 
 
     @Override

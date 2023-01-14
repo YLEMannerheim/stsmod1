@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.EnergizedPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
+import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.BottleHolderAction;
 import dannyandjannymod.FemurAction;
 import dannyandjannymod.powers.CalciumPower;
@@ -22,7 +23,7 @@ public class FemurCard extends BaseCard {
             CardType.SKILL,
             CardTarget.NONE,
             CardRarity.UNCOMMON,
-            CardColor.RED);
+            AbstractCardEnum.MILKMAN_WHITE);
 
     public static final String ID = makeID(cardInfo.baseId);
     public static final int MAGIC = 1;

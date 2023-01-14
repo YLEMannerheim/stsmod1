@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.actions.unique.SkewerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.CustomTags;
 import dannyandjannymod.CardWithTagGenerationAction;
 import dannyandjannymod.DiscountDairyAction;
@@ -19,7 +20,7 @@ public class DiscountDairyCard extends BaseCard {
             CardType.SKILL,
             CardTarget.NONE,
             CardRarity.UNCOMMON,
-            CardColor.RED);
+            AbstractCardEnum.MILKMAN_WHITE);
 
     public static final String ID = makeID(cardInfo.baseId);
     public static final int MAGIC = 0;

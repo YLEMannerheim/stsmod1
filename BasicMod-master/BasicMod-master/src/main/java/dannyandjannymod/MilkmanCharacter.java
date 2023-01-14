@@ -50,8 +50,8 @@ public class MilkmanCharacter extends CustomPlayer {
      */
     private static final String[] orbTextures = { "dannyandjannymod/character/char_button.png" };
     public static final int ENERGY_PER_TURN = 3; // how much energy you get every turn
-    public static final String MY_CHARACTER_SHOULDER_2 = "dannyandjannymod/character/char_button.png"; // campfire pose
-    public static final String MY_CHARACTER_SHOULDER_1 = "dannyandjannymod/character/char_button.png"; // another campfire pose
+    public static final String MY_CHARACTER_SHOULDER_2 = "dannyandjannymod/character/shoulder1.png"; // campfire pose
+    public static final String MY_CHARACTER_SHOULDER_1 = "dannyandjannymod/character/shoulder1.png"; // another campfire pose
     public static final String MY_CHARACTER_CORPSE = "dannyandjannymod/character/char_button.png"; // dead corpse
     public static final String MY_CHARACTER_SKELETON_ATLAS = "dannyandjannymod/character/MilkmanTest.atlas"; // spine animation atlas
     public static final String MY_CHARACTER_SKELETON_JSON = "dannyandjannymod/character/MilkmanTest.json"; // spine animation json

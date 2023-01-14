@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.FrailPower;
 import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
+import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
@@ -17,7 +18,7 @@ public class MissingPersonCard extends BaseCard {
             CardType.SKILL,
             CardTarget.NONE,
             CardRarity.RARE,
-            CardColor.RED);
+            AbstractCardEnum.MILKMAN_WHITE);
 
     public static final String ID = makeID(cardInfo.baseId);
     public static final int MAGIC = 1;

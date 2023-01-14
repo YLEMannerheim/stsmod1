@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.vfx.combat.IntimidateEffect;
+import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.CustomTags;
 import dannyandjannymod.util.CardInfo;
 
@@ -26,7 +27,7 @@ public class LongLifeMilkCard extends BaseCard {
             CardType.SKILL,
             CardTarget.NONE,
             CardRarity.COMMON,
-            CardColor.RED);
+            AbstractCardEnum.MILKMAN_WHITE);
 
     public static final String ID = makeID(cardInfo.baseId);
 

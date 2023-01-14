@@ -1,6 +1,7 @@
 package dannyandjannymod.cards;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.BottleHolderAction;
 import com.megacrit.cardcrawl.actions.unique.ExpertiseAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -18,7 +19,7 @@ public class BottleHolderCard extends BaseCard {
             CardType.SKILL,
             CardTarget.NONE,
             CardRarity.RARE,
-            CardColor.RED);
+            AbstractCardEnum.MILKMAN_WHITE);
 
     public static final String ID = makeID(cardInfo.baseId);
 

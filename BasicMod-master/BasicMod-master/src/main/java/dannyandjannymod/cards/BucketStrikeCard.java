@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StrengthPower;
+import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.CustomTags;
 import dannyandjannymod.util.CardInfo;
 
@@ -20,7 +21,7 @@ public class BucketStrikeCard extends BaseCard {
             CardType.ATTACK,
             CardTarget.ENEMY,
             CardRarity.COMMON,
-            CardColor.RED);
+            AbstractCardEnum.MILKMAN_WHITE);
 
     public static final String ID = makeID(cardInfo.baseId);
 

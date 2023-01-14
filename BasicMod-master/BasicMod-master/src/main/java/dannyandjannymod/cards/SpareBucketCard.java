@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.*;
+import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.CustomTags;
 import dannyandjannymod.powers.SpareBucketPower;
 import dannyandjannymod.util.CardInfo;
@@ -18,7 +19,7 @@ public class SpareBucketCard extends BaseCard {
             CardType.POWER,
             CardTarget.NONE,
             CardRarity.RARE,
-            CardColor.RED);
+            AbstractCardEnum.MILKMAN_WHITE);
 
     public static final String ID = makeID(cardInfo.baseId);
     public static final int MAGIC = 1;

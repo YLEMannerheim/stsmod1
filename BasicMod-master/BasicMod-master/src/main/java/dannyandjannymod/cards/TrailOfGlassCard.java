@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.ThornsPower;
+import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.FemurAction;
 import dannyandjannymod.TrailOfGlassAction;
 import dannyandjannymod.util.CardInfo;
@@ -21,7 +22,7 @@ public class TrailOfGlassCard extends BaseCard {
             CardType.SKILL,
             CardTarget.NONE,
             CardRarity.UNCOMMON,
-            CardColor.RED);
+            AbstractCardEnum.MILKMAN_WHITE);
 
     public static final String ID = makeID(cardInfo.baseId);
 
