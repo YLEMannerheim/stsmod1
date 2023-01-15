@@ -22,7 +22,7 @@ public class GlassFormCard extends BaseCard {
             AbstractCardEnum.MILKMAN_WHITE);
 
     public static final String ID = makeID(cardInfo.baseId);
-    public static final int MAGIC = 3;
+    public static final int MAGIC = 1;
 
 
 

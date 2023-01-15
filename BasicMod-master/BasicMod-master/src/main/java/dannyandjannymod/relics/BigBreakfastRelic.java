@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
+import dannyandjannymod.BigBreakfastAction;
 import dannyandjannymod.powers.CalciumPower;
 
 import static dannyandjannymod.BasicMod.makeID;
@@ -32,11 +33,10 @@ public class BigBreakfastRelic extends BaseRelic {
 
     @Override
     public void onEquip() {
-        AbstractPlayer p = AbstractDungeon.player;
+        //if (AbstractDungeon.player.getRelicNames().get(0) != "BigBreakfastRelic")
+        //    this.instantObtain(AbstractDungeon.player, 0, true);
 
-        if (p.hasRelic("dannyandjanny:BreakfastRelic"))
-            p.loseRelic("dannyandjanny:BreakfastRelic");
-
+        //this.addToBot(new BigBreakfastAction());
     }
 
     public boolean canSpawn() {

@@ -2,29 +2,31 @@ package dannyandjannymod.powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.EnergizedPower;
 import dannyandjannymod.CardWithTagGenerationAction;
 import dannyandjannymod.CustomTags;
 import dannyandjannymod.util.TextureLoader;
 
-public class ImmuneSystemPower extends AbstractPower {
-    public static final String POWER_ID = "ImmuneSystemPower";
+public class DeliverancePower extends AbstractPower {
+    public static final String POWER_ID = "DeliverancePower";
     public static final String NAME;
+    public static final String[] DESCRIPTIONS;
 
-
-    public ImmuneSystemPower(AbstractCreature owner, int cardAmount) {
+    public DeliverancePower(AbstractCreature owner, int stackAmount) {
         this.name = NAME;
-        this.ID = "ImmuneSystemPower";
+        this.ID = "DeliverancePower";
         this.owner = owner;
-        this.amount = cardAmount;
+        this.amount = stackAmount;
+        this.type = PowerType.DEBUFF;
         this.updateDescription();
         this.loadRegion("confusion");
 
@@ -44,12 +46,13 @@ public class ImmuneSystemPower extends AbstractPower {
         }
     }
 
-    @Override
-    public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
-        AbstractPlayer p = AbstractDungeon.player;
-        if (source == p && power.type == PowerType.DEBUFF) {
-            this.addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, this.amount), this.amount));
+    public int onAttacked(DamageInfo info, int damageAmount) {
+        if (this.amount > 0 && info.type == DamageInfo.DamageType.NORMAL) {
+            this.flash();
+            this.addToBot(new DrawCardAction(AbstractDungeon.player, 1));
+            this.addToBot(new ReducePowerAction(this.owner, this.owner, "DeliverancePower", 1));
         }
+        return damageAmount;
     }
 
     public void stackPower(int stackAmount) {
@@ -58,15 +61,14 @@ public class ImmuneSystemPower extends AbstractPower {
     }
 
     public void updateDescription() {
-        this.description = String.format(DESCRIPTIONS[0], this.amount);
+        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
     }
 
     static {
         //powerStrings = CardCrawlGame.languagePack.getPowerStrings("Magnetism");
         //NAME = powerStrings.NAME;
-        NAME = "Immune System";
+        NAME = "Deliverance";
         //SINGULAR_DESCRIPTION = powerStrings.DESCRIPTIONS[0];
-        DESCRIPTIONS = new String[]{"Whenever you apply a #yDebuff to yourself, gain #b%d [E] next turn."};
-
+        DESCRIPTIONS = new String[] {"The next #b", " times you attack this enemy, draw 1 card."} ;
     }
 }

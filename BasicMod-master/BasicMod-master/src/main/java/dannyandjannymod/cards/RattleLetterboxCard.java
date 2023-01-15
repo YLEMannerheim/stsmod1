@@ -7,47 +7,43 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.StrengthPower;
+import com.megacrit.cardcrawl.powers.ThornsPower;
+import com.megacrit.cardcrawl.powers.WeakPower;
 import dannyandjannymod.AbstractCardEnum;
+import dannyandjannymod.powers.DeliverancePower;
 import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
 
-public class KarateKickCard extends BaseCard {
+public class RattleLetterboxCard extends BaseCard {
     private final static CardInfo cardInfo = new CardInfo(
-            "KarateKickCard",
-            3,
+            "RattleLetterboxCard",
+            1,
             CardType.ATTACK,
             CardTarget.ENEMY,
-            CardRarity.UNCOMMON,
+            CardRarity.COMMON,
             AbstractCardEnum.MILKMAN_WHITE);
 
     public static final String ID = makeID(cardInfo.baseId);
 
-    private static final int MAGIC_NUM = 1;
-    private static final int DAMAGE = 5;
+    private static final int MAGIC = 3;
+    private static final int UPG_MAGIC = 2;
+    private static final int DAMAGE = 8;
+    private static final int UPG_DAMAGE = 3;
 
-    public KarateKickCard() {
+    public RattleLetterboxCard() {
         super(cardInfo);
-        setMagic(MAGIC_NUM);
-        setDamage(DAMAGE);
+        setMagic(MAGIC, UPG_MAGIC);
+        setDamage(DAMAGE, UPG_DAMAGE);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        this.addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, this.magicNumber), this.magicNumber));
-    }
-
-    public void upgrade() {
-        if (!this.upgraded) {
-            this.upgradeName();
-            this.upgradeBaseCost(2);
-        }
+        addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+        addToBot(new ApplyPowerAction(m, p, new DeliverancePower(m, this.magicNumber), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
     }
 
     @Override
     public AbstractCard makeCopy() { //Optional
-        return new KarateKickCard();
+        return new RattleLetterboxCard();
     }
 }

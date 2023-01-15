@@ -22,6 +22,7 @@ import static dannyandjannymod.BasicMod.makeID;
 public class GlassFormPower extends AbstractPower {
 
     public static final String NAME;
+    public static final String[] DESCRIPTIONS;
     public GlassFormPower(int amount) {
         this.name = NAME;
         this.ID = "GlassFormPower";
@@ -56,7 +57,8 @@ public class GlassFormPower extends AbstractPower {
     }
 
     public int onAttacked(DamageInfo info, int damageAmount) {
-        if (damageAmount < this.owner.currentHealth && damageAmount > 0 && info.owner != null && info.type == DamageInfo.DamageType.NORMAL && info.type != DamageInfo.DamageType.HP_LOSS) {
+        if (info.type != DamageInfo.DamageType.THORNS && info.type != DamageInfo.DamageType.HP_LOSS && info.owner != null && info.owner != this.owner) {
+        //if (damageAmount < this.owner.currentHealth && damageAmount > 0 && info.owner != null && info.type == DamageInfo.DamageType.NORMAL && info.type != DamageInfo.DamageType.HP_LOSS) {
             this.flash();
             this.addToTop(new ApplyPowerAction(this.owner, this.owner, new ThornsPower(this.owner, this.amount), this.amount));
             this.updateDescription();

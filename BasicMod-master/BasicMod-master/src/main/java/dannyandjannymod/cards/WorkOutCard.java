@@ -31,7 +31,7 @@ public class WorkOutCard extends BaseCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new WeakPower(p, this.magicNumber, false), this.magicNumber));
-        addToBot(new ApplyPowerAction(p, p, new FrailPower(p, this.magicNumber, false), this.magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new VulnerablePower(p, this.magicNumber, false), this.magicNumber));
         this.addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, 2), 2));
         this.addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, 2), 2));
     }

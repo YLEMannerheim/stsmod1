@@ -5,19 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc187df0-56e9-4cd2-841c-1dd2e740a0f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/SkimmingProcessAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/powers/ImmuneSystemPower.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/BigBreakfastAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/GrowthSpurtAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/GrowthSpurtCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/ImmuneSystemCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/MarkDoorCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/RattleLetterboxCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/SecretCompartmentCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/powers/DeliverancePower.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/powers/GrowthSpurtPower.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/GlassBankAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/GlassBankAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/MilkmanCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/MilkmanCharacter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/GrowingPainsCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/GrowingPainsCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/SkimmingProcessCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/SkimmingProcessCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/GlassCutCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/GlassCutCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/GlassFormCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/GlassFormCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/KarateKickCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/KarateKickCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/LactokinesisCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/LactokinesisCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/SafekeepingCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/SafekeepingCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/WorkOutCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/cards/WorkOutCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/powers/GlassFormPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/powers/GlassFormPower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/powers/ImmuneSystemPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/powers/ImmuneSystemPower.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/relics/BigBreakfastRelic.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/relics/BigBreakfastRelic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/relics/MilkmanRelic.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/relics/WhippedCreamRelic.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/relics/WhippedCreamRelic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/localization/eng/CardStrings.json" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/localization/eng/CardStrings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/localization/eng/RelicStrings.json" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/localization/eng/RelicStrings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/localization/eng/CharacterStrings.json" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/localization/eng/CharacterStrings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,10 +76,10 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="dannyandjannymod.powers" />
       <recent name="dannyandjannymod" />
-      <recent name="dannyandjannymod.relics" />
       <recent name="dannyandjannymod.cards" />
+      <recent name="dannyandjannymod.powers" />
+      <recent name="dannyandjannymod.relics" />
       <recent name="basicmod.cards" />
     </key>
   </component>

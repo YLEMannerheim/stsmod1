@@ -5,24 +5,22 @@ import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.EnergizedPower;
 import dannyandjannymod.CardWithTagGenerationAction;
 import dannyandjannymod.CustomTags;
 import dannyandjannymod.util.TextureLoader;
 
-public class ImmuneSystemPower extends AbstractPower {
-    public static final String POWER_ID = "ImmuneSystemPower";
+public class GrowthSpurtPower extends AbstractPower {
+    public static final String POWER_ID = "GrowthSpurtPower";
     public static final String NAME;
 
 
-    public ImmuneSystemPower(AbstractCreature owner, int cardAmount) {
+    public GrowthSpurtPower(AbstractCreature owner, int cardAmount) {
         this.name = NAME;
-        this.ID = "ImmuneSystemPower";
+        this.ID = "GrowthSpurtPower";
         this.owner = owner;
         this.amount = cardAmount;
         this.updateDescription();
@@ -44,11 +42,12 @@ public class ImmuneSystemPower extends AbstractPower {
         }
     }
 
-    @Override
-    public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
-        AbstractPlayer p = AbstractDungeon.player;
-        if (source == p && power.type == PowerType.DEBUFF) {
-            this.addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, this.amount), this.amount));
+    public void atStartOfTurn() {
+        if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
+            this.flash();
+
+            AbstractPlayer p = AbstractDungeon.player;
+            this.addToBot(new ApplyPowerAction(p, p, new CalciumPower(p, this.amount), this.amount));
         }
     }
 
@@ -64,9 +63,8 @@ public class ImmuneSystemPower extends AbstractPower {
     static {
         //powerStrings = CardCrawlGame.languagePack.getPowerStrings("Magnetism");
         //NAME = powerStrings.NAME;
-        NAME = "Immune System";
+        NAME = "Growth Spurt";
         //SINGULAR_DESCRIPTION = powerStrings.DESCRIPTIONS[0];
-        DESCRIPTIONS = new String[]{"Whenever you apply a #yDebuff to yourself, gain #b%d [E] next turn."};
-
+        DESCRIPTIONS = new String[] {"At the start of your turn, gain #b%d #yCalcium."};
     }
 }

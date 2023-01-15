@@ -96,8 +96,8 @@
   },
   "${modID}:KarateKickCard": {
     "NAME": "Karate Kick",
-    "DESCRIPTION": "Deal !D! damage. Gain !M! Strength.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Gain !M! Strength."
+    "DESCRIPTION": "Deal !D! damage twice. Gain !M! Strength.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage twice. Gain !M! Strength."
   },
   "${modID}:RefrigerateCard": {
     "NAME": "Refrigerate",
@@ -146,8 +146,8 @@
   },
   "${modID}:LactokinesisCard": {
     "NAME": "Lactokinesis",
-    "DESCRIPTION": "Lose 1 HP. Gain !B! Block. Deal !D! damage. (Draw !M! card.)",
-    "UPGRADE_DESCRIPTION": "Lose 1 HP. Gain !B! Block. Deal !D! damage. (Draw !M! card.)"
+    "DESCRIPTION": "Gain !B! Block. Gain !M! Calcium. Draw !M! card(s).",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Gain !M! Calcium. Draw !M! card(s)."
   },
   "${modID}:LastDropCard": {
     "NAME": "Last Drop",
@@ -161,8 +161,8 @@
   },
   "${modID}:WorkOutCard": {
     "NAME": "Work Out",
-    "DESCRIPTION": "Gain !M! Weak and !M! Frail. Gain 2 Strength and 2 Dexterity.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Weak and !M! Frail. Gain 2 Strength and 2 Dexterity."
+    "DESCRIPTION": "Gain !M! Weak and !M! Vulnerable. Gain 2 Strength and 2 Dexterity.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Weak and !M! Vulnerable. Gain 2 Strength and 2 Dexterity."
   },
   "${modID}:AroundTheHousesCard": {
     "NAME": "Around the Houses",
@@ -201,8 +201,8 @@
   },
   "${modID}:GrowthSpurtCard": {
     "NAME": "Growth Spurt",
-    "DESCRIPTION": "Gain X Calcium each turn.",
-    "UPGRADE_DESCRIPTION": "Gain X Calcium each turn."
+    "DESCRIPTION": "Gain X(+1) Calcium each turn.",
+    "UPGRADE_DESCRIPTION": "Gain X(+1) Calcium each turn."
   },
   "${modID}:OvergrownCard": {
     "NAME": "Overgrown",
@@ -291,8 +291,8 @@
   },
   "${modID}:GlassFormCard": {
     "NAME": "Glass Form",
-    "DESCRIPTION": "Gain !M! Thorns whenever you lose HP.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Thorns whenever you lose HP."
+    "DESCRIPTION": "Gain !M! Thorns whenever you are attacked.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Thorns whenever you are attacked."
   },
   "${modID}:ReflectiveSurfaceCard": {
     "NAME": "Reflective Surface",
@@ -331,7 +331,22 @@
   },
   "${modID}:SafekeepingCard": {
     "NAME": "Safekeeping",
-    "DESCRIPTION": "Lose all your current Block and gain it next turn instead. (Retain.)",
-    "UPGRADE_DESCRIPTION": "Lose all your current Block and gain it next turn instead. (Retain.)"
+    "DESCRIPTION": "Gain Block next turn equal to your current Block. Lose all your Block. (Don't lose Block.)",
+    "UPGRADE_DESCRIPTION": "Gain Block next turn equal to your current Block. Lose all your Block. (Don't lose Block.)"
+  },
+  "${modID}:RattleLetterboxCard": {
+    "NAME": "Rattle Letterbox",
+    "DESCRIPTION": "Deal !D! damage. Apply !M! Deliverance.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Apply !M! Deliverance."
+  },
+  "${modID}:MarkDoorCard": {
+    "NAME": "Mark Door",
+    "DESCRIPTION": "Apply !M! Deliverance to an enemy. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply !M! Deliverance to an enemy. Exhaust."
+  },
+  "${modID}:SecretCompartmentCard": {
+    "NAME": "Secret Compartment",
+    "DESCRIPTION": "Draw !M! cards. Retain.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. Retain."
   }
 }

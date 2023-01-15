@@ -7,47 +7,44 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.StrengthPower;
 import dannyandjannymod.AbstractCardEnum;
+import dannyandjannymod.powers.DeliverancePower;
 import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
 
-public class KarateKickCard extends BaseCard {
+public class MarkDoorCard extends BaseCard {
     private final static CardInfo cardInfo = new CardInfo(
-            "KarateKickCard",
-            3,
-            CardType.ATTACK,
+            "MarkDoorCard",
+            1,
+            CardType.SKILL,
             CardTarget.ENEMY,
             CardRarity.UNCOMMON,
             AbstractCardEnum.MILKMAN_WHITE);
 
     public static final String ID = makeID(cardInfo.baseId);
 
-    private static final int MAGIC_NUM = 1;
-    private static final int DAMAGE = 5;
+    private static final int MAGIC = 99;
 
-    public KarateKickCard() {
+    public MarkDoorCard() {
         super(cardInfo);
-        setMagic(MAGIC_NUM);
-        setDamage(DAMAGE);
+        setMagic(MAGIC);
+        setExhaust(true);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        this.addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, this.magicNumber), this.magicNumber));
+        addToBot(new ApplyPowerAction(m, p, new DeliverancePower(m, this.magicNumber), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
     }
 
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBaseCost(2);
+            this.upgradeBaseCost(0);
         }
     }
 
     @Override
     public AbstractCard makeCopy() { //Optional
-        return new KarateKickCard();
+        return new MarkDoorCard();
     }
 }

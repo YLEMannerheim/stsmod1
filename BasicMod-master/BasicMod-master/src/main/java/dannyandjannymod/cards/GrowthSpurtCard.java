@@ -1,43 +1,46 @@
 package dannyandjannymod.cards;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.HealAction;
-import com.megacrit.cardcrawl.actions.common.RemoveAllBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.NextTurnBlockPower;
 import dannyandjannymod.AbstractCardEnum;
+import dannyandjannymod.DiscountDairyAction;
+import dannyandjannymod.GrowthSpurtAction;
+import dannyandjannymod.powers.ImmuneSystemPower;
 import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
 
-public class SafekeepingCard extends BaseCard {
+public class GrowthSpurtCard extends BaseCard {
     private final static CardInfo cardInfo = new CardInfo(
-            "SafekeepingCard",
-            0,
-            CardType.SKILL,
+            "GrowthSpurtCard",
+            -1,
+            CardType.POWER,
             CardTarget.NONE,
-            CardRarity.UNCOMMON,
+            CardRarity.COMMON,
             AbstractCardEnum.MILKMAN_WHITE);
 
     public static final String ID = makeID(cardInfo.baseId);
+    public static final int MAGIC = 0;
+    public static final int UPG_MAGIC = 1;
 
-    public SafekeepingCard() {
+
+    public GrowthSpurtCard() {
         super(cardInfo);
+        setMagic(MAGIC, UPG_MAGIC);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int blockAmount = p.currentBlock;
-        if (blockAmount > 0) {
-            this.addToBot(new ApplyPowerAction(p, p, new NextTurnBlockPower(p, blockAmount), blockAmount));
-            if (!this.upgraded)
-                this.addToBot(new RemoveAllBlockAction(p, p));
-        }
+        this.addToBot(new GrowthSpurtAction(p, this.freeToPlayOnce, this.energyOnUse + this.magicNumber));
+        //this.addToBot(new ApplyPowerAction(p, p, new ImmuneSystemPower(p, 1), 1));
+
     }
+
+
 
     @Override
     public AbstractCard makeCopy() { //Optional
-        return new SafekeepingCard();
+        return new GrowthSpurtCard();
     }
 }
