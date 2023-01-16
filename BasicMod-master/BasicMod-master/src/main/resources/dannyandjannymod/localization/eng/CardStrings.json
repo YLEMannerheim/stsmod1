@@ -244,10 +244,10 @@
     "DESCRIPTION": "Gain !M! Calcium, then draw 1 card for each Calcium you have.",
     "UPGRADE_DESCRIPTION": "Gain !M! Calcium, then draw 1 card for each Calcium you have."
   },
-  "${modID}:ProteinPunchCard": {
-    "NAME": "Protein Punch",
-    "DESCRIPTION": "Deal damage equal to !M! x your Calcium.",
-    "UPGRADE_DESCRIPTION": "Deal damage equal to !M! x your Calcium."
+  "${modID}:CalcitrateCard": {
+    "NAME": "Calcitrate",
+    "DESCRIPTION": "Deal !D! damage. Deals additional damage equal to Calcium gained this combat.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Deals additional damage equal to Calcium gained this combat."
   },
   "${modID}:SkullCrackCard": {
     "NAME": "Skull Crack",
@@ -321,8 +321,8 @@
   },
   "${modID}:GlassCutCard": {
     "NAME": "Glass Cut",
-    "DESCRIPTION": "Gain 1 Thorns. Deal !D! damage that ignores Block. Apply !M! Weak.",
-    "UPGRADE_DESCRIPTION": "Gain 1 Thorns. Deal !D! damage that ignores Block. Apply !M! Weak."
+    "DESCRIPTION": "Gain 1 Thorns. Deal !D! damage. Apply !M! Weak.",
+    "UPGRADE_DESCRIPTION": "Gain 1 Thorns. Deal !D! damage. Apply !M! Weak."
   },
   "${modID}:FreshnessCard": {
     "NAME": "Freshness",
