@@ -82,7 +82,7 @@ public class CalciumPower extends AbstractPower {
     @Override
     public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
         if (power instanceof CalciumPower && target instanceof AbstractPlayer) {
-            triggerCheeseWheelRelic(power.amount);
+            //triggerCheeseWheelRelic(power.amount);
             triggerButterDishRelic(power.amount);
             addToBot(new CalcitrateBuffAction(power.amount));
         }
@@ -99,14 +99,15 @@ public class CalciumPower extends AbstractPower {
 
     private void triggerCheeseWheelRelic(int chargeAmount) {
         Debug d = new Debug();
-        d.println("Triggered! AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+        d.println("Checking Cheese Wheel conditions!");
         if (chargeAmount > 0) {
             AbstractPlayer p = AbstractDungeon.player;
             if (p.hasRelic("dannyandjanny:CheeseWheelRelic")) {
                 CheeseWheelRelic r = (CheeseWheelRelic) p.getRelic("dannyandjanny:CheeseWheelRelic");
-                r.counter++;
-                if (r.counter == 1) {
+                if (!r.triggeredThisTurn) {
+                    r.triggeredThisTurn = true;
                     r.flash();
+                    r.stopPulse();
                     this.addToBot(new RelicAboveCreatureAction(p, r));
                     this.addToBot(new DrawCardAction(p, r.getDrawAmount()));
                 } else d.println("not 1 stack");

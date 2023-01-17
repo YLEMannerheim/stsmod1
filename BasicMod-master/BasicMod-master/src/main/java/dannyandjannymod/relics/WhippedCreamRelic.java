@@ -29,7 +29,9 @@ public class WhippedCreamRelic extends BaseRelic {
 
     @Override
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
-        counter++;
+        if (counter < CARD_REQUIREMENT)
+            counter++;
+
         if (counter == CARD_REQUIREMENT) {
             flash();
             this.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));

@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.CustomTags;
+import dannyandjannymod.powers.CalciumPower;
 import dannyandjannymod.powers.OvergrownPower;
 import dannyandjannymod.powers.SpareBucketPower;
 import dannyandjannymod.util.CardInfo;
@@ -22,14 +23,17 @@ public class OvergrownCard extends BaseCard {
             AbstractCardEnum.MILKMAN_WHITE);
 
     public static final String ID = makeID(cardInfo.baseId);
+    public static final int MAGIC = 3;
 
     public OvergrownCard() {
         super(cardInfo);
-        setInnate(false, true);
+        setMagic(MAGIC);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new OvergrownPower(p), 1));
+        if (this.upgraded)
+            addToBot(new ApplyPowerAction(p, p, new CalciumPower(p, magicNumber), magicNumber));
     }
 
     @Override

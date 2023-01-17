@@ -28,6 +28,7 @@ public class SupersizeCard extends BaseCard {
     public SupersizeCard() {
         super(cardInfo);
         setMagic(MAGIC, UPG_MAGIC);
+        setEthereal(true);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

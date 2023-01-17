@@ -146,8 +146,8 @@
   },
   "${modID}:LactokinesisCard": {
     "NAME": "Lactokinesis",
-    "DESCRIPTION": "Gain !B! Block. Gain !M! Calcium. Draw !M! card(s).",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. Gain !M! Calcium. Draw !M! card(s)."
+    "DESCRIPTION": "Gain !B! Block. Gain !M! Calcium.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Gain !M! Calcium."
   },
   "${modID}:LastDropCard": {
     "NAME": "Last Drop",
@@ -201,8 +201,8 @@
   },
   "${modID}:GrowthSpurtCard": {
     "NAME": "Growth Spurt",
-    "DESCRIPTION": "Gain X(+1) Calcium each turn.",
-    "UPGRADE_DESCRIPTION": "Gain X(+1) Calcium each turn."
+    "DESCRIPTION": "At the start of your turn, gain X(+1) Calcium.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, gain X(+1) Calcium."
   },
   "${modID}:OvergrownCard": {
     "NAME": "Overgrown",
@@ -344,9 +344,19 @@
     "DESCRIPTION": "Apply !M! Deliverance to an enemy. Exhaust.",
     "UPGRADE_DESCRIPTION": "Apply !M! Deliverance to an enemy. Exhaust."
   },
-  "${modID}:SecretCompartmentCard": {
-    "NAME": "Secret Compartment",
-    "DESCRIPTION": "Draw !M! cards. Retain.",
-    "UPGRADE_DESCRIPTION": "Draw !M! cards. Retain."
+  "${modID}:SpareTireCard": {
+    "NAME": "Spare Tire",
+    "DESCRIPTION": "Retain. Draw !M! cards. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. Draw !M! cards. Exhaust."
+  },
+  "${modID}:GutPunchCard": {
+    "NAME": "Gut Punch",
+    "DESCRIPTION": "Deal !D! damage. Enemy loses !M! Strength.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Enemy loses !M! Strength."
+  },
+  "${modID}:CremeDeLaCremeCard": {
+    "NAME": "Crème de la Crème",
+    "DESCRIPTION": "Whenever you play a Milk card, upgrade ALL cards in your hand for the rest of this combat.",
+    "UPGRADE_DESCRIPTION": "Whenever you play a Milk card, upgrade ALL cards in your hand for the rest of this combat."
   }
 }

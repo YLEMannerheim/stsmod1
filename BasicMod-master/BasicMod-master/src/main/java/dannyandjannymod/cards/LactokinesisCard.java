@@ -23,9 +23,9 @@ public class LactokinesisCard extends BaseCard {
 
     public static final String ID = makeID(cardInfo.baseId);
 
-    private static final int BLOCK = 1;
-    private static final int UPG_BLOCK = 1;
-    private static final int MAGIC = 1;
+    private static final int BLOCK = 7;
+    private static final int UPG_BLOCK = 2;
+    private static final int MAGIC = 2;
     private static final int UPG_MAGIC = 1;
 
     public LactokinesisCard() {
@@ -37,7 +37,6 @@ public class LactokinesisCard extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, block));
         addToBot(new ApplyPowerAction(p, p, new CalciumPower(p, this.magicNumber), this.magicNumber));
-        addToBot(new DrawCardAction(p, magicNumber));
     }
 
     @Override

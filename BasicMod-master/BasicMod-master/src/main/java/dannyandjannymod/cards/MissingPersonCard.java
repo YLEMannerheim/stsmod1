@@ -21,14 +21,12 @@ public class MissingPersonCard extends BaseCard {
             AbstractCardEnum.MILKMAN_WHITE);
 
     public static final String ID = makeID(cardInfo.baseId);
-    public static final int MAGIC = 1;
 
 
     public MissingPersonCard() {
         super(cardInfo);
-        setMagic(MAGIC);
-        setSelfRetain(false, true);
-        setExhaust(true, true);
+        setEthereal(true);
+        setExhaust(true);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
