@@ -32,6 +32,7 @@ public class MilkCoatingCard extends BaseCard {
     public MilkCoatingCard() {
         super(cardInfo);
         setBlock(BLOCK, UPG_BLOCK);
+        setMagic(MAGIC, UPG_MAGIC);
         setExhaust(true);
         this.tags.add(CustomTags.MILK);
         cardsToPreview = new EmptyBottleCard();
