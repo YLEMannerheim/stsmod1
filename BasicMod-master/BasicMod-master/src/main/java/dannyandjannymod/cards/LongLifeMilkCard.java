@@ -40,6 +40,7 @@ public class LongLifeMilkCard extends BaseCard {
         setSelfRetain(true);
         setBlock(BLOCK, UPG_BLOCK);
         this.tags.add(CustomTags.MILK);
+        cardsToPreview = new EmptyBottleCard();
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

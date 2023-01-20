@@ -26,12 +26,15 @@ public class MilkCoatingCard extends BaseCard {
 
     private static final int UPG_BLOCK = 3;
     private static final int BLOCK = 9;
+    private static final int UPG_MAGIC = -1;
+    private static final int MAGIC = 2;
 
     public MilkCoatingCard() {
         super(cardInfo);
         setBlock(BLOCK, UPG_BLOCK);
         setExhaust(true);
         this.tags.add(CustomTags.MILK);
+        cardsToPreview = new EmptyBottleCard();
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

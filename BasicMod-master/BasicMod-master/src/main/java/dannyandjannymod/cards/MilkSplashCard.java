@@ -34,6 +34,7 @@ public class MilkSplashCard extends BaseCard {
         setDamage(DAMAGE, UPG_DAMAGE);
         setExhaust(true);
         this.tags.add(CustomTags.MILK);
+        cardsToPreview = new EmptyBottleCard();
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

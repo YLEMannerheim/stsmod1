@@ -41,33 +41,33 @@
   },
   "${modID}:MilkSplashCard": {
     "NAME": "Milk Splash",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies. Add an Empty Bottle to your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. Add an Empty Bottle to your hand. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Bottled. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. NL Bottled. NL Exhaust."
   },
   "${modID}:MilkChugCard": {
     "NAME": "Milk Chug",
-    "DESCRIPTION": "Gain !M! Calcium. Add an Empty Bottle to your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Calcium. Add an Empty Bottle to your hand. NL Exhaust."
+    "DESCRIPTION": "Gain !M! Calcium. NL Bottled. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Calcium. NL Bottled. NL Exhaust."
   },
   "${modID}:MilkCoatingCard": {
     "NAME": "Milk Coating",
-    "DESCRIPTION": "Gain !B! Block. Add an Empty Bottle to your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. Add an Empty Bottle to your hand. NL Exhaust."
+    "DESCRIPTION": "Gain !B! Block and !M! Calcium. NL Bottled. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block and !M! Calcium. NL Bottled. NL Exhaust."
   },
   "${modID}:MilkSpillCard": {
     "NAME": "Milk Spill",
-    "DESCRIPTION": "Apply !M! Vulnerable to ALL enemies. Add an Empty Bottle to your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable to ALL enemies. Add an Empty Bottle to your hand. NL Exhaust."
+    "DESCRIPTION": "Apply !M! Vulnerable to ALL enemies. NL Bottled. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable to ALL enemies. NL Bottled. NL Exhaust."
   },
   "${modID}:LongLifeMilkCard": {
     "NAME": "Long-Life Milk",
-    "DESCRIPTION": "Retain. Gain !B! Block. Add an Empty Bottle to your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. Gain !B! Block. Add an Empty Bottle to your hand. NL Exhaust."
+    "DESCRIPTION": "Retain. Gain !B! Block. NL Bottled. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. Gain !B! Block. NL Bottled. NL Exhaust."
   },
-  "${modID}:OffMilkCard": {
-    "NAME": "Off Milk",
-    "DESCRIPTION": "Enemy loses !M! Strength for the rest of this turn. Add an Empty Bottle to your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Enemy loses !M! Strength for the rest of this turn. Add an Empty Bottle to your hand. NL Exhaust."
+  "${modID}:MilkSnortCard": {
+    "NAME": "Milk Snort",
+    "DESCRIPTION": "Enemy loses !M! Strength for the rest of this turn. Bottled. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Enemy loses !M! Strength for the rest of this turn. Bottled. NL Exhaust."
   },
   "${modID}:CattleFarmCard": {
     "NAME": "Cattle Farm",
@@ -141,8 +141,18 @@
   },
   "${modID}:MissingPersonCard": {
     "NAME": "Missing Person",
-    "DESCRIPTION": "Intangible. Exhaust. (Retain.)",
-    "UPGRADE_DESCRIPTION": "Intangible. Exhaust. (Retain.)"
+    "DESCRIPTION": "Shuffle 1 Lost Child into your discard pile. Exhaust. Ethereal.",
+    "UPGRADE_DESCRIPTION": "Shuffle 1 Lost Child into your discard pile. Exhaust. Ethereal."
+  },
+  "${modID}:LostChildCard": {
+    "NAME": "Lost Child",
+    "DESCRIPTION": "Shuffle !M! Relieved Relative(s) into your draw pile. Exhaust. Ethereal.",
+    "UPGRADE_DESCRIPTION": "Shuffle !M! Relieved Relative(s) into your draw pile. Exhaust. Ethereal."
+  },
+  "${modID}:RelievedRelativeCard": {
+    "NAME": "Relieved Relative",
+    "DESCRIPTION": "Gain !M! Gold. Exhaust. Ethereal.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Gold. Exhaust. Ethereal."
   },
   "${modID}:LactokinesisCard": {
     "NAME": "Lactokinesis",
@@ -169,10 +179,10 @@
     "DESCRIPTION": "(Innate.) Draw !M! cards per enemy. Exhaust.",
     "UPGRADE_DESCRIPTION": "(Innate.) Draw !M! cards per enemy. Exhaust."
   },
-  "${modID}:GoodBacteriaCard": {
-    "NAME": "Good Bacteria",
-    "DESCRIPTION": "Gain !M! Regen. Exhaust",
-    "UPGRADE_DESCRIPTION": "Gain !M! Regen. Exhaust"
+  "${modID}:WasteNotCard": {
+    "NAME": "Waste Not",
+    "DESCRIPTION": "Gain !B! Block. Whenever you play a card, increase its Block by !M! this combat. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Whenever you play a card, increase its Block by !M! this combat. NL Ethereal."
   },
   "${modID}:PasteurizeCard": {
     "NAME": "Pasteurize",
@@ -191,8 +201,8 @@
   },
   "${modID}:RepeatOnCard": {
     "NAME": "Repeat On",
-    "DESCRIPTION": "Deal !D! damage X + !M! times. Can be upgraded any number of times.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage X + !M! times. Can be upgraded any number of times."
+    "DESCRIPTION": "Deal !D! damage X + !M! times. Can be Upgraded any number of times.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage X + !M! times. Can be Upgraded any number of times."
   },
   "${modID}:CrossArmsCard": {
     "NAME": "Cross Arms",
@@ -206,8 +216,8 @@
   },
   "${modID}:OvergrownCard": {
     "NAME": "Overgrown",
-    "DESCRIPTION": "(Innate.) At the end of your turn, gain Block equal to your Calcium.",
-    "UPGRADE_DESCRIPTION": "(Innate.) At the end of your turn, gain Block equal to your Calcium."
+    "DESCRIPTION": "At the end of your turn, gain Block equal to your Calcium. (Gain 3 Calcium.)",
+    "UPGRADE_DESCRIPTION": "At the end of your turn, gain Block equal to your Calcium. (Gain 3 Calcium.)"
   },
   "${modID}:GrowingPainsCard": {
     "NAME": "Growing Pains",
@@ -226,16 +236,16 @@
   },
   "${modID}:SupersizeCard": {
     "NAME": "Supersize",
-    "DESCRIPTION": "Gain !M! Max HP.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Max HP."
+    "DESCRIPTION": "Gain !M! Max HP. Ethereal.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Max HP. Ethereal."
   },
   "${modID}:BullyCard": {
     "NAME": "Bully",
     "DESCRIPTION": "Gain 2 Calcium. Apply !M! Weak to ALL enemies.",
     "UPGRADE_DESCRIPTION": "Gain 2 Calcium. Apply !M! Weak to ALL enemies."
   },
-  "${modID}:MarathonRunnerCard": {
-    "NAME": "Marathon Runner",
+  "${modID}:CappuccinoCard": {
+    "NAME": "Cappuccino",
     "DESCRIPTION": "Gain !M! Calcium. Gain !M! [E]  next turn.",
     "UPGRADE_DESCRIPTION": "Gain !M! Calcium. Gain !M! [E]  next turn."
   },
@@ -269,8 +279,8 @@
     "DESCRIPTION": "Gain !B! Block. Next turn gain !B! Block.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. Next turn gain !B! Block."
   },
-  "${modID}:ShakeCard": {
-    "NAME": "Shake",
+  "${modID}:EspressoCard": {
+    "NAME": "Espresso",
     "DESCRIPTION": "Next turn gain !M! [E].",
     "UPGRADE_DESCRIPTION": "Next turn gain !M! [E]."
   },
@@ -306,13 +316,13 @@
   },
   "${modID}:ShieldOfShardsCard": {
     "NAME": "Shield of Shards",
-    "DESCRIPTION": "Transform your Thorns into Intangible. Exhaust.",
-    "UPGRADE_DESCRIPTION": "Transform your Thorns into Intangible. Exhaust."
+    "DESCRIPTION": "Transform your Thorns into Plated Armor.",
+    "UPGRADE_DESCRIPTION": "Transform your Thorns into Plated Armor."
   },
   "${modID}:GlassBottlesCard": {
     "NAME": "Glass Bottles",
-    "DESCRIPTION": "Gain 1 thorns when you play empty bottle.",
-    "UPGRADE_DESCRIPTION": "Gain 1 thorns when you play empty bottle."
+    "DESCRIPTION": "Gain 1 Thorns when you play empty bottle.",
+    "UPGRADE_DESCRIPTION": "Gain 1 Thorns when you play empty bottle."
   },
   "${modID}:GlassBankCard": {
     "NAME": "Glass Bank",
@@ -356,7 +366,7 @@
   },
   "${modID}:CremeDeLaCremeCard": {
     "NAME": "Crème de la Crème",
-    "DESCRIPTION": "Whenever you play a Milk card, upgrade ALL cards in your hand for the rest of this combat.",
-    "UPGRADE_DESCRIPTION": "Whenever you play a Milk card, upgrade ALL cards in your hand for the rest of this combat."
+    "DESCRIPTION": "Whenever you play a Milk card, Upgrade ALL cards in your hand for the rest of this combat.",
+    "UPGRADE_DESCRIPTION": "Whenever you play a Milk card, Upgrade ALL cards in your hand for the rest of this combat."
   }
 }

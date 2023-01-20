@@ -40,6 +40,7 @@ public class MilkSpillCard extends BaseCard {
         setExhaust(true);
         setMagic(MAGIC, UPG_MAGIC);
         this.tags.add(CustomTags.MILK);
+        cardsToPreview = new EmptyBottleCard();
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

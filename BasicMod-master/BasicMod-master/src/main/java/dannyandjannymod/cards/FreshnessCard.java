@@ -30,6 +30,7 @@ public class FreshnessCard extends BaseCard {
         setMagic(MAGIC, UPG_MAGIC);
         setExhaust(true);
         setEthereal(true);
+        this.tags.add(CardTags.HEALING);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

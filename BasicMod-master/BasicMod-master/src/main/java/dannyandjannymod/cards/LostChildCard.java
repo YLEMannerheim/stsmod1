@@ -1,14 +1,10 @@
 package dannyandjannymod.cards;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.tempCards.Beta;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.FrailPower;
-import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
 import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.CardWithTagGenerationAction;
 import dannyandjannymod.CustomTags;
@@ -16,29 +12,33 @@ import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
 
-public class MissingPersonCard extends BaseCard {
+public class LostChildCard extends BaseCard {
     private final static CardInfo cardInfo = new CardInfo(
-            "MissingPersonCard",
-            2,
+            "LostChildCard",
+            1,
             CardType.SKILL,
             CardTarget.NONE,
-            CardRarity.RARE,
-            AbstractCardEnum.MILKMAN_WHITE);
+            CardRarity.SPECIAL,
+            CardColor.COLORLESS);
 
     public static final String ID = makeID(cardInfo.baseId);
+    public static final int MAGIC = 1;
+    public static final int UPG_MAGIC = 1;
 
 
-    public MissingPersonCard() {
+    public LostChildCard() {
         super(cardInfo);
-        this.cardsToPreview = new LostChildCard();
+        setMagic(MAGIC, UPG_MAGIC);
+        this.cardsToPreview = new RelievedRelativeCard();
         setEthereal(true);
         setExhaust(true);
-        this.tags.add(CardTags.HEALING);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractCard c = new LostChildCard().makeCopy();
-        this.addToBot(new MakeTempCardInDiscardAction(c, 1));
+        for(int i = 0; i < this.magicNumber; i++) {
+            AbstractCard c = new RelievedRelativeCard().makeCopy();
+            this.addToBot(new MakeTempCardInDrawPileAction(c, 1, true, true));
+        }
     }
 
     public void upgrade() {
@@ -50,6 +50,6 @@ public class MissingPersonCard extends BaseCard {
 
     @Override
     public AbstractCard makeCopy() { //Optional
-        return new MissingPersonCard();
+        return new LostChildCard();
     }
 }

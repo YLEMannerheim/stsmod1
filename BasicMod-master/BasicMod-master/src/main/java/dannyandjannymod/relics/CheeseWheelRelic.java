@@ -1,6 +1,7 @@
 package dannyandjannymod.relics;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -30,6 +31,10 @@ public class CheeseWheelRelic extends BaseRelic {
         //setCounter(0);
         this.beginLongPulse();
         triggeredThisTurn = false;
+    }
+
+    public void onPlayerEndTurn() {
+        this.stopPulse();
     }
 
     @Override

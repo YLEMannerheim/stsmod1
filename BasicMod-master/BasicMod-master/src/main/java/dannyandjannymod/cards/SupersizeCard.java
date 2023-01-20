@@ -29,6 +29,8 @@ public class SupersizeCard extends BaseCard {
         super(cardInfo);
         setMagic(MAGIC, UPG_MAGIC);
         setEthereal(true);
+        this.tags.add(CardTags.HEALING);
+
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

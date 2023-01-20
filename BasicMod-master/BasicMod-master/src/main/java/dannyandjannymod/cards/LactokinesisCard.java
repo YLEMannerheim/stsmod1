@@ -15,7 +15,7 @@ import static dannyandjannymod.BasicMod.makeID;
 public class LactokinesisCard extends BaseCard {
     private final static CardInfo cardInfo = new CardInfo(
             "LactokinesisCard",
-            0,
+            1,
             CardType.SKILL,
             CardTarget.NONE,
             CardRarity.COMMON,

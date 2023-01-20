@@ -1,26 +1,21 @@
 package dannyandjannymod.cards;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
-import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.GainStrengthPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
-import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.CustomTags;
 import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
 
-public class OffMilkCard extends BaseCard {
+public class MilkSnortCard extends BaseCard {
     private final static CardInfo cardInfo = new CardInfo(
-            "OffMilkCard",
+            "MilkSnortCard",
             1,
             CardType.SKILL,
             CardTarget.ENEMY,
@@ -29,14 +24,15 @@ public class OffMilkCard extends BaseCard {
 
     public static final String ID = makeID(cardInfo.baseId);
 
-    private static final int UPG_MAGIC = 2;
-    private static final int MAGIC = 5;
+    private static final int UPG_MAGIC = 3;
+    private static final int MAGIC = 7;
 
-    public OffMilkCard() {
+    public MilkSnortCard() {
         super(cardInfo);
         setMagic(MAGIC, UPG_MAGIC);
         setExhaust(true);
         this.tags.add(CustomTags.MILK);
+        cardsToPreview = new EmptyBottleCard();
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -50,6 +46,6 @@ public class OffMilkCard extends BaseCard {
 
     @Override
     public AbstractCard makeCopy() { //Optional
-        return new OffMilkCard();
+        return new MilkSnortCard();
     }
 }

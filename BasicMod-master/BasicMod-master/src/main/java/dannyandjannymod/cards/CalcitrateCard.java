@@ -40,7 +40,6 @@ public class CalcitrateCard extends BaseCard {
         */
 
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_HEAVY));
-
     }
 
     @Override

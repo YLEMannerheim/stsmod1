@@ -1,44 +1,40 @@
 package dannyandjannymod.cards;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
+import com.megacrit.cardcrawl.actions.common.GainGoldAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.tempCards.Beta;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.FrailPower;
-import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
 import dannyandjannymod.AbstractCardEnum;
-import dannyandjannymod.CardWithTagGenerationAction;
-import dannyandjannymod.CustomTags;
 import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
 
-public class MissingPersonCard extends BaseCard {
+public class RelievedRelativeCard extends BaseCard {
     private final static CardInfo cardInfo = new CardInfo(
-            "MissingPersonCard",
-            2,
+            "RelievedRelativeCard",
+            1,
             CardType.SKILL,
             CardTarget.NONE,
-            CardRarity.RARE,
-            AbstractCardEnum.MILKMAN_WHITE);
+            CardRarity.SPECIAL,
+            CardColor.COLORLESS);
 
     public static final String ID = makeID(cardInfo.baseId);
+    public static final int MAGIC = 25;
+    public static final int UPG_MAGIC = 5;
 
 
-    public MissingPersonCard() {
+    public RelievedRelativeCard() {
         super(cardInfo);
-        this.cardsToPreview = new LostChildCard();
+        setMagic(MAGIC, UPG_MAGIC);
         setEthereal(true);
         setExhaust(true);
-        this.tags.add(CardTags.HEALING);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractCard c = new LostChildCard().makeCopy();
-        this.addToBot(new MakeTempCardInDiscardAction(c, 1));
+        CardCrawlGame.sound.play("GOLD_GAIN", 0.1F);
+        this.addToBot(new GainGoldAction(this.magicNumber));
     }
 
     public void upgrade() {
@@ -50,6 +46,6 @@ public class MissingPersonCard extends BaseCard {
 
     @Override
     public AbstractCard makeCopy() { //Optional
-        return new MissingPersonCard();
+        return new RelievedRelativeCard();
     }
 }
