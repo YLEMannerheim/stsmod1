@@ -31,13 +31,13 @@
   },
   "${modID}:EmptyBottleCard": {
     "NAME": "Empty Bottle",
-    "DESCRIPTION": "Retain. Deal !D! damage. Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. Deal !D! damage. Exhaust."
+    "DESCRIPTION": "Retain. NL Deal !D! damage. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage. NL Exhaust."
   },
   "${modID}:BottleHolderCard": {
     "NAME": "Bottle Holder",
-    "DESCRIPTION": "Add Empty Bottles to your hand until your hand is full.",
-    "UPGRADE_DESCRIPTION": "Add Empty Bottles to your hand until your hand is full."
+    "DESCRIPTION": "Add Empty Bottles to your hand until your hand is full. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add Empty Bottles to your hand until your hand is full. NL Exhaust."
   },
   "${modID}:MilkSplashCard": {
     "NAME": "Milk Splash",
@@ -61,8 +61,8 @@
   },
   "${modID}:LongLifeMilkCard": {
     "NAME": "Long-Life Milk",
-    "DESCRIPTION": "Retain. Gain !B! Block. NL Bottled. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. Gain !B! Block. NL Bottled. NL Exhaust."
+    "DESCRIPTION": "Retain. NL Gain !B! Block. NL Bottled. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Gain !B! Block. NL Bottled. NL Exhaust."
   },
   "${modID}:MilkSnortCard": {
     "NAME": "Milk Snort",
@@ -76,11 +76,11 @@
   },
   "${modID}:DiscountDairyCard": {
     "NAME": "Discount Dairy",
-    "DESCRIPTION": "Add X (+ 1) random Milk cards to your hand. They cost 0 this turn. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Add X (+ 1) random Milk cards to your hand. They cost 0 this turn. NL Exhaust."
+    "DESCRIPTION": "Add X random Milk cards to your hand. They cost 0 this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add X+1 random Milk cards to your hand. They cost 0 this turn. NL Exhaust."
   },
-  "${modID}:MilkersCard": {
-    "NAME": "Milkers",
+  "${modID}:UdderCard": {
+    "NAME": "Udder",
     "DESCRIPTION": "Add 3 random Milk cards to your hand.",
     "UPGRADE_DESCRIPTION": "Add 3 random Milk cards to your hand."
   },
@@ -91,18 +91,18 @@
   },
   "${modID}:PreserveCard": {
     "NAME": "Preserve",
-    "DESCRIPTION": "Gain !B! Block. Gain !M! Dexterity.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. Gain !M! Dexterity."
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Dexterity.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Gain !M! Dexterity."
   },
-  "${modID}:KarateKickCard": {
-    "NAME": "Karate Kick",
-    "DESCRIPTION": "Deal !D! damage twice. Gain !M! Strength.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage twice. Gain !M! Strength."
+  "${modID}:DoubleCreamCard": {
+    "NAME": "Double Cream",
+    "DESCRIPTION": "Deal !D! damage twice. NL Gain !M! Strength.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage twice. NL Gain !M! Strength."
   },
   "${modID}:RefrigerateCard": {
     "NAME": "Refrigerate",
-    "DESCRIPTION": "Gain !M! Metallicize. Gain !M! Plated Armor.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Metallicize. Gain !M! Plated Armor."
+    "DESCRIPTION": "Gain !B! Block. Gain !M! Metallicize. Gain !M! Plated Armor.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Gain !M! Metallicize. Gain !M! Plated Armor."
   },
   "${modID}:BucketStrikeCard": {
     "NAME": "Bucket Strike",
@@ -116,13 +116,13 @@
   },
   "${modID}:KickTheBucketCard": {
     "NAME": "Kick The Bucket",
-    "DESCRIPTION": "Retain. Deal !D! damage.",
-    "UPGRADE_DESCRIPTION": "Retain. Deal !D! damage."
+    "DESCRIPTION": "Retain. NL Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage."
   },
   "${modID}:BucketHeadbuttCard": {
     "NAME": "Bucket Headbutt",
-    "DESCRIPTION": "Gain !B! Block. Deal !D! damage.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. Deal !D! damage."
+    "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Deal !D! damage."
   },
   "${modID}:SpareBucketCard": {
     "NAME": "Spare Bucket",
@@ -131,28 +131,28 @@
   },
   "${modID}:DentedBucketCard": {
     "NAME": "Dented Bucket",
-    "DESCRIPTION": "Deal !D! damage. Whenever you use this card, permanently reduce this card's damage by 1. ",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Whenever you use this card, permanently reduce this card's damage by 1. "
+    "DESCRIPTION": "Deal !D! damage. Whenever you use this card, permanently reduce its damage by 1. ",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Whenever you use this card, permanently reduce its damage by 1. "
   },
   "${modID}:FlickMilkTopCard": {
     "NAME": "Flick Milk Top",
-    "DESCRIPTION": "Deal !D! damage. When the target dies, add Flick Milk Top to your hand. Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. When the target dies, add Flick Milk Top to your hand. Exhaust."
+    "DESCRIPTION": "Deal !D! damage. When the target dies, add this card to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. When the target dies, add this card to your hand. NL Exhaust."
   },
   "${modID}:MissingPersonCard": {
     "NAME": "Missing Person",
-    "DESCRIPTION": "Shuffle 1 Lost Child into your discard pile. Exhaust. Ethereal.",
-    "UPGRADE_DESCRIPTION": "Shuffle 1 Lost Child into your discard pile. Exhaust. Ethereal."
+    "DESCRIPTION": "Shuffle 1 Lost Child into your discard pile. NL Exhaust. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Shuffle 1 Lost Child into your discard pile. NL Exhaust. NL Ethereal."
   },
   "${modID}:LostChildCard": {
     "NAME": "Lost Child",
-    "DESCRIPTION": "Shuffle !M! Relieved Relative(s) into your draw pile. Exhaust. Ethereal.",
-    "UPGRADE_DESCRIPTION": "Shuffle !M! Relieved Relative(s) into your draw pile. Exhaust. Ethereal."
+    "DESCRIPTION": "Gain !M! Gold. NL Exhaust. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Gold. NL Exhaust. NL Ethereal."
   },
   "${modID}:RelievedRelativeCard": {
     "NAME": "Relieved Relative",
-    "DESCRIPTION": "Gain !M! Gold. Exhaust. Ethereal.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Gold. Exhaust. Ethereal."
+    "DESCRIPTION": "Shuffle !M! Relieved Relative(s) into your draw pile. NL Exhaust. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Shuffle !M! Relieved Relative(s) into your draw pile. NL Exhaust. NL Ethereal."
   },
   "${modID}:LactokinesisCard": {
     "NAME": "Lactokinesis",
@@ -161,8 +161,8 @@
   },
   "${modID}:LastDropCard": {
     "NAME": "Last Drop",
-    "DESCRIPTION": "Deal !D! damage. Lose !M! Strength.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Lose !M! Strength."
+    "DESCRIPTION": "Deal !D! damage. NL Lose !M! Strength.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Lose !M! Strength."
   },
   "${modID}:ExpirationDateCard": {
     "NAME": "Expiration Date",
@@ -176,8 +176,8 @@
   },
   "${modID}:AroundTheHousesCard": {
     "NAME": "Around the Houses",
-    "DESCRIPTION": "(Innate.) Draw !M! cards per enemy. Exhaust.",
-    "UPGRADE_DESCRIPTION": "(Innate.) Draw !M! cards per enemy. Exhaust."
+    "DESCRIPTION": "Draw !M! cards per enemy. N; Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Draw !M! cards per enemy. NL Exhaust."
   },
   "${modID}:WasteNotCard": {
     "NAME": "Waste Not",
@@ -196,8 +196,8 @@
   },
   "${modID}:MultivitaminsCard": {
     "NAME": "Multivitamins",
-    "DESCRIPTION": "(Retain.) Deal !D! damage !M! times. Exhaust.",
-    "UPGRADE_DESCRIPTION": "(Retain.) Deal !D! damage !M! times. Exhaust."
+    "DESCRIPTION": "Deal !D! damage !M! times. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage !M! times. NL Exhaust."
   },
   "${modID}:RepeatOnCard": {
     "NAME": "Repeat On",
@@ -211,38 +211,38 @@
   },
   "${modID}:GrowthSpurtCard": {
     "NAME": "Growth Spurt",
-    "DESCRIPTION": "At the start of your turn, gain X(+1) Calcium.",
-    "UPGRADE_DESCRIPTION": "At the start of your turn, gain X(+1) Calcium."
+    "DESCRIPTION": "At the start of your turn, gain X Calcium.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, gain X+1 Calcium."
   },
   "${modID}:OvergrownCard": {
     "NAME": "Overgrown",
-    "DESCRIPTION": "At the end of your turn, gain Block equal to your Calcium. (Gain 3 Calcium.)",
-    "UPGRADE_DESCRIPTION": "At the end of your turn, gain Block equal to your Calcium. (Gain 3 Calcium.)"
+    "DESCRIPTION": "At the end of your turn, gain Block equal to your Calcium.",
+    "UPGRADE_DESCRIPTION": "At the end of your turn, gain Block equal to your Calcium. NL Gain 3 Calcium."
   },
   "${modID}:GrowingPainsCard": {
     "NAME": "Growing Pains",
-    "DESCRIPTION": "Deal !D! damage. Gain Calcium equal to unblocked damage dealt.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Gain Calcium equal to unblocked damage dealt."
+    "DESCRIPTION": "Deal !D! damage. NL Gain Calcium equal to unblocked damage dealt.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain Calcium equal to unblocked damage dealt."
   },
   "${modID}:ThickSkullCard": {
     "NAME": "Thick Skull",
-    "DESCRIPTION": "Gain !B! Block. If you have at least 1 Calcium, gain !M! additional Block.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. If you have at least 1 Calcium, gain !M! additional Block."
+    "DESCRIPTION": "Gain !B! Block. NL If you have at least 1 Calcium, gain !M! additional Block.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL If you have at least 1 Calcium, gain !M! additional Block."
   },
   "${modID}:KnuckleSandwichCard": {
     "NAME": "Knuckle Sandwich",
-    "DESCRIPTION": "Deal !D! damage. Apply !M! Calcium to the target.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Apply !M! Calcium to the target."
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Calcium to the target.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Apply !M! Calcium to the target."
   },
   "${modID}:SupersizeCard": {
     "NAME": "Supersize",
-    "DESCRIPTION": "Gain !M! Max HP. Ethereal.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Max HP. Ethereal."
+    "DESCRIPTION": "Gain !M! Max HP. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Max HP. NL Ethereal."
   },
   "${modID}:BullyCard": {
     "NAME": "Bully",
-    "DESCRIPTION": "Gain 2 Calcium. Apply !M! Weak to ALL enemies.",
-    "UPGRADE_DESCRIPTION": "Gain 2 Calcium. Apply !M! Weak to ALL enemies."
+    "DESCRIPTION": "Gain 2 Calcium. NL Apply !M! Weak to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Gain 2 Calcium. NL Apply !M! Weak to ALL enemies."
   },
   "${modID}:CappuccinoCard": {
     "NAME": "Cappuccino",
@@ -256,8 +256,8 @@
   },
   "${modID}:CalcitrateCard": {
     "NAME": "Calcitrate",
-    "DESCRIPTION": "Deal !D! damage. Deals additional damage equal to Calcium gained this combat.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Deals additional damage equal to Calcium gained this combat."
+    "DESCRIPTION": "Deal !D! damage. NL Deals additional damage equal to Calcium gained this combat.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Deals additional damage equal to Calcium gained this combat."
   },
   "${modID}:SkullCrackCard": {
     "NAME": "Skull Crack",
@@ -276,8 +276,8 @@
   },
   "${modID}:DuckAndDiveCard": {
     "NAME": "Duck and Dive",
-    "DESCRIPTION": "Gain !B! Block. Next turn gain !B! Block.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. Next turn gain !B! Block."
+    "DESCRIPTION": "Gain !B! Block. NL Next turn gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Next turn gain !B! Block."
   },
   "${modID}:EspressoCard": {
     "NAME": "Espresso",
@@ -286,8 +286,8 @@
   },
   "${modID}:NapCard": {
     "NAME": "Nap",
-    "DESCRIPTION": "Next turn draw !M! more card(s).",
-    "UPGRADE_DESCRIPTION": "Next turn draw !M! more card(s)."
+    "DESCRIPTION": "Next turn draw !M! more card.",
+    "UPGRADE_DESCRIPTION": "Next turn draw !M! more cards."
   },
   "${modID}:GoodNightsRestCard": {
     "NAME": "Good Night's Rest",
@@ -336,33 +336,33 @@
   },
   "${modID}:FreshnessCard": {
     "NAME": "Freshness",
-    "DESCRIPTION": "Heal !M! HP. Exhaust. Ethereal.",
-    "UPGRADE_DESCRIPTION": "Heal !M! HP. Exhaust. Ethereal."
+    "DESCRIPTION": "Heal !M! HP. NL Exhaust. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Heal !M! HP. NL Exhaust. NL Ethereal."
   },
   "${modID}:SafekeepingCard": {
     "NAME": "Safekeeping",
-    "DESCRIPTION": "Gain Block next turn equal to your current Block. Lose all your Block. (Don't lose Block.)",
-    "UPGRADE_DESCRIPTION": "Gain Block next turn equal to your current Block. Lose all your Block. (Don't lose Block.)"
+    "DESCRIPTION": "Gain Block next turn equal to your current Block. Lose all your Block.",
+    "UPGRADE_DESCRIPTION": "Gain Block next turn equal to your current Block."
   },
   "${modID}:RattleLetterboxCard": {
     "NAME": "Rattle Letterbox",
-    "DESCRIPTION": "Deal !D! damage. Apply !M! Deliverance.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Apply !M! Deliverance."
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Deliverance.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Apply !M! Deliverance."
   },
   "${modID}:MarkDoorCard": {
     "NAME": "Mark Door",
-    "DESCRIPTION": "Apply !M! Deliverance to an enemy. Exhaust.",
-    "UPGRADE_DESCRIPTION": "Apply !M! Deliverance to an enemy. Exhaust."
+    "DESCRIPTION": "Apply !M! Deliverance to an enemy. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply !M! Deliverance to an enemy. NL Exhaust."
   },
   "${modID}:SpareTireCard": {
     "NAME": "Spare Tire",
-    "DESCRIPTION": "Retain. Draw !M! cards. Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. Draw !M! cards. Exhaust."
+    "DESCRIPTION": "Retain. NL Draw !M! cards. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Draw !M! cards. NL Exhaust."
   },
   "${modID}:GutPunchCard": {
     "NAME": "Gut Punch",
-    "DESCRIPTION": "Deal !D! damage. Enemy loses !M! Strength.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Enemy loses !M! Strength."
+    "DESCRIPTION": "Deal !D! damage. NL Enemy loses !M! Strength.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Enemy loses !M! Strength."
   },
   "${modID}:CremeDeLaCremeCard": {
     "NAME": "Crème de la Crème",
@@ -376,7 +376,7 @@
   },
   "${modID}:LactoseIntoleranceCard": {
     "NAME": "Lactose Intolerance",
-    "DESCRIPTION": "Whenever you play a Milk card, apply !M! Poison to target.",
-    "UPGRADE_DESCRIPTION": "Whenever you play a Milk card, apply !M! Poison to target."
+    "DESCRIPTION": "Deal !D! damage. Whenever you attack this enemy, it loses !M! HP. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Whenever you attack this enemy, it loses !M! HP. NL Exhaust."
   }
 }

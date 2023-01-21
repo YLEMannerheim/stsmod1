@@ -21,7 +21,7 @@ public class TrailOfGlassCard extends BaseCard {
             1,
             CardType.SKILL,
             CardTarget.NONE,
-            CardRarity.UNCOMMON,
+            CardRarity.RARE,
             AbstractCardEnum.MILKMAN_WHITE);
 
     public static final String ID = makeID(cardInfo.baseId);

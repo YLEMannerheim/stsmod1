@@ -20,7 +20,7 @@ public class ShieldOfShardsCard extends BaseCard {
             3,
             CardType.POWER,
             CardTarget.NONE,
-            CardRarity.RARE,
+            CardRarity.UNCOMMON,
             AbstractCardEnum.MILKMAN_WHITE);
 
     public static final String ID = makeID(cardInfo.baseId);

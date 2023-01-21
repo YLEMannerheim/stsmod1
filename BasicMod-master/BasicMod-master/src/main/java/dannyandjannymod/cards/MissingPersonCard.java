@@ -22,7 +22,7 @@ public class MissingPersonCard extends BaseCard {
             2,
             CardType.SKILL,
             CardTarget.NONE,
-            CardRarity.RARE,
+            CardRarity.UNCOMMON,
             AbstractCardEnum.MILKMAN_WHITE);
 
     public static final String ID = makeID(cardInfo.baseId);

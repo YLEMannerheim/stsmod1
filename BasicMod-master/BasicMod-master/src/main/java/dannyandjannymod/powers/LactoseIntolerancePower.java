@@ -2,6 +2,7 @@ package dannyandjannymod.powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.LoseHPAction;
@@ -64,7 +65,7 @@ public class LactoseIntolerancePower extends AbstractPower {
     public int onAttacked(DamageInfo info, int damageAmount) {
         if (info.type == DamageInfo.DamageType.NORMAL) {
             this.flash();
-            this.addToTop(new LoseHPAction(this.owner, (AbstractCreature) null, this.amount));
+            this.addToTop(new LoseHPAction(this.owner, (AbstractCreature) null, this.amount, AbstractGameAction.AttackEffect.LIGHTNING));
         }
 
         return damageAmount;

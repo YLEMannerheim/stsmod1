@@ -13,9 +13,9 @@ import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
 
-public class KarateKickCard extends BaseCard {
+public class DoubleCreamCard extends BaseCard {
     private final static CardInfo cardInfo = new CardInfo(
-            "KarateKickCard",
+            "DoubleCreamCard",
             3,
             CardType.ATTACK,
             CardTarget.ENEMY,
@@ -27,7 +27,7 @@ public class KarateKickCard extends BaseCard {
     private static final int MAGIC_NUM = 1;
     private static final int DAMAGE = 5;
 
-    public KarateKickCard() {
+    public DoubleCreamCard() {
         super(cardInfo);
         setMagic(MAGIC_NUM);
         setDamage(DAMAGE);
@@ -48,6 +48,6 @@ public class KarateKickCard extends BaseCard {
 
     @Override
     public AbstractCard makeCopy() { //Optional
-        return new KarateKickCard();
+        return new DoubleCreamCard();
     }
 }

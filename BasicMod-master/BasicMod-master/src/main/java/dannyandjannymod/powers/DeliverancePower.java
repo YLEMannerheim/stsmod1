@@ -70,6 +70,6 @@ public class DeliverancePower extends AbstractPower {
         //NAME = powerStrings.NAME;
         NAME = "Deliverance";
         //SINGULAR_DESCRIPTION = powerStrings.DESCRIPTIONS[0];
-        DESCRIPTIONS = new String[] {"The next #b", " times you attack this enemy, draw 1 card."} ;
+        DESCRIPTIONS = new String[] {"The next #b", " times you attack this enemy, draw #b1 card."} ;
     }
 }

@@ -1,6 +1,7 @@
 package dannyandjannymod.cards;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -22,15 +23,17 @@ public class RefrigerateCard extends BaseCard {
 
     public static final String ID = makeID(cardInfo.baseId);
 
-    private static final int MAGIC_NUM = 2;
-    private static final int UPG_MAGIC_NUM = 1;
+    private static final int BLOCK = 2;
+    private static final int MAGIC = 2;
 
     public RefrigerateCard() {
         super(cardInfo);
-        setMagic(MAGIC_NUM, UPG_MAGIC_NUM);
+        setBlock(BLOCK);
+        setMagic(MAGIC);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new GainBlockAction(p, p, block));
         this.addToBot(new ApplyPowerAction(p, p, new MetallicizePower(p, this.magicNumber), this.magicNumber));
         this.addToBot(new ApplyPowerAction(p, p, new PlatedArmorPower(p, this.magicNumber), this.magicNumber));
     }

@@ -11,9 +11,9 @@ import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
 
-public class MilkersCard extends BaseCard {
+public class UdderCard extends BaseCard {
     private final static CardInfo cardInfo = new CardInfo(
-            "MilkersCard",
+            "UdderCard",
             2,
             CardType.SKILL,
             CardTarget.NONE,
@@ -24,7 +24,7 @@ public class MilkersCard extends BaseCard {
     public static final int MAGIC = 3;
 
 
-    public MilkersCard() {
+    public UdderCard() {
         super(cardInfo);
         setMagic(MAGIC);
     }
@@ -45,6 +45,6 @@ public class MilkersCard extends BaseCard {
 
     @Override
     public AbstractCard makeCopy() { //Optional
-        return new MilkersCard();
+        return new UdderCard();
     }
 }
