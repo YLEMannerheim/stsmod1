@@ -1,12 +1,15 @@
 package dannyandjannymod.cards;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.FlickMilkTopPower;
 import dannyandjannymod.AbstractCardEnum;
+import dannyandjannymod.powers.FlickMilkTopUpgradedPower;
 import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
@@ -22,16 +25,21 @@ public class FlickMilkTopCard extends BaseCard {
 
     public static final String ID = makeID(cardInfo.baseId);
 
-    private static final int UPG_DAMAGE = 3;
+    private static final int UPG_DAMAGE = 5;
     private static final int DAMAGE = 3;
 
     public FlickMilkTopCard() {
         super(cardInfo);
         setDamage(DAMAGE, UPG_DAMAGE);
-        this.shuffleBackIntoDrawPile = true;
+        setExhaust(true);
+        //this.shuffleBackIntoDrawPile = true;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new ApplyPowerAction(
+                m,
+                p,
+                upgraded ? new FlickMilkTopUpgradedPower(m) : new FlickMilkTopPower(m)));
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
     }
 
