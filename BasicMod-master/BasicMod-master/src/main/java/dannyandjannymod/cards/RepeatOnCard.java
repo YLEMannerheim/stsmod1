@@ -2,6 +2,7 @@ package dannyandjannymod.cards;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.unique.RepeatOnAction;
 import com.megacrit.cardcrawl.actions.unique.SkewerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -41,7 +42,7 @@ public class RepeatOnCard extends BaseCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new SkewerAction(p, m, this.damage, DamageInfo.DamageType.NORMAL, this.freeToPlayOnce, this.energyOnUse + this.timesUpgraded));
+        addToBot(new RepeatOnAction(p, m, this.damage, DamageInfo.DamageType.NORMAL, this.freeToPlayOnce, this.energyOnUse + this.timesUpgraded));
     }
 
     public boolean canUpgrade() {

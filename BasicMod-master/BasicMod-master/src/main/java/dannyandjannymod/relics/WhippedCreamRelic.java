@@ -29,15 +29,15 @@ public class WhippedCreamRelic extends BaseRelic {
 
     @Override
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
-        if (counter < CARD_REQUIREMENT)
+        if (counter < CARD_REQUIREMENT) {
             counter++;
+            if (counter == CARD_REQUIREMENT) {
+                flash();
+                this.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
 
-        if (counter == CARD_REQUIREMENT) {
-            flash();
-            this.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-
-            AbstractPlayer p = AbstractDungeon.player;
-            this.addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, ENERGY_GAIN), ENERGY_GAIN));
+                AbstractPlayer p = AbstractDungeon.player;
+                this.addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, ENERGY_GAIN), ENERGY_GAIN));
+            }
         }
     }
 

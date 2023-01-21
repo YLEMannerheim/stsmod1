@@ -19,7 +19,7 @@ public class SkimmingProcessCard extends BaseCard {
             1,
             CardType.SKILL,
             CardTarget.NONE,
-            CardRarity.COMMON,
+            CardRarity.UNCOMMON,
             AbstractCardEnum.MILKMAN_WHITE);
 
     public static final String ID = makeID(cardInfo.baseId);
