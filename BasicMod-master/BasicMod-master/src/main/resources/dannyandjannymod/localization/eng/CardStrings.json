@@ -66,8 +66,8 @@
   },
   "${modID}:MilkSnortCard": {
     "NAME": "Milk Snort",
-    "DESCRIPTION": "Enemy loses !M! Strength for the rest of this turn. Bottled. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Enemy loses !M! Strength for the rest of this turn. Bottled. NL Exhaust."
+    "DESCRIPTION": "Enemy loses !M! Strength for the rest of this turn. NL Bottled. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Enemy loses !M! Strength for the rest of this turn. NL Bottled. NL Exhaust."
   },
   "${modID}:CattleFarmCard": {
     "NAME": "Cattle Farm",
@@ -89,8 +89,8 @@
     "DESCRIPTION": "Shuffle 5 random Milk cards into your draw pile.",
     "UPGRADE_DESCRIPTION": "Shuffle 5 random Milk cards into your draw pile."
   },
-  "${modID}:HardenCard": {
-    "NAME": "Harden",
+  "${modID}:PreserveCard": {
+    "NAME": "Preserve",
     "DESCRIPTION": "Gain !B! Block. Gain !M! Dexterity.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. Gain !M! Dexterity."
   },
@@ -136,8 +136,8 @@
   },
   "${modID}:FlickMilkTopCard": {
     "NAME": "Flick Milk Top",
-    "DESCRIPTION": "Deal !D! damage. Shuffle this card into your draw pile.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Shuffle this card into your draw pile."
+    "DESCRIPTION": "Deal !D! damage. When the target dies, add Flick Milk Top to your hand. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. When the target dies, add Flick Milk Top to your hand. Exhaust."
   },
   "${modID}:MissingPersonCard": {
     "NAME": "Missing Person",
@@ -156,8 +156,8 @@
   },
   "${modID}:LactokinesisCard": {
     "NAME": "Lactokinesis",
-    "DESCRIPTION": "Gain !B! Block. Gain !M! Calcium.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. Gain !M! Calcium."
+    "DESCRIPTION": "Gain !B! Block. If you play a Milk card while this card is in your hand, it costs 0 this turn.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. If you play a Milk card while this card is in your hand, it costs 0 this turn."
   },
   "${modID}:LastDropCard": {
     "NAME": "Last Drop",
@@ -249,8 +249,8 @@
     "DESCRIPTION": "Gain !M! Calcium. Gain !M! [E]  next turn.",
     "UPGRADE_DESCRIPTION": "Gain !M! Calcium. Gain !M! [E]  next turn."
   },
-  "${modID}:FemurCard": {
-    "NAME": "Femur",
+  "${modID}:ChurnCard": {
+    "NAME": "Churn",
     "DESCRIPTION": "Gain !M! Calcium, then draw 1 card for each Calcium you have.",
     "UPGRADE_DESCRIPTION": "Gain !M! Calcium, then draw 1 card for each Calcium you have."
   },
@@ -368,5 +368,15 @@
     "NAME": "Crème de la Crème",
     "DESCRIPTION": "Whenever you play a Milk card, Upgrade ALL cards in your hand for the rest of this combat.",
     "UPGRADE_DESCRIPTION": "Whenever you play a Milk card, Upgrade ALL cards in your hand for the rest of this combat."
+  },
+  "${modID}:ImmuneSystemCard": {
+    "NAME": "Immune System",
+    "DESCRIPTION": "Whenever you apply a Debuff to yourself, gain 1 [E] next turn.",
+    "UPGRADE_DESCRIPTION": "Whenever you apply a Debuff to yourself, gain 1 [E] next turn."
+  },
+  "${modID}:LactoseIntoleranceCard": {
+    "NAME": "Lactose Intolerance",
+    "DESCRIPTION": "Whenever you play a Milk card, apply !M! Poison to target.",
+    "UPGRADE_DESCRIPTION": "Whenever you play a Milk card, apply !M! Poison to target."
   }
 }

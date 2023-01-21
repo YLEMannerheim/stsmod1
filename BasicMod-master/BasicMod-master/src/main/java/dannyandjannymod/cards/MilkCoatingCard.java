@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.CustomTags;
+import dannyandjannymod.powers.CalciumPower;
 import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
@@ -40,6 +41,7 @@ public class MilkCoatingCard extends BaseCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, block));
+        this.addToBot(new ApplyPowerAction(p, p, new CalciumPower(p, this.magicNumber), this.magicNumber));
         this.addToBot(new MakeTempCardInHandAction(new EmptyBottleCard(), 1));
     }
 
