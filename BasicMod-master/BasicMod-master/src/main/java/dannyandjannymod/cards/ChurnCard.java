@@ -1,24 +1,19 @@
 package dannyandjannymod.cards;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.EnergizedPower;
-import com.megacrit.cardcrawl.powers.StrengthPower;
 import dannyandjannymod.AbstractCardEnum;
-import dannyandjannymod.BottleHolderAction;
 import dannyandjannymod.FemurAction;
 import dannyandjannymod.powers.CalciumPower;
 import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
 
-public class FemurCard extends BaseCard {
+public class ChurnCard extends BaseCard {
     private final static CardInfo cardInfo = new CardInfo(
-            "FemurCard",
+            "ChurnCard",
             1,
             CardType.SKILL,
             CardTarget.NONE,
@@ -29,7 +24,7 @@ public class FemurCard extends BaseCard {
     public static final int MAGIC = 1;
     public static final int UPG_MAGIC = 1;
 
-    public FemurCard() {
+    public ChurnCard() {
         super(cardInfo);
         setMagic(MAGIC, UPG_MAGIC);
     }
@@ -48,6 +43,6 @@ public class FemurCard extends BaseCard {
 
     @Override
     public AbstractCard makeCopy() { //Optional
-        return new FemurCard();
+        return new ChurnCard();
     }
 }

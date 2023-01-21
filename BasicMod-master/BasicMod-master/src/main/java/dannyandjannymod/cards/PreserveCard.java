@@ -11,9 +11,9 @@ import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
 
-public class HardenCard extends BaseCard {
+public class PreserveCard extends BaseCard {
     private final static CardInfo cardInfo = new CardInfo(
-            "HardenCard",
+            "PreserveCard",
             3,
             CardType.SKILL,
             CardTarget.NONE,
@@ -25,7 +25,7 @@ public class HardenCard extends BaseCard {
     private static final int MAGIC_NUM = 1;
     private static final int BLOCK = 10;
 
-    public HardenCard() {
+    public PreserveCard() {
         super(cardInfo);
         setMagic(MAGIC_NUM);
         setBlock(BLOCK);
@@ -45,6 +45,6 @@ public class HardenCard extends BaseCard {
 
     @Override
     public AbstractCard makeCopy() { //Optional
-        return new HardenCard();
+        return new PreserveCard();
     }
 }
