@@ -39,30 +39,14 @@ public class ElectrolytesCard extends BaseCard {
     public ElectrolytesCard() {
         super(cardInfo);
         setMagic(MAGIC);
-        this.tags.add(CustomTags.BUCKET);
         Debug d = new Debug();
         d.println("ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ Electrolytes misc value is: " + this.misc + "\n");
         //this.updateCost(- this.misc);
     }
 
-    @Override
-    public void triggerWhenDrawn() {
-
-    }
-
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new BerserkPower(p, 1), 1));
-        addToBot(new ElectrolytesAction(this.uuid, this.magicNumber));
-    }
-
-    public void applyPowers() {
-        //while (cost > Math.max(baseCost - this.misc, 0))
-        //this.addToBot(new ReduceCostAction(this.uuid, 1));
-        this.initializeDescription();
-        if (!initialised) {
-            //addToBot(new ElectrolytesAction(this.uuid, this.misc));
-            initialised = true;
-        }
+        addToBot(new ElectrolytesAction(this, this.magicNumber));
     }
 
     @Override

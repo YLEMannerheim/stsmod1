@@ -9,32 +9,31 @@ import java.util.Iterator;
 import java.util.UUID;
 
 public class ElectrolytesAction extends AbstractGameAction {
-    private int miscIncrease;
-    private UUID uuid;
 
-    public ElectrolytesAction(UUID targetUUID, int miscIncrease) {
-        this.miscIncrease = miscIncrease;
-        this.uuid = targetUUID;
+    private AbstractCard toReduce;
+
+    public ElectrolytesAction(AbstractCard toReduce, int reduction)
+    {
+        this.toReduce = toReduce;
+        this.actionType = ActionType.DAMAGE; //prevents being removed by end of combat
+        this.amount = reduction;
     }
 
     public void update() {
-        Iterator var1 = AbstractDungeon.player.masterDeck.group.iterator();
+        UUID uuid = toReduce.uuid;
 
-        AbstractCard c;
-        while(var1.hasNext()) {
-            c = (AbstractCard)var1.next();
-            if (c.uuid.equals(this.uuid)) {
-                c.misc += miscIncrease;
-                c.updateCost(-this.miscIncrease);
-                c.applyPowers();
+        for (AbstractCard c : AbstractDungeon.player.masterDeck.group)
+        {
+            if (c.uuid.equals(uuid)) {
+                c.misc += this.amount;
+                c.updateCost(-this.amount);
             }
         }
 
-        for(var1 = GetAllInBattleInstances.get(this.uuid).iterator(); var1.hasNext(); c.baseBlock = c.misc) {
-            c = (AbstractCard)var1.next();
-            c.misc += miscIncrease;
-            c.updateCost(-this.miscIncrease);
-            c.applyPowers();
+        for(AbstractCard c : GetAllInBattleInstances.get(uuid)) {
+            c.misc += this.amount;
+            c.updateCost(-this.amount);
+            //c.flash(Color.WHITE.cpy());
         }
 
         this.isDone = true;
