@@ -39,9 +39,11 @@ public class ElectrolytesCard extends BaseCard {
     public ElectrolytesCard() {
         super(cardInfo);
         setMagic(MAGIC);
-        Debug d = new Debug();
-        d.println("ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ Electrolytes misc value is: " + this.misc + "\n");
+        //Debug d = new Debug();
+        //d.println("ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ Electrolytes misc value is: " + this.misc + "\n");
         //this.updateCost(- this.misc);
+        setEthereal(true);
+        setInnate(false, true);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
