@@ -101,8 +101,8 @@
   },
   "${modID}:RefrigerateCard": {
     "NAME": "Refrigerate",
-    "DESCRIPTION": "Gain !B! Block. Gain !M! Metallicize. Gain !M! Plated Armor.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. Gain !M! Metallicize. Gain !M! Plated Armor."
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Metallicize. NL Gain !M! Plated Armor.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Gain !M! Metallicize. NL Gain !M! Plated Armor."
   },
   "${modID}:BucketStrikeCard": {
     "NAME": "Bucket Strike",
@@ -176,7 +176,7 @@
   },
   "${modID}:AroundTheHousesCard": {
     "NAME": "Around the Houses",
-    "DESCRIPTION": "Draw !M! cards per enemy. N; Exhaust.",
+    "DESCRIPTION": "Draw !M! cards per enemy. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Innate. NL Draw !M! cards per enemy. NL Exhaust."
   },
   "${modID}:WasteNotCard": {
@@ -316,8 +316,8 @@
   },
   "${modID}:ShieldOfShardsCard": {
     "NAME": "Shield of Shards",
-    "DESCRIPTION": "Transform your Thorns into Plated Armor.",
-    "UPGRADE_DESCRIPTION": "Transform your Thorns into Plated Armor."
+    "DESCRIPTION": "Convert your Thorns into Plated Armor.",
+    "UPGRADE_DESCRIPTION": "Convert your Thorns into Plated Armor."
   },
   "${modID}:GlassBottlesCard": {
     "NAME": "Glass Bottles",
@@ -378,5 +378,15 @@
     "NAME": "Lactose Intolerance",
     "DESCRIPTION": "Deal !D! damage. Whenever you attack this enemy, it loses !M! HP. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. Whenever you attack this enemy, it loses !M! HP. NL Exhaust."
+  },
+  "${modID}:CoolGlassCard": {
+    "NAME": "Cool Glass",
+    "DESCRIPTION": "Gain !M! Thorns. Gain !M! Plated Armor.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Thorns. Gain !M! Metallicize."
+  },
+  "${modID}:ElectrolytesCard": {
+    "NAME": "Electrolytes",
+    "DESCRIPTION": "Gain 1 [E] at the start of each turn. Whenever you play this card, permanently reduce its cost by 1.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Gain 1 [E] at the start of each turn. Whenever you play this card, permanently reduce its cost by 1. "
   }
 }
