@@ -50,7 +50,7 @@ public class DeliverancePower extends AbstractPower {
         if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead() && this.amount > 0 && info.type == DamageInfo.DamageType.NORMAL) {
             this.flash();
             this.addToBot(new DrawCardAction(AbstractDungeon.player, 1));
-            this.addToBot(new ReducePowerAction(this.owner, this.owner, "DeliverancePower", 1));
+            this.addToTop(new ReducePowerAction(this.owner, this.owner, "DeliverancePower", 1));
         }
 
         return damageAmount;

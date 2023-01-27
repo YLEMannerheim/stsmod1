@@ -85,6 +85,6 @@ public class LactoseIntolerancePower extends AbstractPower {
         //NAME = powerStrings.NAME;
         NAME = "Lactose Intolerance";
         //SINGULAR_DESCRIPTION = powerStrings.DESCRIPTIONS[0];
-        DESCRIPTIONS = new String[] {"Whenever you play a #yMilk card, gains #b", " #yPoison."} ;
+        DESCRIPTIONS = new String[] {"Whenever you play a #yMilk card, loses #b", " health."} ;
     }
 }
