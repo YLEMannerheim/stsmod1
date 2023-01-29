@@ -3,26 +3,22 @@ package dannyandjannymod.powers;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.*;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.*;
-import dannyandjannymod.CardWithTagGenerationAction;
-import dannyandjannymod.CustomTags;
 import dannyandjannymod.util.TextureLoader;
 
-public class OvergrownPower extends AbstractPower {
-    public static final String POWER_ID = "OvergrownPower";
-    private static final PowerStrings powerStrings;
+public class FortifiedCalciumPower extends AbstractPower {
+    public static final String POWER_ID = "FortifiedCalciumPower";
+    //private static final PowerStrings powerStrings;
     public static final String NAME;
     public static final String[] DESCRIPTIONS;
 
-    public OvergrownPower(AbstractCreature owner) {
+    public FortifiedCalciumPower(AbstractCreature owner) {
         this.name = NAME;
-        this.ID = "OvergrownPower";
+        this.ID = POWER_ID;
         this.owner = owner;
         this.amount = -1;
         //this.type = PowerType.BUFF;
@@ -64,10 +60,10 @@ public class OvergrownPower extends AbstractPower {
     }
 
     static {
-        powerStrings = CardCrawlGame.languagePack.getPowerStrings("OvergrownPower");
+        //powerStrings = CardCrawlGame.languagePack.getPowerStrings("OvergrownPower");
         //NAME = powerStrings.NAME;
         //DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-        NAME = "Overgrown";
+        NAME = "Fortified Calcium";
         DESCRIPTIONS = new String[] {"At the end of your turn, gain Block equal to your Calcium."} ;
     }
 }
