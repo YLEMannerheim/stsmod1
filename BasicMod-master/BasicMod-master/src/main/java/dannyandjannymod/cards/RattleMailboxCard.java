@@ -7,17 +7,15 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.ThornsPower;
-import com.megacrit.cardcrawl.powers.WeakPower;
 import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.powers.DeliverancePower;
 import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
 
-public class RattleLetterboxCard extends BaseCard {
+public class RattleMailboxCard extends BaseCard {
     private final static CardInfo cardInfo = new CardInfo(
-            "RattleLetterboxCard",
+            "RattleMailboxCard",
             1,
             CardType.ATTACK,
             CardTarget.ENEMY,
@@ -31,7 +29,7 @@ public class RattleLetterboxCard extends BaseCard {
     private static final int DAMAGE = 8;
     private static final int UPG_DAMAGE = 3;
 
-    public RattleLetterboxCard() {
+    public RattleMailboxCard() {
         super(cardInfo);
         setMagic(MAGIC, UPG_MAGIC);
         setDamage(DAMAGE, UPG_DAMAGE);
@@ -44,6 +42,6 @@ public class RattleLetterboxCard extends BaseCard {
 
     @Override
     public AbstractCard makeCopy() { //Optional
-        return new RattleLetterboxCard();
+        return new RattleMailboxCard();
     }
 }

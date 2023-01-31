@@ -214,8 +214,8 @@
     "DESCRIPTION": "At the start of your turn, gain X Calcium.",
     "UPGRADE_DESCRIPTION": "At the start of your turn, gain X+1 Calcium."
   },
-  "${modID}:OvergrownCard": {
-    "NAME": "Overgrown",
+  "${modID}:FortifiedCalciumCard": {
+    "NAME": "Fortified Calcium",
     "DESCRIPTION": "At the end of your turn, gain Block equal to your Calcium.",
     "UPGRADE_DESCRIPTION": "At the end of your turn, gain Block equal to your Calcium. NL Gain 3 Calcium."
   },
@@ -386,7 +386,7 @@
   },
   "${modID}:ElectrolytesCard": {
     "NAME": "Electrolytes",
-    "DESCRIPTION": "Gain 1 [E] at the start of each turn. Whenever you play this card, permanently reduce its cost by 1.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Gain 1 [E] at the start of each turn. Whenever you play this card, permanently reduce its cost by 1. "
+    "DESCRIPTION": "Gain 1 [E] at the start of each turn. Whenever you play this card, permanently reduce its cost by 1. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Gain 1 [E] at the start of each turn. Whenever you play this card, permanently reduce its cost by 1. NL Ethereal."
   }
 }
