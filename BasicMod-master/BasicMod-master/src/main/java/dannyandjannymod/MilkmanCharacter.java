@@ -92,20 +92,6 @@ public class MilkmanCharacter extends CustomPlayer {
         retVal.add(new MilkmanDefendCard().cardID);
         retVal.add(new StrongerBonesCard().cardID);
         retVal.add(new OneTwoPunchCard().cardID);
-
-        /*
-        retVal.add("MilkmanStrikeCard");
-        retVal.add("MilkmanStrikeCard");
-        retVal.add("MilkmanStrikeCard");
-        retVal.add("MilkmanStrikeCard");
-        retVal.add("MilkmanDefendCard");
-        retVal.add("MilkmanDefendCard");
-        retVal.add("MilkmanDefendCard");
-        retVal.add("MilkmanDefendCard");
-        retVal.add("StrongerBonesCard");
-        retVal.add("OneTwoPunchCard");
-        */
-
         return retVal;
     }
 
@@ -161,12 +147,12 @@ public class MilkmanCharacter extends CustomPlayer {
 
     @Override
     public BitmapFont getEnergyNumFont() {
-        return FontHelper.energyNumFontRed;
+        return FontHelper.energyNumFontBlue;
     }
 
     @Override
     public void doCharSelectScreenSelectEffect() {
-        CardCrawlGame.sound.playA("ATTACK_HEAVY", MathUtils.random(-0.2f, 0.2f)); //TODO 'SOTE_SFX_Blood_1_v2'
+        CardCrawlGame.sound.playA("SLIME_SPLIT", MathUtils.random(-0.2f, 0.2f)); //TODO 'SOTE_SFX_Blood_1_v2'
         CardCrawlGame.screenShake.shake(ScreenShake.ShakeIntensity.MED, ScreenShake.ShakeDur.SHORT, true);
     }
 
