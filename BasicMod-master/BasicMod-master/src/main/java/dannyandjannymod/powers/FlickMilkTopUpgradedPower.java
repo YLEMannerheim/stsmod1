@@ -57,11 +57,11 @@ public class FlickMilkTopUpgradedPower extends AbstractPower {
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
+        this.description = DESCRIPTIONS[0] + this.amount + (this.amount == 1 ? DESCRIPTIONS[1] : DESCRIPTIONS[2]);
     }
 
     static {
         NAME = "Milk Top";
-        DESCRIPTIONS = new String[]{"When this monster dies, add #b", " Flick Milk Top card(s) to your hand."};
+        DESCRIPTIONS = new String[]{"When this monster dies, add #b", " #yUpgraded Flick Milk Top card to your hand.", " #yUpgraded Flick Milk Top cards to your hand."};
     }
 }

@@ -3,7 +3,7 @@
 // (powered by FernFlower decompiler)
 //
 
-package com.megacrit.cardcrawl.powers;
+package dannyandjannymod.powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
@@ -17,6 +17,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.AbstractPower.PowerType;
 import dannyandjannymod.cards.FlickMilkTopCard;
 import dannyandjannymod.util.TextureLoader;
@@ -62,11 +63,11 @@ public class FlickMilkTopPower extends AbstractPower {
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
+        this.description = DESCRIPTIONS[0] + this.amount + (this.amount == 1 ? DESCRIPTIONS[1] : DESCRIPTIONS[2]);
     }
 
     static {
         NAME = "Milk Top";
-        DESCRIPTIONS = new String[]{"When this monster dies, add #b", " Flick Milk Top card(s) to your hand."};
+        DESCRIPTIONS = new String[]{"When this monster dies, add #b", " Flick Milk Top card to your hand.", " Flick Milk Top cards to your hand."};
     }
 }
