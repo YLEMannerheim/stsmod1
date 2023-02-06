@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.CardWithTagGenerationAction;
 import dannyandjannymod.CustomTags;
 
@@ -18,6 +19,7 @@ public class LassoRelic extends BaseRelic {
 
     public LassoRelic() {
         super(ID, NAME, RelicTier.UNCOMMON, LandingSound.FLAT);
+        pool = AbstractCardEnum.MILKMAN_WHITE;
     }
 
     @Override

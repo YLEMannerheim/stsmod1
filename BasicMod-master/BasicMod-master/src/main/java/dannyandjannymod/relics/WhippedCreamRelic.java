@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
 import com.megacrit.cardcrawl.powers.EnergizedPower;
+import dannyandjannymod.AbstractCardEnum;
 
 import static dannyandjannymod.BasicMod.makeID;
 
@@ -20,6 +21,7 @@ public class WhippedCreamRelic extends BaseRelic {
 
     public WhippedCreamRelic() {
         super(ID, NAME, RelicTier.BOSS, LandingSound.MAGICAL);
+        pool = AbstractCardEnum.MILKMAN_WHITE;
     }
 
     @Override

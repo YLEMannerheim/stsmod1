@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
+import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.cards.CalciumDeficiencyCard;
 
 import static dannyandjannymod.BasicMod.makeID;
@@ -19,6 +20,7 @@ public class SpottedFingernailRelic extends BaseRelic {
 
     public SpottedFingernailRelic() {
         super(ID, NAME, RelicTier.BOSS, LandingSound.MAGICAL);
+        pool = AbstractCardEnum.MILKMAN_WHITE;
     }
 
     public void atBattleStart() {

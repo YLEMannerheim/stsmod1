@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import dannyandjannymod.AbstractCardEnum;
 
 import static dannyandjannymod.BasicMod.makeID;
 import static org.lwjgl.util.mapped.MappedObject.foreach;
@@ -16,6 +17,7 @@ public class FrozenYogurtRelic extends BaseRelic {
 
     public FrozenYogurtRelic() {
         super(ID, NAME, RelicTier.UNCOMMON, LandingSound.FLAT);
+        pool = AbstractCardEnum.MILKMAN_WHITE;
     }
 
     @Override

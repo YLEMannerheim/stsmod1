@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.sun.org.apache.xpath.internal.operations.Bool;
+import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.powers.CalciumPower;
 
 import static dannyandjannymod.BasicMod.makeID;
@@ -20,6 +21,7 @@ public class CheeseWheelRelic extends BaseRelic {
 
     public CheeseWheelRelic() {
         super(ID, NAME, RelicTier.COMMON, LandingSound.SOLID);
+        pool = AbstractCardEnum.MILKMAN_WHITE;
     }
 
     public int getDrawAmount() {

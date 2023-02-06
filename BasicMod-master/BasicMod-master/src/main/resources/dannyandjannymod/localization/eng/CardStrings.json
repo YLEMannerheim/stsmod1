@@ -317,7 +317,7 @@
   "${modID}:ShieldOfShardsCard": {
     "NAME": "Shield of Shards",
     "DESCRIPTION": "Convert your Thorns into Plated Armor.",
-    "UPGRADE_DESCRIPTION": "Convert your Thorns into Plated Armor."
+    "UPGRADE_DESCRIPTION": "Convert your Thorns into Metallicize."
   },
   "${modID}:GlassBottlesCard": {
     "NAME": "Glass Bottles",
@@ -341,11 +341,11 @@
   },
   "${modID}:SafekeepingCard": {
     "NAME": "Safekeeping",
-    "DESCRIPTION": "Gain Block next turn equal to your current Block. Lose all your Block.",
+    "DESCRIPTION": "Gain Block next turn equal to your current Block.",
     "UPGRADE_DESCRIPTION": "Gain Block next turn equal to your current Block."
   },
-  "${modID}:RattleLetterboxCard": {
-    "NAME": "Rattle Letterbox",
+  "${modID}:RattleMailboxCard": {
+    "NAME": "Rattle Mailbox",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Deliverance.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Apply !M! Deliverance."
   },
@@ -388,5 +388,10 @@
     "NAME": "Electrolytes",
     "DESCRIPTION": "Gain 1 [E] at the start of each turn. Whenever you play this card, permanently reduce its cost by 1. NL Ethereal.",
     "UPGRADE_DESCRIPTION": "Innate. NL Gain 1 [E] at the start of each turn. Whenever you play this card, permanently reduce its cost by 1. NL Ethereal."
+  },
+  "${modID}:MorningRoundsCard": {
+    "NAME": "Morning Rounds",
+    "DESCRIPTION": "At the start of your turn, ALL enemies without Delivance gain 1 Deliverance.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, ALL enemies without Delivance gain 1 Deliverance."
   }
 }

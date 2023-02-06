@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.CardLibrary;
 import dannyandjannymod.cards.EmptyBottleCard;
 
 import java.util.ArrayList;
@@ -30,6 +31,22 @@ public class CardWithTagGenerationAction extends AbstractGameAction {
 
     public static AbstractCard returnRandomCardWithTagInCombat(AbstractCard.CardTags tag) {
         ArrayList<AbstractCard> list = new ArrayList();
+
+        Iterator var2 = CardLibrary.getAllCards().iterator();
+
+        AbstractCard c;
+        while(var2.hasNext()) {
+            c = (AbstractCard)var2.next();
+            if (c.hasTag(tag) && !c.hasTag(AbstractCard.CardTags.HEALING)) {
+                list.add(c);
+            }
+        }
+
+        return (AbstractCard)list.get(cardRandomRng.random(list.size() - 1));
+
+        /*
+        ArrayList<AbstractCard> list = new ArrayList();
+
         Iterator var2 = srcCommonCardPool.group.iterator();
 
         AbstractCard c;
@@ -59,5 +76,6 @@ public class CardWithTagGenerationAction extends AbstractGameAction {
         }
 
         return (AbstractCard)list.get(cardRandomRng.random(list.size() - 1));
+         */
     }
 }

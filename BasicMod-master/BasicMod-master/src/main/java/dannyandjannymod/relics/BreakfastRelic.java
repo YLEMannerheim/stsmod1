@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
+import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.cards.SpareBucketCard;
 import dannyandjannymod.powers.CalciumPower;
 import dannyandjannymod.util.TextureLoader;
@@ -24,6 +25,7 @@ public class BreakfastRelic extends BaseRelic {
 
     public BreakfastRelic() {
         super(ID, NAME, RelicTier.STARTER, LandingSound.FLAT);
+        pool = AbstractCardEnum.MILKMAN_WHITE;
     }
 
     @Override

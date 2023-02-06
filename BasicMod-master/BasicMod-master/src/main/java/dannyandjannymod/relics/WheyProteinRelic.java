@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
+import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.CardWithTagGenerationAction;
 import dannyandjannymod.CustomTags;
 
@@ -22,6 +23,7 @@ public class WheyProteinRelic extends BaseRelic {
 
     public WheyProteinRelic() {
         super(ID, NAME, RelicTier.RARE, LandingSound.HEAVY);
+        pool = AbstractCardEnum.MILKMAN_WHITE;
     }
 
     public void onUseCard(AbstractCard card, UseCardAction action) {

@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.ThornsPower;
+import dannyandjannymod.AbstractCardEnum;
 
 import static dannyandjannymod.BasicMod.makeID;
 
@@ -15,6 +16,7 @@ public class GlassCafetiereRelic extends BaseRelic {
 
     public GlassCafetiereRelic() {
         super(ID, NAME, RelicTier.SHOP, LandingSound.MAGICAL);
+        pool = AbstractCardEnum.MILKMAN_WHITE;
     }
 
     public void atBattleStart() {

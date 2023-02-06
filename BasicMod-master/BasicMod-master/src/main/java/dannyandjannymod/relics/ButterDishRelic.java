@@ -2,6 +2,7 @@ package dannyandjannymod.relics;
 
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.CardWithTagGenerationAction;
 import dannyandjannymod.CustomTags;
 
@@ -14,6 +15,7 @@ public class ButterDishRelic extends BaseRelic {
 
     public ButterDishRelic() {
         super(ID, NAME, RelicTier.RARE, LandingSound.FLAT);
+        pool = AbstractCardEnum.MILKMAN_WHITE;
     }
 
 

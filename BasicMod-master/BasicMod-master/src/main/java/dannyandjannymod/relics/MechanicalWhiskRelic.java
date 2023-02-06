@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
+import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.powers.CalciumPower;
 
 import static dannyandjannymod.BasicMod.makeID;
@@ -21,6 +22,7 @@ public class MechanicalWhiskRelic extends BaseRelic {
 
     public MechanicalWhiskRelic() {
         super(ID, NAME, RelicTier.RARE, LandingSound.CLINK);
+        pool = AbstractCardEnum.MILKMAN_WHITE;
     }
 
     public void onExhaust(AbstractCard card) {
