@@ -26,8 +26,8 @@ public class LostChildCard extends BaseCard {
             CardColor.COLORLESS);
 
     public static final String ID = makeID(cardInfo.baseId);
-    public static final int MAGIC = 10;
-    public static final int UPG_MAGIC = 15;
+    public static final int MAGIC = 25;
+    public static final int UPG_MAGIC = 10;
 
 
     public LostChildCard() {

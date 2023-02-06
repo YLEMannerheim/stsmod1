@@ -17,7 +17,7 @@ import static dannyandjannymod.BasicMod.makeID;
 public class ShieldOfShardsCard extends BaseCard {
     private final static CardInfo cardInfo = new CardInfo(
             "ShieldOfShardsCard",
-            3,
+            2,
             CardType.POWER,
             CardTarget.NONE,
             CardRarity.UNCOMMON,
@@ -32,15 +32,13 @@ public class ShieldOfShardsCard extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (p.getPower("Thorns") != null) {
             int thornsAmt = p.getPower("Thorns").amount;
-            this.addToBot(new ApplyPowerAction(p, p, new PlatedArmorPower(p, thornsAmt), thornsAmt));
+            this.addToBot(
+                    new ApplyPowerAction(
+                            p,
+                            p,
+                            upgraded ? new MetallicizePower(p, thornsAmt) : new PlatedArmorPower(p, thornsAmt),
+                            thornsAmt));
             this.addToBot(new RemoveSpecificPowerAction(p, p, "Thorns"));
-        }
-    }
-
-    public void upgrade() {
-        if (!this.upgraded) {
-            this.upgradeName();
-            this.upgradeBaseCost(2);
         }
     }
 

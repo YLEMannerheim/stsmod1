@@ -15,7 +15,7 @@ import static dannyandjannymod.BasicMod.makeID;
 public class SafekeepingCard extends BaseCard {
     private final static CardInfo cardInfo = new CardInfo(
             "SafekeepingCard",
-            0,
+            2,
             CardType.SKILL,
             CardTarget.NONE,
             CardRarity.UNCOMMON,
@@ -31,8 +31,15 @@ public class SafekeepingCard extends BaseCard {
         int blockAmount = p.currentBlock;
         if (blockAmount > 0) {
             this.addToBot(new ApplyPowerAction(p, p, new NextTurnBlockPower(p, blockAmount), blockAmount));
-            if (!this.upgraded)
-                this.addToBot(new RemoveAllBlockAction(p, p));
+            //if (!this.upgraded)
+            //    this.addToBot(new RemoveAllBlockAction(p, p));
+        }
+    }
+
+    public void upgrade() {
+        if (!this.upgraded) {
+            this.upgradeName();
+            this.upgradeBaseCost(1);
         }
     }
 
