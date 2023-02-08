@@ -201,7 +201,7 @@
   },
   "${modID}:RepeatOnCard": {
     "NAME": "Repeat On",
-    "DESCRIPTION": "Deal !D! damage X + !M! times. Can be Upgraded any number of times.",
+    "DESCRIPTION": "Deal !D! damage X times. Can be Upgraded any number of times.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage X + !M! times. Can be Upgraded any number of times."
   },
   "${modID}:CrossArmsCard": {
@@ -391,7 +391,7 @@
   },
   "${modID}:MorningRoundsCard": {
     "NAME": "Morning Rounds",
-    "DESCRIPTION": "At the start of your turn, ALL enemies without Delivance gain 1 Deliverance.",
-    "UPGRADE_DESCRIPTION": "At the start of your turn, ALL enemies without Delivance gain 1 Deliverance."
+    "DESCRIPTION": "At the start of your turn, ALL enemies with less than 1 Deliverance have their Deliverance increased to 1.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, ALL enemies with less than 1 Deliverance have their Deliverance increased to 1."
   }
 }
