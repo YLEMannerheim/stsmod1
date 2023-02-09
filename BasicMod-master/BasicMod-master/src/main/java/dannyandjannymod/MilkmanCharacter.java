@@ -48,11 +48,11 @@ public class MilkmanCharacter extends CustomPlayer {
             modID + "Resources/images/char/mainChar/orb/layer4d.png",
             modID + "Resources/images/char/mainChar/orb/layer5d.png",};
      */
-    private static final String[] orbTextures = { "dannyandjannymod/character/char_button.png" };
+    private static final String[] orbTextures = { "dannyandjannymod/character/characterSelectButton.png" };
     public static final int ENERGY_PER_TURN = 3; // how much energy you get every turn
     public static final String MY_CHARACTER_SHOULDER_2 = "dannyandjannymod/character/shoulder1.png"; // campfire pose
     public static final String MY_CHARACTER_SHOULDER_1 = "dannyandjannymod/character/shoulder1.png"; // another campfire pose
-    public static final String MY_CHARACTER_CORPSE = "dannyandjannymod/character/char_button.png"; // dead corpse
+    public static final String MY_CHARACTER_CORPSE = "dannyandjannymod/character/characterCorpse.png"; // dead corpse
     public static final String MY_CHARACTER_SKELETON_ATLAS = "dannyandjannymod/character/MilkmanTest.atlas"; // spine animation atlas
     public static final String MY_CHARACTER_SKELETON_JSON = "dannyandjannymod/character/MilkmanTest.json"; // spine animation json
 
@@ -117,7 +117,7 @@ public class MilkmanCharacter extends CustomPlayer {
 
     @Override
     public String getTitle(PlayerClass playerClass) {
-        return "The Milkman";
+        return "the Milkman";
     }
 
     @Override
@@ -127,7 +127,7 @@ public class MilkmanCharacter extends CustomPlayer {
 
     @Override
     public Color getCardRenderColor() {
-        return Color.LIGHT_GRAY;
+        return Color.CYAN;
     }
 
     @Override
@@ -137,7 +137,7 @@ public class MilkmanCharacter extends CustomPlayer {
 
     @Override
     public Color getCardTrailColor() {
-        return Color.LIGHT_GRAY;
+        return Color.CYAN;
     }
 
     @Override
@@ -178,7 +178,7 @@ public class MilkmanCharacter extends CustomPlayer {
 
     @Override
     public Color getSlashAttackColor() {
-        return Color.WHITE;
+        return Color.CYAN;
     }
 
     @Override

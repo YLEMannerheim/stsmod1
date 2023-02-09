@@ -29,8 +29,8 @@ public class MilkmanMod implements EditCharactersSubscriber {
         MilkmanMod mod = new MilkmanMod();
     }
 
-    public static final String MY_CHARACTER_BUTTON = "dannyandjannymod/character/char_button.png";
-    public static final String MY_CHARACTER_PORTRAIT = "dannyandjannymod/character/shoulder1.png";
+    public static final String CHARACTER_SELECT_BUTTON = "dannyandjannymod/character/characterSelectButton.png";
+    public static final String CHARACTER_SELECT_PORTRAIT = "dannyandjannymod/character/characterSelectPortrait.png";
     public static final String POWER_BG = "dannyandjannymod/character/powerCardSmall.png";
     public static final String ATTACK_BG = "dannyandjannymod/character/attackCardSmall.png";
     public static final String SKILL_BG = "dannyandjannymod/character/skillCardSmall.png";
@@ -49,8 +49,8 @@ public class MilkmanMod implements EditCharactersSubscriber {
 
 
         BaseMod.addCharacter(new MilkmanCharacter(CardCrawlGame.playerName),
-                MY_CHARACTER_BUTTON,
-                MY_CHARACTER_PORTRAIT,
+                CHARACTER_SELECT_BUTTON,
+                CHARACTER_SELECT_PORTRAIT,
                 MilkmanClassEnum.MILKMAN_WHITE);
 
         //addColor(AbstractCardEnum.MILKMAN_WHITE, Color.LIGHT_GRAY, ATTACK_BG, SKILL_BG, POWER_BG, ENERGY_ORB, ATTACK_BG_PORT, SKILL_BG_PORT, POWER_BG_PORT, ENERGY_ORB_PORT, ENERGY_ORB_CARD);
