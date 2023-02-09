@@ -18,6 +18,8 @@ public class BigBreakfastRelic extends BaseRelic {
     public static final String NAME = "BigBreakfastRelic";
     public static final String ID = makeID(NAME);
     public static final int MAGIC = 3;
+    public static final String RELIC_TO_REPLACE = "dannyandjanny:BreakfastRelic";
+
 
     public BigBreakfastRelic() {
         super(ID, NAME, RelicTier.BOSS, LandingSound.FLAT);
@@ -41,6 +43,21 @@ public class BigBreakfastRelic extends BaseRelic {
         //    this.instantObtain(AbstractDungeon.player, 0, true);
 
         //this.addToBot(new BigBreakfastAction());
+    }
+
+    @Override
+    public void obtain() {
+        // Replace the starter relic, or just give the relic if starter isn't found
+        if (AbstractDungeon.player.hasRelic(RELIC_TO_REPLACE)) {
+            for (int i=0; i<AbstractDungeon.player.relics.size(); ++i) {
+                if (AbstractDungeon.player.relics.get(i).relicId.equals(RELIC_TO_REPLACE)) {
+                    instantObtain(AbstractDungeon.player, i, true);
+                    break;
+                }
+            }
+        } else {
+            super.obtain();
+        }
     }
 
     public boolean canSpawn() {

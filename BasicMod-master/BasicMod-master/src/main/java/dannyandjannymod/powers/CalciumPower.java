@@ -57,16 +57,15 @@ public class CalciumPower extends AbstractPower {
         }
     }
 
+    /*
     public void playApplyPowerSfx() {
         CardCrawlGame.sound.play("POWER_SHACKLE", 0.05F);
     }
+     */
 
     public void stackPower(int stackAmount) {
         this.fontScale = 8.0F;
         this.amount += stackAmount;
-        if (this.amount == 0) {
-            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, "Shackled"));
-        }
 
         if (this.amount >= 999) {
             this.amount = 999;
