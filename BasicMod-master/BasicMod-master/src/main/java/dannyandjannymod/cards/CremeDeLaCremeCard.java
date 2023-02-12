@@ -5,7 +5,6 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import dannyandjannymod.AbstractCardEnum;
-import dannyandjannymod.powers.CattleFarmPower;
 import dannyandjannymod.powers.CremeDeLaCremePower;
 import dannyandjannymod.util.CardInfo;
 

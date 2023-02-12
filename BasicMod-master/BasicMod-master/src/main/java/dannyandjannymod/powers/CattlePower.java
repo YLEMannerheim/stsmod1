@@ -2,35 +2,26 @@ package dannyandjannymod.powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.CardQueueItem;
-import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import dannyandjannymod.CardWithTagGenerationAction;
 import dannyandjannymod.CustomTags;
 
-import static dannyandjannymod.BasicMod.makeID;
-
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.localization.PowerStrings;
 import dannyandjannymod.util.TextureLoader;
 
-public class CattleFarmPower extends AbstractPower {
-    public static final String POWER_ID = "CattleFarmPower";
+public class CattlePower extends AbstractPower {
+    public static final String POWER_ID = "CattlePower";
     //private static final PowerStrings powerStrings;
     public static final String NAME;
     public static final String SINGULAR_DESCRIPTION;
     public static final String PLURAL_DESCRIPTION;
 
-    public CattleFarmPower(AbstractCreature owner, int cardAmount) {
+    public CattlePower(AbstractCreature owner, int cardAmount) {
         this.name = NAME;
-        this.ID = "CattleFarmPower";
+        this.ID = "CattlePower";
         this.owner = owner;
         this.amount = cardAmount;
         this.updateDescription();

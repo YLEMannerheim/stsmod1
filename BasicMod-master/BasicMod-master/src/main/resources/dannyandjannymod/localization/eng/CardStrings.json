@@ -69,8 +69,8 @@
     "DESCRIPTION": "Enemy loses !M! Strength for the rest of this turn. NL Bottled. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Enemy loses !M! Strength for the rest of this turn. NL Bottled. NL Exhaust."
   },
-  "${modID}:CattleFarmCard": {
-    "NAME": "Cattle Farm",
+  "${modID}:RearCattleCard": {
+    "NAME": "Rear Cattle",
     "DESCRIPTION": "Add !M! random Milk card to your hand every turn.",
     "UPGRADE_DESCRIPTION": "Add !M! random Milk card to your hand every turn."
   },

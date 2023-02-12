@@ -53,7 +53,7 @@ public class GlassFormPower extends AbstractPower {
 
     static {
         NAME = "Glass Form";
-        DESCRIPTIONS = new String[] {"Whenever you lose HP, gain #b", " #yThorns."} ;
+        DESCRIPTIONS = new String[] {"Whenever you are attacked, gain #b", " #yThorns."} ;
     }
 
     public int onAttacked(DamageInfo info, int damageAmount) {
