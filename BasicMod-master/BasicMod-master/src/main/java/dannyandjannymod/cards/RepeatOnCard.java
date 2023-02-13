@@ -39,6 +39,8 @@ public class RepeatOnCard extends BaseCard {
         this.name = cardStrings.NAME + "+" + this.timesUpgraded;
         this.initializeTitle();
         this.upgradeMagicNumber(1);
+        this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+        this.initializeDescription();
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
