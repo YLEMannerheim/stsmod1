@@ -141,18 +141,18 @@
   },
   "${modID}:MissingPersonCard": {
     "NAME": "Missing Person",
-    "DESCRIPTION": "Shuffle 1 Lost Child into your discard pile. NL Exhaust. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "Shuffle 1 Lost Child into your discard pile. NL Exhaust. NL Ethereal."
+    "DESCRIPTION": "Ethereal. NL Shuffle 1 Lost Child into your discard pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Ethereal. NL Shuffle 1 Lost Child into your discard pile. NL Exhaust."
   },
   "${modID}:LostChildCard": {
     "NAME": "Lost Child",
-    "DESCRIPTION": "Gain !M! Gold. NL Exhaust. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Gold. NL Exhaust. NL Ethereal."
+    "DESCRIPTION": "Ethereal. NL Gain !M! Gold. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Ethereal. NL Gain !M! Gold. NL Exhaust."
   },
   "${modID}:RelievedRelativeCard": {
     "NAME": "Relieved Relative",
-    "DESCRIPTION": "Shuffle !M! Relieved Relative(s) into your draw pile. NL Exhaust. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "Shuffle !M! Relieved Relative(s) into your draw pile. NL Exhaust. NL Ethereal."
+    "DESCRIPTION": "Ethereal. NL Shuffle !M! Relieved Relative(s) into your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Ethereal. NL Shuffle !M! Relieved Relative(s) into your draw pile. NL Exhaust."
   },
   "${modID}:LactokinesisCard": {
     "NAME": "Lactokinesis",
@@ -166,13 +166,13 @@
   },
   "${modID}:ExpirationDateCard": {
     "NAME": "Expiration Date",
-    "DESCRIPTION": "Gain !B! Block. Gain !B! Block next turn. Lose !M! Dexterity.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. Gain !B! Block next turn. Lose !M! Dexterity."
+    "DESCRIPTION": "Gain !B! Block. NL Gain !B! Block next turn. NL Lose !M! Dexterity.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Gain !B! Block next turn. NL Lose !M! Dexterity."
   },
   "${modID}:WorkOutCard": {
     "NAME": "Work Out",
-    "DESCRIPTION": "Gain !M! Weak and !M! Vulnerable. Gain 2 Strength and 2 Dexterity.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Weak and !M! Vulnerable. Gain 2 Strength and 2 Dexterity."
+    "DESCRIPTION": "Gain !M! Weak. NL Gain !M! Vulnerable. NL Gain 2 Strength. NL Gain 2 Dexterity.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Weak. NL Gain !M! Vulnerable. NL Gain 2 Strength. NL Gain 2 Dexterity."
   },
   "${modID}:AroundTheHousesCard": {
     "NAME": "Around the Houses",
@@ -181,18 +181,18 @@
   },
   "${modID}:WasteNotCard": {
     "NAME": "Waste Not",
-    "DESCRIPTION": "Gain !B! Block. Whenever you play a card, increase its Block by !M! this combat. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. Whenever you play a card, increase its Block by !M! this combat. NL Ethereal."
+    "DESCRIPTION": "Ethereal. NL Gain !B! Block. Whenever you play a card, increase Block amount by !M! this combat.",
+    "UPGRADE_DESCRIPTION": "Ethereal. NL Gain !B! Block. Whenever you play a card, increase Block amount by !M! this combat."
   },
   "${modID}:PasteurizeCard": {
     "NAME": "Pasteurize",
-    "DESCRIPTION": "Remove all debuffs. Exhaust.",
-    "UPGRADE_DESCRIPTION": "Remove all debuffs. Exhaust."
+    "DESCRIPTION": "Remove all debuffs. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Remove all debuffs. NL Exhaust."
   },
   "${modID}:SkimmingProcessCard": {
     "NAME": "Skimming Process",
-    "DESCRIPTION": "Exhaust your hand. Add 1 random Milk card to your hand for each Exhausted card.",
-    "UPGRADE_DESCRIPTION": "Exhaust your hand. Add 1 random Milk card to your hand for each Exhausted card."
+    "DESCRIPTION": "Exhaust your hand. NL Add 1 random Milk card to your hand for each Exhausted card.",
+    "UPGRADE_DESCRIPTION": "Exhaust your hand. NL Add 1 random Milk card to your hand for each Exhausted card."
   },
   "${modID}:MultivitaminsCard": {
     "NAME": "Multivitamins",
@@ -201,8 +201,8 @@
   },
   "${modID}:RepeatOnCard": {
     "NAME": "Repeat On",
-    "DESCRIPTION": "Deal !D! damage X times. Can be Upgraded any number of times.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage X + !M! times. Can be Upgraded any number of times."
+    "DESCRIPTION": "Deal !D! damage X times. NL Can be Upgraded any number of times.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage X + !M! times. NL Can be Upgraded any number of times."
   },
   "${modID}:CrossArmsCard": {
     "NAME": "Cross Arms",
@@ -236,8 +236,8 @@
   },
   "${modID}:SupersizeCard": {
     "NAME": "Supersize",
-    "DESCRIPTION": "Gain !M! Max HP. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Max HP. NL Ethereal."
+    "DESCRIPTION": "Ethereal. NL Gain !M! Max HP.",
+    "UPGRADE_DESCRIPTION": "Ethereal. NL Gain !M! Max HP."
   },
   "${modID}:BullyCard": {
     "NAME": "Bully",
@@ -246,8 +246,8 @@
   },
   "${modID}:CappuccinoCard": {
     "NAME": "Cappuccino",
-    "DESCRIPTION": "Gain !M! Calcium. Gain !M! [E]  next turn.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Calcium. Gain !M! [E]  next turn."
+    "DESCRIPTION": "Gain !M! Calcium. NL Gain !M! [E]  next turn.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Calcium. NL Gain !M! [E]  next turn."
   },
   "${modID}:ChurnCard": {
     "NAME": "Churn",
@@ -306,13 +306,13 @@
   },
   "${modID}:ReflectiveSurfaceCard": {
     "NAME": "Reflective Surface",
-    "DESCRIPTION": "Gain Block equal to the target's Block. If the target has no Block, double your Block instead.",
-    "UPGRADE_DESCRIPTION": "Gain Block equal to the target's Block. If the target has no Block, double your Block instead."
+    "DESCRIPTION": "Gain Block equal to the target's Block. NL If the target has no Block, double your Block instead.",
+    "UPGRADE_DESCRIPTION": "Gain Block equal to the target's Block. NL If the target has no Block, double your Block instead."
   },
   "${modID}:TrailOfGlassCard": {
     "NAME": "Trail of Glass",
-    "DESCRIPTION": "Gain 2 Thorns. Gain Block equal to !M! times your Thorns.",
-    "UPGRADE_DESCRIPTION": "Gain 2 Thorns. Gain Block equal to !M! times your Thorns."
+    "DESCRIPTION": "Gain 2 Thorns. NL Gain Block equal to !M! times your Thorns.",
+    "UPGRADE_DESCRIPTION": "Gain 2 Thorns. NL Gain Block equal to !M! times your Thorns."
   },
   "${modID}:ShieldOfShardsCard": {
     "NAME": "Shield of Shards",
@@ -331,13 +331,13 @@
   },
   "${modID}:GlassCutCard": {
     "NAME": "Glass Cut",
-    "DESCRIPTION": "Gain 1 Thorns. Deal !D! damage. Apply !M! Weak.",
-    "UPGRADE_DESCRIPTION": "Gain 1 Thorns. Deal !D! damage. Apply !M! Weak."
+    "DESCRIPTION": "Gain 1 Thorns. NL Deal !D! damage. NL Apply !M! Weak.",
+    "UPGRADE_DESCRIPTION": "Gain 1 Thorns. NL Deal !D! damage. NL Apply !M! Weak."
   },
   "${modID}:FreshnessCard": {
     "NAME": "Freshness",
-    "DESCRIPTION": "Heal !M! HP. NL Exhaust. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "Heal !M! HP. NL Exhaust. NL Ethereal."
+    "DESCRIPTION": "Ethereal. NL Heal !M! HP. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Ethereal. NL Heal !M! HP. NL Exhaust."
   },
   "${modID}:SafekeepingCard": {
     "NAME": "Safekeeping",
@@ -381,8 +381,8 @@
   },
   "${modID}:CoolGlassCard": {
     "NAME": "Cool Glass",
-    "DESCRIPTION": "Gain !M! Thorns. Gain !M! Plated Armor.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Thorns. Gain !M! Metallicize."
+    "DESCRIPTION": "Gain !M! Thorns. NL Gain !M! Plated Armor.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Thorns. NL Gain !M! Metallicize."
   },
   "${modID}:ElectrolytesCard": {
     "NAME": "Electrolytes",
