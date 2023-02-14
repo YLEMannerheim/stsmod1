@@ -57,7 +57,7 @@ public class GrowthSpurtPower extends AbstractPower {
     }
 
     public void updateDescription() {
-        this.description = String.format(DESCRIPTIONS[0], this.amount);
+        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
     }
 
     static {
@@ -65,6 +65,6 @@ public class GrowthSpurtPower extends AbstractPower {
         //NAME = powerStrings.NAME;
         NAME = "Growth Spurt";
         //SINGULAR_DESCRIPTION = powerStrings.DESCRIPTIONS[0];
-        DESCRIPTIONS = new String[] {"At the start of your turn, gain #b%d #yCalcium."};
+        DESCRIPTIONS = new String[] {"At the start of your turn, gain #b", " #yCalcium."};
     }
 }
