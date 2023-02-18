@@ -1,5 +1,6 @@
 package dannyandjannymod.cards;
 
+import basemod.BaseMod;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.BottleHolderAction;
@@ -29,7 +30,7 @@ public class BottleHolderCard extends BaseCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new BottleHolderAction(p, 10));
+        this.addToBot(new BottleHolderAction(p, BaseMod.MAX_HAND_SIZE));
     }
 
     public void upgrade() {
