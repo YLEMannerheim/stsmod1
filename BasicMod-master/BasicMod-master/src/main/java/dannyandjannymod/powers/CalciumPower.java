@@ -141,7 +141,10 @@ public class CalciumPower extends AbstractPower {
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
+        if (this.owner.isPlayer)
+            this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
+        else
+            this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[2];
     }
 
     public void atEndOfTurn(boolean isPlayer) {
@@ -161,6 +164,6 @@ public class CalciumPower extends AbstractPower {
         //NAME = powerStrings.NAME;
         //DESCRIPTIONS = powerStrings.DESCRIPTIONS;
         NAME = "Calcium";
-        DESCRIPTIONS = new String[] {"Gain #b", " temporary #yStrength and #yDexterity next turn."} ;
+        DESCRIPTIONS = new String[] {"Gain #b", " temporary #yStrength and #yDexterity next turn.", " temporary #yStrength and #yBlock next turn."} ;
     }
 }
