@@ -72,7 +72,7 @@ public class CattlePower extends AbstractPower {
     static {
         //powerStrings = CardCrawlGame.languagePack.getPowerStrings("Magnetism");
         //NAME = powerStrings.NAME;
-        NAME = "Cattle Farm";
+        NAME = "Cattle";
         //SINGULAR_DESCRIPTION = powerStrings.DESCRIPTIONS[0];
         //DESCRIPTIONS = new String[] {"Put #b{0} random #yMilk card in your hand at the start of your turn."} ;
         SINGULAR_DESCRIPTION = "At the start of your turn, add #b%d random #yMilk card into your hand.";
