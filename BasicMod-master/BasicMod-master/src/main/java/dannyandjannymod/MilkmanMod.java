@@ -21,7 +21,7 @@ public class MilkmanMod implements EditCharactersSubscriber {
         //BaseMod.subscribeToEditCharacters(this);
         BaseMod.subscribe(this);
 
-        addColor(AbstractCardEnum.MILKMAN_WHITE, Color.LIGHT_GRAY, ATTACK_BG, SKILL_BG, POWER_BG, ENERGY_ORB, ATTACK_BG_PORT, SKILL_BG_PORT, POWER_BG_PORT, ENERGY_ORB_PORT, ENERGY_ORB_CARD);
+        addColor(AbstractCardEnum.MILKMAN_WHITE, Color.CYAN, ATTACK_BG, SKILL_BG, POWER_BG, ENERGY_ORB, ATTACK_BG_PORT, SKILL_BG_PORT, POWER_BG_PORT, ENERGY_ORB_PORT, ENERGY_ORB_CARD);
 
     }
 
@@ -37,9 +37,9 @@ public class MilkmanMod implements EditCharactersSubscriber {
     public static final String POWER_BG_PORT = "dannyandjannymod/character/powerCard.png";
     public static final String ATTACK_BG_PORT = "dannyandjannymod/character/attackCard.png";
     public static final String SKILL_BG_PORT = "dannyandjannymod/character/skillCard.png";
-    public static final String ENERGY_ORB = "dannyandjannymod/character/energyOrbCardSmall.png";
-    public static final String ENERGY_ORB_PORT = "dannyandjannymod/character/energyOrbCard.png";
-    public static final String ENERGY_ORB_CARD = "dannyandjannymod/character/energyOrbCardSmall.png";
+    public static final String ENERGY_ORB = "dannyandjannymod/character/energyOrbCard2.png";
+    public static final String ENERGY_ORB_PORT = "dannyandjannymod/character/energyOrb2.png";
+    public static final String ENERGY_ORB_CARD = "dannyandjannymod/character/energyOrbCardSmall2.png";
 
 
     @Override
