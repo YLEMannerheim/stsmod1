@@ -2,10 +2,7 @@ package dannyandjannymod.powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -126,7 +123,6 @@ public class CalciumPower extends AbstractPower {
         }
     }
 
-
     public void reducePower(int reduceAmount) {
         this.fontScale = 8.0F;
         this.amount -= reduceAmount;
@@ -150,8 +146,12 @@ public class CalciumPower extends AbstractPower {
 
     public void atEndOfTurn(boolean isPlayer) {
         this.flash();
+
         this.addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, this.amount), this.amount));
-        this.addToBot(new ApplyPowerAction(this.owner, this.owner, new DexterityPower(this.owner, this.amount), this.amount));
+        if (isPlayer)
+            this.addToBot(new ApplyPowerAction(this.owner, this.owner, new DexterityPower(this.owner, this.amount), this.amount));
+        else
+            this.addToBot(new GainBlockAction(this.owner, this.owner, this.amount));
         this.addToBot(new ApplyPowerAction(this.owner, this.owner, new CalciumComedownPower(this.owner, this.amount), this.amount));
         this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, "CalciumPower"));
     }

@@ -231,8 +231,8 @@
   },
   "${modID}:KnuckleSandwichCard": {
     "NAME": "Knuckle Sandwich",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Calcium to the target.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Apply !M! Calcium to the target."
+    "DESCRIPTION": "Deal !D! damage. NL Next turn, target gains !M! temporary Strength and !M! Block.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Next turn, target gains !M! temporary Strength and !M! Block."
   },
   "${modID}:SupersizeCard": {
     "NAME": "Supersize",

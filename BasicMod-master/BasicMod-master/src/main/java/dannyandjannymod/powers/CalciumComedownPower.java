@@ -93,7 +93,8 @@ public class CalciumComedownPower extends AbstractPower {
     public void atEndOfTurn(boolean isPlayer) {
         this.flash();
         this.addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, -this.amount), -this.amount));
-        this.addToBot(new ApplyPowerAction(this.owner, this.owner, new DexterityPower(this.owner, -this.amount), -this.amount));
+        if (this.owner.isPlayer)
+            this.addToBot(new ApplyPowerAction(this.owner, this.owner, new DexterityPower(this.owner, -this.amount), -this.amount));
         this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, "CalciumComedownPower"));
     }
 
