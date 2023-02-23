@@ -12,9 +12,9 @@ import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
 
-public class ExpirationDateCard extends BaseCard {
+public class CurdleCard extends BaseCard {
     private final static CardInfo cardInfo = new CardInfo(
-            "ExpirationDateCard",
+            "CurdleCard",
             2,
             CardType.SKILL,
             CardTarget.NONE,
@@ -27,7 +27,7 @@ public class ExpirationDateCard extends BaseCard {
     private static final int BLOCK = 20;
     private static final int UPG_BLOCK = 5;
 
-    public ExpirationDateCard() {
+    public CurdleCard() {
         super(cardInfo);
         setMagic(MAGIC_NUM);
         setBlock(BLOCK, UPG_BLOCK);
@@ -41,6 +41,6 @@ public class ExpirationDateCard extends BaseCard {
 
     @Override
     public AbstractCard makeCopy() { //Optional
-        return new ExpirationDateCard();
+        return new CurdleCard();
     }
 }
