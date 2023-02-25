@@ -164,8 +164,8 @@
     "DESCRIPTION": "Deal !D! damage. NL Lose !M! Strength.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Lose !M! Strength."
   },
-  "${modID}:ExpirationDateCard": {
-    "NAME": "Expiration Date",
+  "${modID}:CurdleCard": {
+    "NAME": "Curdle",
     "DESCRIPTION": "Gain !B! Block. NL Gain !B! Block next turn. NL Lose !M! Dexterity.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Gain !B! Block next turn. NL Lose !M! Dexterity."
   },
