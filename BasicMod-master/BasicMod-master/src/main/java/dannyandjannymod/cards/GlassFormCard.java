@@ -5,9 +5,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import dannyandjannymod.AbstractCardEnum;
-import dannyandjannymod.CustomTags;
 import dannyandjannymod.powers.GlassFormPower;
-import dannyandjannymod.powers.SpareBucketPower;
 import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
