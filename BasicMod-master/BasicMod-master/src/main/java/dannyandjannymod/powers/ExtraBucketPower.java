@@ -2,30 +2,24 @@ package dannyandjannymod.powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardQueueItem;
-import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import dannyandjannymod.CustomTags;
 import dannyandjannymod.util.TextureLoader;
 
-import static dannyandjannymod.BasicMod.makeID;
-
-public class SpareBucketPower extends AbstractPower {
+public class ExtraBucketPower extends AbstractPower {
 
     public static final String NAME;
     public static final String SINGULAR_DESCRIPTION;
     public static final String PLURAL_DESCRIPTION;
-    public SpareBucketPower(int amount) {
+    public ExtraBucketPower(int amount) {
         this.name = NAME;
-        this.ID = "SpareBucketPower";
+        this.ID = "ExtraBucketPower";
         this.owner = AbstractDungeon.player;
         this.amount = amount;
         this.updateDescription();
@@ -82,7 +76,7 @@ public class SpareBucketPower extends AbstractPower {
     }
 
     static {
-        NAME = "Spare Bucket";
+        NAME = "Extra Bucket";
         SINGULAR_DESCRIPTION = "Bucket cards are played #b%d additional time.";
         PLURAL_DESCRIPTION = "Bucket cards are played #b%d additional times.";
     }

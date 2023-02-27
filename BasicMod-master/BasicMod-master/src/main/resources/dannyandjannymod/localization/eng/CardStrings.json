@@ -124,8 +124,8 @@
     "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Deal !D! damage."
   },
-  "${modID}:SpareBucketCard": {
-    "NAME": "Spare Bucket",
+  "${modID}:ExtraBucketCard": {
+    "NAME": "Extra Bucket",
     "DESCRIPTION": "Your Bucket cards are played !M! additional time.",
     "UPGRADE_DESCRIPTION": "Your Bucket cards are played !M! additional time."
   },

@@ -4,17 +4,16 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.*;
 import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.CustomTags;
-import dannyandjannymod.powers.SpareBucketPower;
+import dannyandjannymod.powers.ExtraBucketPower;
 import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
 
-public class SpareBucketCard extends BaseCard {
+public class ExtraBucketCard extends BaseCard {
     private final static CardInfo cardInfo = new CardInfo(
-            "SpareBucketCard",
+            "ExtraBucketCard",
             3,
             CardType.POWER,
             CardTarget.NONE,
@@ -26,7 +25,7 @@ public class SpareBucketCard extends BaseCard {
 
 
 
-    public SpareBucketCard() {
+    public ExtraBucketCard() {
         super(cardInfo);
         setMagic(MAGIC);
         this.tags.add(CustomTags.BUCKET);
@@ -37,7 +36,7 @@ public class SpareBucketCard extends BaseCard {
         //addToBot(new ApplyPowerAction(p, p, new FrailPower(p, this.magicNumber, false), this.magicNumber));
 
         //this.addToBot(new ApplyPowerAction(p, p, new DoubleTapPower(p, this.magicNumber), this.magicNumber));
-        addToBot(new ApplyPowerAction(p, p, new SpareBucketPower(1), 1));
+        addToBot(new ApplyPowerAction(p, p, new ExtraBucketPower(1), 1));
         //this.addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, 2), 2));
         //this.addToBot(new ApplyPowerAction(p, p, new SpareBucketPower(p, 2), 2));
     }
@@ -51,6 +50,6 @@ public class SpareBucketCard extends BaseCard {
 
     @Override
     public AbstractCard makeCopy() { //Optional
-        return new SpareBucketCard();
+        return new ExtraBucketCard();
     }
 }
