@@ -49,12 +49,15 @@ public class FortifiedCalciumPower extends AbstractPower {
         this.description = DESCRIPTIONS[0];
     }
 
-    public void atEndOfTurn(boolean isPlayer) {
-        if (this.owner.getPower("CalciumPower") != null) {
-            int calcAmt = this.owner.getPower("CalciumPower").amount;
-            if (calcAmt > 0) {
-                this.flash();
-                this.addToBot(new GainBlockAction(this.owner, calcAmt, Settings.FAST_MODE));
+    @Override
+    public void atEndOfTurnPreEndTurnCards(boolean isPlayer) {
+        if (isPlayer) {
+            if (this.owner.getPower("CalciumPower") != null) {
+                int calcAmt = this.owner.getPower("CalciumPower").amount;
+                if (calcAmt > 0) {
+                    this.flash();
+                    this.addToBot(new GainBlockAction(this.owner, calcAmt, Settings.FAST_MODE));
+                }
             }
         }
     }
