@@ -26,25 +26,25 @@ public class DentedBucketCard extends BaseCard {
 
     public static final String ID = makeID(cardInfo.baseId);
 
-    private static final int UPG_DAMAGE = 5;
+    public static final int UPG_DAMAGE = 5;
     private static final int DAMAGE = 25;
     private static final int MAGIC = 1;
 
     public DentedBucketCard() {
         super(cardInfo);
-        setDamage(DAMAGE, UPG_DAMAGE);
+        this.misc = DAMAGE;
         setMagic(MAGIC);
+        setDamage(this.misc, UPG_DAMAGE);
         this.tags.add(CustomTags.BUCKET);
-        this.misc = 1;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
+        addToTop(new DentedBucketAction(this.uuid, -this.magicNumber));
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SMASH));
-        addToBot(new DentedBucketAction(this.uuid, this.magicNumber));
     }
 
     public void applyPowers() {
-        this.baseDamage = Math.max(0, DAMAGE - this.misc);
+        this.baseBlock = this.misc;
         super.applyPowers();
         this.initializeDescription();
     }

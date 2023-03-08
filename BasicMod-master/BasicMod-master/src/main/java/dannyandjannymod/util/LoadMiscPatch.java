@@ -2,6 +2,7 @@ package dannyandjannymod.util;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
+import dannyandjannymod.cards.DentedBucketCard;
 import dannyandjannymod.cards.ElectrolytesCard;
 import javassist.CtBehavior;
 
@@ -26,6 +27,12 @@ public class LoadMiscPatch {
                     retVal.updateCost(-misc);
                     retVal.initializeDescription();
                 }
+            }
+
+            if (retVal.cardID.equals(DentedBucketCard.ID))
+            {
+                retVal.baseDamage = Math.max(0, retVal.upgraded ? misc + DentedBucketCard.UPG_DAMAGE : misc);
+                retVal.initializeDescription();
             }
         }
 
