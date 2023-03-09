@@ -1,13 +1,10 @@
 package dannyandjannymod.cards;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import dannyandjannymod.AbstractCardEnum;
-import dannyandjannymod.DiscountDairyAction;
 import dannyandjannymod.GrowthSpurtAction;
-import dannyandjannymod.powers.ImmuneSystemPower;
 import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
