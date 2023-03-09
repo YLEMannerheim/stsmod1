@@ -6,9 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="fc187df0-56e9-4cd2-841c-1dd2e740a0f1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/MilkmanCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/java/dannyandjannymod/MilkmanCharacter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/character/shoulder1.png" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/character/shoulder1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/character/shoulder2.png" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/character/shoulder2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/cards/attack/MilkmanStrikeCard.png" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/cards/attack/MilkmanStrikeCard.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/cards/attack/MilkmanStrikeCard_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/cards/attack/MilkmanStrikeCard_p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/cards/skill/PasteurizeCard.png" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/cards/skill/PasteurizeCard.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/cards/skill/PasteurizeCard_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMod-master/src/main/resources/dannyandjannymod/cards/skill/PasteurizeCard_p.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
