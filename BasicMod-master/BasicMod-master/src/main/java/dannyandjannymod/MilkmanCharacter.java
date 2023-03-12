@@ -68,8 +68,8 @@ public class MilkmanCharacter extends CustomPlayer {
     public static final String MY_CHARACTER_SHOULDER_2 = "dannyandjannymod/character/shoulder2.png"; // campfire pose
     public static final String MY_CHARACTER_SHOULDER_1 = "dannyandjannymod/character/shoulder1.png"; // another campfire pose
     public static final String MY_CHARACTER_CORPSE = "dannyandjannymod/character/characterCorpse.png"; // dead corpse
-    public static final String MY_CHARACTER_SKELETON_ATLAS = "dannyandjannymod/character/MilkmanTest.atlas"; // spine animation atlas
-    public static final String MY_CHARACTER_SKELETON_JSON = "dannyandjannymod/character/MilkmanTest.json"; // spine animation json
+    public static final String MY_CHARACTER_SKELETON_ATLAS = "dannyandjannymod/character/skeleton.atlas"; // spine animation atlas
+    public static final String MY_CHARACTER_SKELETON_JSON = "dannyandjannymod/character/skeleton.json"; // spine animation json
 
     public static float update_timer = 0; // heart win effect
     public static boolean glow_fade = false; // heart win effect
@@ -94,7 +94,7 @@ public class MilkmanCharacter extends CustomPlayer {
 
         //loadAnimation(MY_CHARACTER_SKELETON_ATLAS, MY_CHARACTER_SKELETON_JSON, 1.0F); // if you're using modified versions of base game animations or made animations in spine make sure to include this bit and the following lines
 
-        AnimationState.TrackEntry e = this.state.setAnimation(0, "IDLE", true);
+        AnimationState.TrackEntry e = this.state.setAnimation(0, "IDLE_RESIZED", true);
         //e.setTime(e.getEndTime() * MathUtils.random());
     }
 
