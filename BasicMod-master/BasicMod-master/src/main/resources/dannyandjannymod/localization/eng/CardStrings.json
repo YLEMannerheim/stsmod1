@@ -177,7 +177,7 @@
   "${modID}:AroundTheHousesCard": {
     "NAME": "Around the Houses",
     "DESCRIPTION": "Draw !M! cards per enemy. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Draw !M! cards per enemy. NL Exhaust."
+    "UPGRADE_DESCRIPTION": "Draw !M! cards per enemy. NL Exhaust. NL Innate."
   },
   "${modID}:WasteNotCard": {
     "NAME": "Waste Not",
@@ -186,8 +186,8 @@
   },
   "${modID}:PasteurizeCard": {
     "NAME": "Pasteurize",
-    "DESCRIPTION": "Remove all debuffs. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Remove all debuffs. NL Exhaust."
+    "DESCRIPTION": "Remove ALL debuffs. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Remove ALL debuffs. NL Exhaust."
   },
   "${modID}:SkimmingProcessCard": {
     "NAME": "Skimming Process",
@@ -246,8 +246,8 @@
   },
   "${modID}:CappuccinoCard": {
     "NAME": "Cappuccino",
-    "DESCRIPTION": "Gain !M! Calcium. NL Gain !M! [E]  next turn.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Calcium. NL Gain !M! [E]  next turn."
+    "DESCRIPTION": "Gain !M! Calcium. NL Gain [E] next turn.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Calcium. NL Gain [E][E] next turn."
   },
   "${modID}:ChurnCard": {
     "NAME": "Churn",
@@ -281,8 +281,8 @@
   },
   "${modID}:EspressoCard": {
     "NAME": "Espresso",
-    "DESCRIPTION": "Next turn gain !M! [E].",
-    "UPGRADE_DESCRIPTION": "Next turn gain !M! [E]."
+    "DESCRIPTION": "Next turn gain [E].",
+    "UPGRADE_DESCRIPTION": "Next turn gain [E][E]."
   },
   "${modID}:NapCard": {
     "NAME": "Nap",
@@ -316,8 +316,8 @@
   },
   "${modID}:ShieldOfShardsCard": {
     "NAME": "Shield of Shards",
-    "DESCRIPTION": "Convert your Thorns into Plated Armor.",
-    "UPGRADE_DESCRIPTION": "Convert your Thorns into Metallicize."
+    "DESCRIPTION": "Whenever you gain Thorns, gain !M! Plated Armor.",
+    "UPGRADE_DESCRIPTION": "Whenever you gain Thorns, gain !M! Metallicize."
   },
   "${modID}:GlassBottlesCard": {
     "NAME": "Glass Bottles",
@@ -369,11 +369,6 @@
     "DESCRIPTION": "Whenever you play a Milk card, Upgrade ALL cards in your hand for the rest of this combat.",
     "UPGRADE_DESCRIPTION": "Whenever you play a Milk card, Upgrade ALL cards in your hand for the rest of this combat."
   },
-  "${modID}:ImmuneSystemCard": {
-    "NAME": "Immune System",
-    "DESCRIPTION": "Whenever you apply a Debuff to yourself, gain 1 [E] next turn.",
-    "UPGRADE_DESCRIPTION": "Whenever you apply a Debuff to yourself, gain 1 [E] next turn."
-  },
   "${modID}:LactoseIntoleranceCard": {
     "NAME": "Lactose Intolerance",
     "DESCRIPTION": "Deal !D! damage. Whenever you attack this enemy, it loses !M! HP. NL Exhaust.",
@@ -386,8 +381,8 @@
   },
   "${modID}:ElectrolytesCard": {
     "NAME": "Electrolytes",
-    "DESCRIPTION": "Gain 1 [E] at the start of each turn. Whenever you play this card, permanently reduce its cost by 1. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Gain 1 [E] at the start of each turn. Whenever you play this card, permanently reduce its cost by 1. NL Ethereal."
+    "DESCRIPTION": "Ethereal. NL Gain [E] at the start of each turn. Whenever you play this card, permanently reduce its cost by 1.",
+    "UPGRADE_DESCRIPTION": "Ethereal. NL Gain [E] at the start of each turn. Whenever you play this card, permanently reduce its cost by 1. NL Innate."
   },
   "${modID}:MorningRoundsCard": {
     "NAME": "Morning Rounds",

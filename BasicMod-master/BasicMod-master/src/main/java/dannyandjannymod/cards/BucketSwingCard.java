@@ -33,6 +33,7 @@ public class BucketSwingCard extends BaseCard {
 
     public BucketSwingCard() {
         super(cardInfo);
+        this.isMultiDamage = true;
         setDamage(DAMAGE, UPG_DAMAGE);
         this.tags.add(CustomTags.BUCKET);
     }

@@ -33,6 +33,7 @@ public class MilkSplashCard extends BaseCard {
         super(cardInfo);
         setDamage(DAMAGE, UPG_DAMAGE);
         setExhaust(true);
+        this.isMultiDamage = true;
         this.tags.add(CustomTags.MILK);
         cardsToPreview = new EmptyBottleCard();
     }
