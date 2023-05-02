@@ -26,6 +26,7 @@ public class RearCattleCard extends BaseCard {
     public RearCattleCard() {
         super(cardInfo);
         setMagic(MAGIC);
+        cardsToPreview = new EmptyBottleCard();
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

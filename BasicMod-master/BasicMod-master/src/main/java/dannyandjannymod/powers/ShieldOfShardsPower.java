@@ -50,7 +50,7 @@ public class ShieldOfShardsPower extends AbstractPower implements BetterOnApplyP
 
     public void updateDescription() {
         //this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
-        this.description = "Whenever you gain Thorns, gain #b" + this.amount + " Plated Armor.";
+        this.description = "Whenever you gain Thorns, gain #b" + this.amount + " #yPlated #yArmor.";
     }
 
 

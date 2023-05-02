@@ -27,6 +27,7 @@ public class BottleHolderCard extends BaseCard {
     public BottleHolderCard() {
         super(cardInfo);
         setExhaust(true);
+        cardsToPreview = new EmptyBottleCard();
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

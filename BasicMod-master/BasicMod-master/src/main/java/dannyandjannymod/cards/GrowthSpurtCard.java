@@ -1,8 +1,10 @@
 package dannyandjannymod.cards;
 
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.MetallicizePower;
 import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.GrowthSpurtAction;
 import dannyandjannymod.util.CardInfo;
@@ -19,22 +21,18 @@ public class GrowthSpurtCard extends BaseCard {
             AbstractCardEnum.MILKMAN_WHITE);
 
     public static final String ID = makeID(cardInfo.baseId);
-    public static final int MAGIC = 0;
-    public static final int UPG_MAGIC = 1;
+    public static final int MAGIC = 1;
 
 
     public GrowthSpurtCard() {
         super(cardInfo);
-        setMagic(MAGIC, UPG_MAGIC);
+        setMagic(MAGIC);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new GrowthSpurtAction(p, this.freeToPlayOnce, this.energyOnUse + this.magicNumber));
-        //this.addToBot(new ApplyPowerAction(p, p, new ImmuneSystemPower(p, 1), 1));
-
+        int amt = this.energyOnUse * this.magicNumber;
+        this.addToBot(new GrowthSpurtAction(p, this.freeToPlayOnce, amt, upgraded));
     }
-
-
 
     @Override
     public AbstractCard makeCopy() { //Optional

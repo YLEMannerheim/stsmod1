@@ -49,7 +49,7 @@ public class ShieldOfShardsUpgradedPower extends AbstractPower implements Better
 
     public void updateDescription() {
         //this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
-        this.description = "Whenever you gain Thorns, gain #b" + this.amount + " Metallicize.";
+        this.description = "Whenever you gain Thorns, gain #b" + this.amount + " #yMetallicize.";
     }
 
 

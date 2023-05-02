@@ -24,6 +24,7 @@ public class CremeDeLaCremeCard extends BaseCard {
 
     public CremeDeLaCremeCard() {
         super(cardInfo);
+        cardsToPreview = new EmptyBottleCard();
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

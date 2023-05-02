@@ -29,6 +29,7 @@ public class GlassFormPower extends AbstractPower {
         this.owner = AbstractDungeon.player;
         this.amount = amount;
         this.updateDescription();
+
         this.loadRegion("demonForm");
 
         String unPrefixed = ID;
@@ -53,18 +54,13 @@ public class GlassFormPower extends AbstractPower {
 
     static {
         NAME = "Glass Form";
-        DESCRIPTIONS = new String[] {"Whenever you are attacked, gain #b", " #yThorns."} ;
+        DESCRIPTIONS = new String[] {"At the start of your turn, gain #b", " #yThorns."} ;
     }
 
-    public int onAttacked(DamageInfo info, int damageAmount) {
-        if (info.type != DamageInfo.DamageType.THORNS && info.type != DamageInfo.DamageType.HP_LOSS && info.owner != null && info.owner != this.owner) {
-        //if (damageAmount < this.owner.currentHealth && damageAmount > 0 && info.owner != null && info.type == DamageInfo.DamageType.NORMAL && info.type != DamageInfo.DamageType.HP_LOSS) {
-            this.flash();
-            this.addToTop(new ApplyPowerAction(this.owner, this.owner, new ThornsPower(this.owner, this.amount), this.amount));
-            this.updateDescription();
-        }
-
-        return damageAmount;
+    @Override
+    public void atStartOfTurnPostDraw() {
+        this.flash();
+        this.addToTop(new ApplyPowerAction(this.owner, this.owner, new ThornsPower(this.owner, this.amount), this.amount));
     }
 
     /*

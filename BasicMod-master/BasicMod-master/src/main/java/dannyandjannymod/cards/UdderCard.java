@@ -27,6 +27,7 @@ public class UdderCard extends BaseCard {
     public UdderCard() {
         super(cardInfo);
         setMagic(MAGIC);
+        cardsToPreview = new EmptyBottleCard();
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

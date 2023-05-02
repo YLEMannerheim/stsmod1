@@ -1,5 +1,6 @@
 package dannyandjannymod.cards;
 
+import basemod.helpers.BaseModCardTags;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -20,24 +21,17 @@ public class GlassFormCard extends BaseCard {
             AbstractCardEnum.MILKMAN_WHITE);
 
     public static final String ID = makeID(cardInfo.baseId);
-    public static final int MAGIC = 1;
-
-
+    public static final int MAGIC = 3;
+    public static final int UPG_MAGIC = 1;
 
     public GlassFormCard() {
         super(cardInfo);
-        setMagic(MAGIC);
+        setMagic(MAGIC, UPG_MAGIC);
+        this.tags.add(BaseModCardTags.FORM);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new GlassFormPower(magicNumber), magicNumber));
-    }
-
-    public void upgrade() {
-        if (!this.upgraded) {
-            this.upgradeName();
-            this.upgradeBaseCost(2);
-        }
     }
 
     @Override

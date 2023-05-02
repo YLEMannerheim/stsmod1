@@ -36,43 +36,43 @@
   },
   "${modID}:BottleHolderCard": {
     "NAME": "Bottle Holder",
-    "DESCRIPTION": "Add Empty Bottles to your hand until your hand is full. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Add Empty Bottles to your hand until your hand is full. NL Exhaust."
+    "DESCRIPTION": "Add *Empty *Bottles to your hand until your hand is full. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add *Empty *Bottles to your hand until your hand is full. NL Exhaust."
   },
   "${modID}:MilkSplashCard": {
     "NAME": "Milk Splash",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Bottled. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. NL Bottled. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Add an *Empty *Bottle to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. NL Add an *Empty *Bottle to your hand. NL Exhaust."
   },
   "${modID}:MilkChugCard": {
     "NAME": "Milk Chug",
-    "DESCRIPTION": "Gain !M! Calcium. NL Bottled. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Calcium. NL Bottled. NL Exhaust."
+    "DESCRIPTION": "Gain !M! Calcium. NL Add an *Empty *Bottle to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Calcium. NL Add an *Empty *Bottle to your hand. NL Exhaust."
   },
   "${modID}:MilkCoatingCard": {
     "NAME": "Milk Coating",
-    "DESCRIPTION": "Gain !B! Block and !M! Calcium. NL Bottled. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block and !M! Calcium. NL Bottled. NL Exhaust."
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Calcium. NL Add an *Empty *Bottle to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Gain !M! Calcium. NL Add an *Empty *Bottle to your hand. NL Exhaust."
   },
   "${modID}:MilkSpillCard": {
     "NAME": "Milk Spill",
-    "DESCRIPTION": "Apply !M! Vulnerable to ALL enemies. NL Bottled. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable to ALL enemies. NL Bottled. NL Exhaust."
+    "DESCRIPTION": "Apply !M! Vulnerable to ALL enemies. NL Add an *Empty *Bottle to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable to ALL enemies. NL Add an *Empty *Bottle to your hand. NL Exhaust."
   },
   "${modID}:LongLifeMilkCard": {
     "NAME": "Long-Life Milk",
-    "DESCRIPTION": "Retain. NL Gain !B! Block. NL Bottled. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Gain !B! Block. NL Bottled. NL Exhaust."
+    "DESCRIPTION": "Retain. NL Gain !B! Block. NL Add an *Empty *Bottle to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Gain !B! Block. NL Add an *Empty *Bottle to your hand. NL Exhaust."
   },
   "${modID}:MilkSnortCard": {
     "NAME": "Milk Snort",
-    "DESCRIPTION": "Enemy loses !M! Strength for the rest of this turn. NL Bottled. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Enemy loses !M! Strength for the rest of this turn. NL Bottled. NL Exhaust."
+    "DESCRIPTION": "Enemy loses !M! Strength this turn. NL Add an *Empty *Bottle to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Enemy loses !M! Strength this turn. NL Add an *Empty *Bottle to your hand. NL Exhaust."
   },
   "${modID}:RearCattleCard": {
     "NAME": "Rear Cattle",
-    "DESCRIPTION": "Add !M! random Milk card to your hand every turn.",
-    "UPGRADE_DESCRIPTION": "Add !M! random Milk card to your hand every turn."
+    "DESCRIPTION": "At the start of your turn, add !M! random Milk card to your hand.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, add !M! random Milk card to your hand."
   },
   "${modID}:DiscountDairyCard": {
     "NAME": "Discount Dairy",
@@ -101,8 +101,8 @@
   },
   "${modID}:RefrigerateCard": {
     "NAME": "Refrigerate",
-    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Metallicize. NL Gain !M! Plated Armor.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Gain !M! Metallicize. NL Gain !M! Plated Armor."
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! *Metallicize. NL Gain !M! *Plated *Armor.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Gain !M! *Metallicize. NL Gain !M! *Plated *Armor."
   },
   "${modID}:BucketStrikeCard": {
     "NAME": "Bucket Strike",
@@ -212,7 +212,7 @@
   "${modID}:GrowthSpurtCard": {
     "NAME": "Growth Spurt",
     "DESCRIPTION": "At the start of your turn, gain X Calcium.",
-    "UPGRADE_DESCRIPTION": "At the start of your turn, gain X+1 Calcium."
+    "UPGRADE_DESCRIPTION": "At the start of your turn, gain X Calcium and X Block."
   },
   "${modID}:FortifiedCalciumCard": {
     "NAME": "Fortified Calcium",
@@ -301,8 +301,8 @@
   },
   "${modID}:GlassFormCard": {
     "NAME": "Glass Form",
-    "DESCRIPTION": "Gain !M! Thorns whenever you are attacked.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Thorns whenever you are attacked."
+    "DESCRIPTION": "At the start of your turn, gain !M! Thorns.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, gain !M! Thorns."
   },
   "${modID}:ReflectiveSurfaceCard": {
     "NAME": "Reflective Surface",
@@ -316,8 +316,8 @@
   },
   "${modID}:ShieldOfShardsCard": {
     "NAME": "Shield of Shards",
-    "DESCRIPTION": "Whenever you gain Thorns, gain !M! Plated Armor.",
-    "UPGRADE_DESCRIPTION": "Whenever you gain Thorns, gain !M! Metallicize."
+    "DESCRIPTION": "Whenever you gain Thorns, gain !M! *Plated *Armor.",
+    "UPGRADE_DESCRIPTION": "Whenever you gain Thorns, gain !M! *Metallicize."
   },
   "${modID}:GlassBottlesCard": {
     "NAME": "Glass Bottles",
@@ -376,13 +376,13 @@
   },
   "${modID}:CoolGlassCard": {
     "NAME": "Cool Glass",
-    "DESCRIPTION": "Gain !M! Thorns. NL Gain !M! Plated Armor.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Thorns. NL Gain !M! Metallicize."
+    "DESCRIPTION": "Gain !M! Thorns. NL Gain !M! *Plated *Armor.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Thorns. NL Gain !M! *Metallicize."
   },
   "${modID}:ElectrolytesCard": {
     "NAME": "Electrolytes",
-    "DESCRIPTION": "Ethereal. NL Gain [E] at the start of each turn. Whenever you play this card, permanently reduce its cost by 1.",
-    "UPGRADE_DESCRIPTION": "Ethereal. NL Gain [E] at the start of each turn. Whenever you play this card, permanently reduce its cost by 1. NL Innate."
+    "DESCRIPTION": "Ethereal. NL At the start of your turn, gain [E]. Whenever you play this card, permanently reduce its cost by 1.",
+    "UPGRADE_DESCRIPTION": "Ethereal. NL At the start of your turn, gain [E]. Whenever you play this card, permanently reduce its cost by 1. NL Innate."
   },
   "${modID}:MorningRoundsCard": {
     "NAME": "Morning Rounds",

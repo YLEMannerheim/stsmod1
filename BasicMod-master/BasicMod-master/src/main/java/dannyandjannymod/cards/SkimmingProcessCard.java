@@ -26,6 +26,7 @@ public class SkimmingProcessCard extends BaseCard {
 
     public SkimmingProcessCard() {
         super(cardInfo);
+        cardsToPreview = new EmptyBottleCard();
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

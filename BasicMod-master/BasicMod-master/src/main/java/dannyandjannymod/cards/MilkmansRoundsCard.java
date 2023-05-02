@@ -30,6 +30,7 @@ public class MilkmansRoundsCard extends BaseCard {
     public MilkmansRoundsCard() {
         super(cardInfo);
         setMagic(MAGIC);
+        cardsToPreview = new EmptyBottleCard();
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

@@ -18,7 +18,7 @@
     "NAME": "Big Breakfast",
     "FLAVOR": "Start the day right.",
     "DESCRIPTIONS": [
-      "At the start of each battle, gain #b",
+      "Replaces #yBreakfast relic. NL At the start of each battle, gain #b",
       " #yStrength and #yDexterity."
     ]
   },

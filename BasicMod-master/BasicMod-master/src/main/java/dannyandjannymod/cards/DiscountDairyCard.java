@@ -30,6 +30,7 @@ public class DiscountDairyCard extends BaseCard {
         super(cardInfo);
         setExhaust(true);
         setMagic(MAGIC, UPG_MAGIC);
+        cardsToPreview = new EmptyBottleCard();
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

@@ -146,10 +146,8 @@ public class BasicMod implements
     public void receiveEditKeywords()
     {
         BaseMod.addKeyword(new String[]{"calcium"}, "Grants temporary #yStrength and #yDexterity next turn.");
-        BaseMod.addKeyword(new String[]{"milk"}, "Milk cards are strong cards that are #yBottled and #yExhaust.");
+        BaseMod.addKeyword(new String[]{"milk"}, "Milk cards are 1-cost cards that #yExhaust and add an #yEmpty #yBottle to your hand.");
         BaseMod.addKeyword(new String[]{"deliverance"}, "When attacked, you draw #b1 card.");
-        BaseMod.addKeyword(new String[]{"bottled"}, "When you play this card, add #b1 Empty Bottle to your hand.");
-
 
         Gson gson = new Gson();
         String json = Gdx.files.internal(localizationPath(defaultLanguage, "Keywords.json")).readString(String.valueOf(StandardCharsets.UTF_8));
