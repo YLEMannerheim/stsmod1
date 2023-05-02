@@ -30,7 +30,6 @@ public class PasteurizeCard extends BaseCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new RemoveDebuffsAction(p));
-        addToBot(new RemoveSpecificPowerAction(p, p, "Shackled"));
     }
 
     public void upgrade() {
