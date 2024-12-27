@@ -110,6 +110,9 @@ public class MilkmanCharacter extends CustomPlayer {
         retVal.add(new MilkmanDefendCard().cardID);
         retVal.add(new StrongerBonesCard().cardID);
         retVal.add(new OneTwoPunchCard().cardID);
+        retVal.add(new RankedgameCard().cardID);
+        retVal.add(new RankedgameCard().cardID);
+        retVal.add(new RankedgameCard().cardID);
         return retVal;
     }
 

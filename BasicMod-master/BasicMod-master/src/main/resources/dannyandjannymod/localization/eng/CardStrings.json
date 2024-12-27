@@ -388,5 +388,10 @@
     "NAME": "Morning Rounds",
     "DESCRIPTION": "At the start of your turn, ALL enemies with less than 1 Deliverance have their Deliverance increased to 1.",
     "UPGRADE_DESCRIPTION": "At the start of your turn, ALL enemies with less than 1 Deliverance have their Deliverance increased to 1."
+  },
+  "${modID}:RankedgameCard": {
+    "NAME": "Ranked Game",
+    "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Enter Tilted. If already Tilted, enter Suicidal.",
+    "UPGRADE_DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Enter Tilted. If already Tilted, enter Suicidal."
   }
 }
