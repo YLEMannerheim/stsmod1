@@ -23,6 +23,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../../../../../Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/cards/green/DieDieDie.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../../../../Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/cards/red/SeeingRed.class" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -59,8 +63,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="dannyandjannymod" />
       <recent name="dannyandjannymod.cards" />
+      <recent name="dannyandjannymod" />
       <recent name="dannyandjannymod.powers" />
       <recent name="dannyandjannymod.relics" />
       <recent name="basicmod.cards" />

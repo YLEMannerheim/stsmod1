@@ -393,5 +393,26 @@
     "NAME": "Ranked Game",
     "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Enter Tilted. If already Tilted, enter Suicidal.",
     "UPGRADE_DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Enter Tilted. If already Tilted, enter Suicidal."
+  },
+
+  "${modID}:TikTokCard": {
+    "NAME": "TikTok",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies twice. NL Channel 1 Brain Rot.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies twice. NL Channel 1 Brain Rot."
+  },
+  "${modID}:OverstimulatedCard": {
+    "NAME": "Overstimulated",
+    "DESCRIPTION": "Draw cards until your hand is full. NL Channel 1 Brain Rot. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Draw cards until your hand is full. NL Channel 1 Brain Rot. NL Exhaust."
+  },
+  "${modID}:GoInfiniteCard": {
+    "NAME": "Go Infinite",
+    "DESCRIPTION": "Gain [E] [E]. You cannot draw cards this turn.",
+    "UPGRADE_DESCRIPTION": "Gain [E] [E] [E]. You cannot draw cards this turn."
+  },
+  "${modID}:JamesCard": {
+    "NAME": "James",
+    "DESCRIPTION": "Discard all copies of Brad in your hand. NL Gain 1 Strength. NL Draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Discard all copies of Brad in your hand. NL Gain 1 Strength. NL Draw !M! cards."
   }
 }
