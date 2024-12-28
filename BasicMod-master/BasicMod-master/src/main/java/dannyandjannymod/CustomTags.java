@@ -10,4 +10,7 @@ public class CustomTags
 
     @SpireEnum
     public static AbstractCard.CardTags MILK;
+
+    @SpireEnum
+    public static AbstractCard.CardTags CHARACTER;
 }

@@ -414,5 +414,15 @@
     "NAME": "James",
     "DESCRIPTION": "Discard all copies of Brad in your hand. NL Gain 1 Strength. NL Draw !M! card.",
     "UPGRADE_DESCRIPTION": "Discard all copies of Brad in your hand. NL Gain 1 Strength. NL Draw !M! cards."
+  },
+  "${modID}:RoidRageCard": {
+    "NAME": "Roid Rage",
+    "DESCRIPTION": "Gain !M! Strength. NL Enter Tilted.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Strength. NL Enter Tilted."
+  },
+  "${modID}:KeyboardSmashCard": {
+    "NAME": "Keyboard Smash",
+    "DESCRIPTION": "Can only be played if Tilted. NL Deal !D! damage and gain !B! Block X times.",
+    "UPGRADE_DESCRIPTION": "Can only be played if Tilted. NL Deal !D! damage and gain !B! Block X times."
   }
 }
