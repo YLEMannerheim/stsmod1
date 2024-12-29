@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.stances.CalmStance;
 import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.CustomTags;
+import dannyandjannymod.DrunkAction;
 import dannyandjannymod.util.CardInfo;
 
 import java.util.ArrayList;
@@ -32,6 +33,8 @@ public class ChugCard extends BaseCard {
 
     public ChugCard() {
         super(cardInfo);
+        cardsToPreview = new HangoverCard();
+        setExhaust(true);
         setMagic(2,1);
     }
 
@@ -60,7 +63,7 @@ public class ChugCard extends BaseCard {
             c.setCostForTurn(c.costForTurn - magicNumber);
         }
 
-        addToBot(new ChangeStanceAction("Calm"));
+        addToBot(new DrunkAction());
     }
 
 

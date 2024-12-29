@@ -424,5 +424,20 @@
     "NAME": "Keyboard Smash",
     "DESCRIPTION": "Can only be played if Tilted. NL Deal !D! damage and gain !B! Block X times.",
     "UPGRADE_DESCRIPTION": "Can only be played if Tilted. NL Deal !D! damage and gain !B! Block X times."
+  },
+  "${modID}:KorvaleCard": {
+    "NAME": "Korvale",
+    "DESCRIPTION": "At the start of your turn, add a Chug into your hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, add a Chug into your hand."
+  },
+  "${modID}:ChugCard": {
+    "NAME": "Chug",
+    "DESCRIPTION": "Reduce the cost of a random card in your hand by !M! this turn. Enter Drunk. If already Drunk, add Hangover into your discard pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Reduce the cost of a random card in your hand by !M! this turn. Enter Drunk. If already Drunk, add Hangover into your discard pile. NL Exhaust."
+  },
+  "${modID}:HangoverCard": {
+    "NAME": "Hangover",
+    "DESCRIPTION": "At the end of your turn, gain 1 Drained. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "At the end of your turn, gain 1 Drained. NL Exhaust."
   }
 }

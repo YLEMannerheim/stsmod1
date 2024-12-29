@@ -29,8 +29,9 @@ public class KorvaleCard extends BaseCard {
 
     public KorvaleCard() {
         super(cardInfo);
-        setInnate(true);
+        setInnate(false,true);
         this.tags.add(CustomTags.CHARACTER);
+        cardsToPreview = new ChugCard();
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
