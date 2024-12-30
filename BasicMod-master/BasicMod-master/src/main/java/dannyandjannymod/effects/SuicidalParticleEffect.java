@@ -26,7 +26,7 @@ public class SuicidalParticleEffect extends AbstractGameEffect {
         this.duration = this.startingDuration;
         this.scale *= Settings.scale;
         this.dur_div2 = this.duration / 2.0F;
-        this.color = new Color(MathUtils.random(0F, 0F), MathUtils.random(0F, 0F), MathUtils.random(0F, 0F), 0.0F);
+        this.color = new Color(MathUtils.random(0.5F, 0.5F), MathUtils.random(0F, 0F), MathUtils.random(0F, 0F), 0.0F);
         this.x = AbstractDungeon.player.hb.cX + MathUtils.random(-AbstractDungeon.player.hb.width / 2.0F - 50.0F * Settings.scale, AbstractDungeon.player.hb.width / 2.0F + 50.0F * Settings.scale);
         this.y = AbstractDungeon.player.hb.cY + MathUtils.random(-AbstractDungeon.player.hb.height / 2.0F + 10.0F * Settings.scale, AbstractDungeon.player.hb.height / 2.0F - 20.0F * Settings.scale);
         this.renderBehind = MathUtils.randomBoolean();
