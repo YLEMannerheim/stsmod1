@@ -29,7 +29,7 @@ public class KeyboardSmashAction extends AbstractGameAction {
         this.block = block;
         this.freeToPlayOnce = freeToPlayOnce;
         this.duration = Settings.ACTION_DUR_XFAST;
-        this.actionType = ActionType.SPECIAL;
+        this.actionType = ActionType.DAMAGE;
         this.damageTypeForTurn = damageTypeForTurn;
         this.energyOnUse = energyOnUse;
     }
