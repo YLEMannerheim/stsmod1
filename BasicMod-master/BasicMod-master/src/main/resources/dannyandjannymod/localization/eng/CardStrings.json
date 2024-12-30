@@ -439,5 +439,10 @@
     "NAME": "Hangover",
     "DESCRIPTION": "At the end of your turn, gain 1 Drained. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "At the end of your turn, gain 1 Drained. NL Exhaust."
+  },
+  "${modID}:DrinkingProblemCard": {
+    "NAME": "Drinking Problem",
+    "DESCRIPTION": "Draw X cards. NL Add X *Chugs into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Draw X+1 cards. NL Add X+1 *Chugs into your hand. NL Exhaust."
   }
 }
