@@ -35,7 +35,8 @@ public class BasicMod implements
         EditCardsSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
-        PostInitializeSubscriber {
+        PostInitializeSubscriber,
+        AddAudioSubscriber {
     public static ModInfo info;
     public static String modID;
     static { loadModInfo(); }
@@ -173,6 +174,14 @@ public class BasicMod implements
 
     }
 
+    private static final String GRAGAS_AUDIO = audioPath("gragas_drinking_problem.ogg");
+    public static final String GRAGAS_KEY = makeID("GragasDrinkingProblem");
+
+    @Override
+    public void receiveAddAudio() {
+        BaseMod.addAudio(GRAGAS_KEY, GRAGAS_AUDIO);
+    }
+
     private void registerKeyword(KeywordInfo info) {
         BaseMod.addKeyword(modID.toLowerCase(), info.PROPER_NAME, info.NAMES, info.DESCRIPTION);
     }
@@ -193,6 +202,10 @@ public class BasicMod implements
     }
     public static String relicPath(String file) {
         return resourcesFolder + "/relics/" + file;
+    }
+
+    public static String audioPath(String file) {
+        return resourcesFolder + "/audio/" + file;
     }
 
 
