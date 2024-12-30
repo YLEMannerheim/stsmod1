@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.vfx.combat.ClashEffect;
 import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.CustomTags;
 import dannyandjannymod.KeyboardSmashAction;
+import dannyandjannymod.stances.TiltedStance;
 import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
@@ -55,7 +56,7 @@ public class KeyboardSmashCard extends BaseCard {
         if (!canUse) {
             return false;
         } else {
-            if (!AbstractDungeon.player.stance.ID.equals("Wrath")) {
+            if (!AbstractDungeon.player.stance.ID.equals(TiltedStance.STANCE_ID)) {
                 canUse = false;
                 this.cantUseMessage = "Im not tilted enough!";
             }
