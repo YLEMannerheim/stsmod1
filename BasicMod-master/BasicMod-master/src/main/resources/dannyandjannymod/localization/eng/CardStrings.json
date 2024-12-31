@@ -469,5 +469,15 @@
     "NAME": "Boykisser",
     "DESCRIPTION": "Apply !M! Weak. NL Draw 2 cards. NL Channel 1 Pusheen. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Apply !M! Weak. NL Draw 2 cards. NL Channel 1 Pusheen."
+  },
+  "${modID}:RenCard": {
+    "NAME": "Ren",
+    "DESCRIPTION": "Whenever you change Stance, add *So *Mean *To *Me into your hand.",
+    "UPGRADE_DESCRIPTION": "Whenever you change Stance, add So *Mean *To *Me into your hand."
+  },
+  "${modID}:SoMeanToMeCard": {
+    "NAME": "So Mean To Me",
+    "DESCRIPTION": "Apply !M! Weak and !M! Vulnerable. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply !M! Weak and !M! Vulnerable. NL Exhaust."
   }
 }
