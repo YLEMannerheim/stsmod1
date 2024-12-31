@@ -444,5 +444,15 @@
     "NAME": "Drinking Problem",
     "DESCRIPTION": "Draw X cards. NL Add X *Chugs into your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Draw X+1 cards. NL Add X+1 *Chugs into your hand. NL Exhaust."
+  },
+  "${modID}:JaniCard": {
+    "NAME": "Jani",
+    "DESCRIPTION": "Add *Sleeping *Meds into your hand.",
+    "UPGRADE_DESCRIPTION": "Add Upgraded *Sleeping *Meds into your hand."
+  },
+  "${modID}:SleepingMedsCard": {
+    "NAME": "Sleeping Medication",
+    "DESCRIPTION": "Retain NL Gain 5 Dexterity. After !M! seconds, you instantly end your turn every turn.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Gain 5 Dexterity. After !M! seconds, you instantly end your turn every turn."
   }
 }
