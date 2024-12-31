@@ -451,7 +451,7 @@
     "UPGRADE_DESCRIPTION": "Add Upgraded *Sleeping *Meds into your hand."
   },
   "${modID}:SleepingMedsCard": {
-    "NAME": "Sleeping Medication",
+    "NAME": "Sleeping Meds",
     "DESCRIPTION": "Retain NL Gain 5 Dexterity. After !M! seconds, you instantly end your turn every turn.",
     "UPGRADE_DESCRIPTION": "Retain. NL Gain 5 Dexterity. After !M! seconds, you instantly end your turn every turn."
   }

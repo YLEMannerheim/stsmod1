@@ -33,8 +33,8 @@ public class SleepingMedsCard extends BaseCard {
     //also, getting better at remembering that this place is a constructor :D
     public SleepingMedsCard() {
         super(cardInfo);
-        setMagic(60, 20);       //card is refraining, and after 60s and 80s something will happen
-        setSelfRetain(true);                       //Need to find a way to get the timers working
+        setMagic(60, 20);
+        setSelfRetain(true);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
