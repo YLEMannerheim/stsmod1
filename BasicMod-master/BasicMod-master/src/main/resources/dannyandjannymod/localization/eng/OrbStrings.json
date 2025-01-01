@@ -1,12 +1,8 @@
 {
-  "${modID}:OrbID": {
-    "NAME": "Orb Name",
+  "PusheenOrb": {
+    "NAME": "Pusheen",
     "DESCRIPTION": [
-      "#yPassive: At the start of your turn, draw #b",
-      " card.",
-      " cards.",
-      " NL #yEvoke: Deal #b",
-      " damage to all enemies."
+      "#yPassive: Do nothing. NL #yEvoke: Do nothing."
     ]
   }
 }
