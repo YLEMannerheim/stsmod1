@@ -176,10 +176,13 @@ public class BasicMod implements
 
     private static final String GRAGAS_AUDIO = audioPath("gragas_drinking_problem.ogg");
     public static final String GRAGAS_KEY = makeID("GragasDrinkingProblem");
+    private static final String NYA_AUDIO = audioPath("nya.wav");
+    public static final String NYA_KEY = makeID("Nya");
 
     @Override
     public void receiveAddAudio() {
         BaseMod.addAudio(GRAGAS_KEY, GRAGAS_AUDIO);
+        BaseMod.addAudio(NYA_KEY, NYA_AUDIO);
     }
 
     private void registerKeyword(KeywordInfo info) {
