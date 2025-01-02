@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.EmptyStanceEffect;
 import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.CustomTags;
-import dannyandjannymod.Orbs.PusheenOrb;
+import dannyandjannymod.orbs.PusheenOrb;
 import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;

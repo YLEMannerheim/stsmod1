@@ -1,6 +1,4 @@
-package dannyandjannymod.Orbs;
-
-package thePackmaster.orbs.summonspack;
+package dannyandjannymod.orbs;
 
 import basemod.abstracts.CustomOrb;
 import com.badlogic.gdx.Gdx;
@@ -13,26 +11,20 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.MathHelper;
 import com.megacrit.cardcrawl.localization.OrbStrings;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
-import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.FocusPower;
 import com.megacrit.cardcrawl.vfx.BobEffect;
 import com.megacrit.cardcrawl.vfx.scene.TorchParticleXLEffect;
-import thePackmaster.SpireAnniversary5Mod;
-import thePackmaster.powers.shamanpack.IgnitePower;
-import thePackmaster.util.Wiz;
 
 import static dannyandjannymod.BasicMod.makeID;
-import static thePackmaster.SpireAnniversary5Mod.makePath;
-import static thePackmaster.util.Wiz.*;
+import static dannyandjannymod.BasicMod.orbPath;
 
-public class FireSpirit extends CustomOrb {
-    public static final String ORB_ID = makeID(FireSpirit.class.getSimpleName());
+
+public class NewPusheenOrb extends CustomOrb {
+    public static final String ORB_ID = makeID(NewPusheenOrb.class.getSimpleName());
     private static final OrbStrings orbString = CardCrawlGame.languagePack.getOrbString(ORB_ID);
     public static final String NAME = orbString.NAME;
     public static final String[] DESCRIPTIONS = orbString.DESCRIPTION;
-    private static final String IMG_PATH = makePath("/images/orbs/summonsPack/FireSpirit.png");
+    private static final String IMG_PATH = orbPath("pusheen.png");
     private static final float SPIRIT_WIDTH = 96.0f;
 
     private final static int BASE_PASSIVE = 2;
@@ -42,7 +34,7 @@ public class FireSpirit extends CustomOrb {
 
     private final BobEffect fireBobEffect = new BobEffect(2f, 3f);
 
-    public FireSpirit()
+    public NewPusheenOrb()
     {
         super(ORB_ID, NAME, BASE_PASSIVE, FOCUS_AMOUNT, "", "", IMG_PATH);
         applyFocus();
@@ -50,34 +42,14 @@ public class FireSpirit extends CustomOrb {
     }
 
     @Override
+    public void onEvoke(){
+    }
+
+    @Override
     public void playChannelSFX() {
-        CardCrawlGame.sound.play("SOTE_SFX_FireIgnite_2_v1.ogg", 0.1f);
+        //CardCrawlGame.sound.play("SOTE_SFX_FireIgnite_2_v1.ogg", 0.1f);
     }
 
-    @Override
-    public void applyFocus() {
-        AbstractPower power = adp().getPower(FocusPower.POWER_ID);
-        if (power != null)
-            passiveAmount = Math.max(0, basePassiveAmount + power.amount);
-        else
-            passiveAmount = basePassiveAmount;
-
-        if (passiveAmount < 0)
-            passiveAmount = 0;
-
-        evokeAmount = FOCUS_AMOUNT;
-    }
-
-    @Override
-    public void onEndOfTurn() {
-        for (AbstractMonster m : Wiz.getEnemies())
-            applyToEnemy(m, new IgnitePower(m, passiveAmount));
-    }
-
-    @Override
-    public void onEvoke() {
-        Wiz.applyToSelfTop(new FocusPower(adp(), FOCUS_AMOUNT));
-    }
 
     @Override
     public void updateAnimation() {
@@ -85,8 +57,8 @@ public class FireSpirit extends CustomOrb {
 
         sparkTimer -= Gdx.graphics.getDeltaTime();
 
-        cX = MathHelper.orbLerpSnap(cX, adp().animX + tX);
-        cY = MathHelper.orbLerpSnap(cY, adp().animY + tY);
+        cX = MathHelper.orbLerpSnap(cX, AbstractDungeon.player.animX + tX);
+        cY = MathHelper.orbLerpSnap(cY, AbstractDungeon.player.animY + tY);
         if (channelAnimTimer != 0.0F) {
             channelAnimTimer -= Gdx.graphics.getDeltaTime();
             if (channelAnimTimer < 0.0F) {
@@ -124,6 +96,6 @@ public class FireSpirit extends CustomOrb {
 
     @Override
     public AbstractOrb makeCopy() {
-        return new FireSpirit();
+        return new NewPusheenOrb();
     }
 }
