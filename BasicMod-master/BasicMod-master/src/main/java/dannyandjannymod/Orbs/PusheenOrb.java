@@ -1,19 +1,16 @@
-package dannyandjannymod.Orbs;
+package dannyandjannymod.orbs;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.vfx.combat.LightningOrbPassiveEffect;
 
-import static dannyandjannymod.BasicMod.makeID;
+import static dannyandjannymod.BasicMod.*;
 
 public class PusheenOrb extends AbstractOrb {
     public static final String ORB_ID = makeID("PusheenOrb");
@@ -26,7 +23,7 @@ public class PusheenOrb extends AbstractOrb {
 
     public PusheenOrb() {
         this.ID = ORB_ID;
-        this.img = ImageMaster.ORB_LIGHTNING;
+        this.img = ImageMaster.loadImage("dannyandjannymod/orbs/pusheen.png");
         this.name = orbString.NAME;
         this.baseEvokeAmount = 69;
         this.evokeAmount = this.baseEvokeAmount;
@@ -92,7 +89,7 @@ public class PusheenOrb extends AbstractOrb {
     }
 
         public void playChannelSFX () {
-            //CardCrawlGame.sound.play("ORB_LIGHTNING_CHANNEL", 0.1F);  <-  PlaysWhenPlayed
+            CardCrawlGame.sound.playV(NYA_KEY, 0.75f);
         }
         static {
             orbString = CardCrawlGame.languagePack.getOrbString("PusheenOrb");
