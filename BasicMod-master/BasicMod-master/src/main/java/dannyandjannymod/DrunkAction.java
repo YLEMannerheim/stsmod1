@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.cards.tempCards.Shiv;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.vfx.combat.VerticalAuraEffect;
 import dannyandjannymod.cards.HangoverCard;
+import dannyandjannymod.stances.DrunkStance;
 
 public class DrunkAction extends AbstractGameAction {
 
@@ -17,11 +18,10 @@ public class DrunkAction extends AbstractGameAction {
     }
 
     public void update() {
-        if (AbstractDungeon.player.stance.ID.equals("Calm")) {
+        if (AbstractDungeon.player.stance.ID.equals(DrunkStance.STANCE_ID))
             this.addToBot(new MakeTempCardInDiscardAction(new HangoverCard(), 1));
-        } else {
-            addToBot(new ChangeStanceAction("Calm"));
-        }
+        else
+            addToBot(new ChangeStanceAction(DrunkStance.STANCE_ID));
 
         this.isDone = true;
     }
