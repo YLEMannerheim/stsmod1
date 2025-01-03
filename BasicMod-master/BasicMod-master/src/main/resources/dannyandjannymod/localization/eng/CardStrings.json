@@ -479,5 +479,15 @@
     "NAME": "So Mean To Me",
     "DESCRIPTION": "Apply !M! Weak and !M! Vulnerable. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Apply !M! Weak and !M! Vulnerable. NL Exhaust."
+  },
+  "${modID}:RopeCard": {
+    "NAME": "Rope",
+    "DESCRIPTION": "Deal !D! damage. NL Enter Suicidal.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Enter Suicidal."
+  },
+  "${modID}:FreshAirCard": {
+    "NAME": "Fresh Air",
+    "DESCRIPTION": "Gain !B! Block. NL Exit your Stance.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Exit your Stance."
   }
 }
