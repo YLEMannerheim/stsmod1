@@ -16,7 +16,6 @@ import com.megacrit.cardcrawl.vfx.BobEffect;
 import com.megacrit.cardcrawl.vfx.scene.TorchParticleXLEffect;
 
 import static dannyandjannymod.BasicMod.makeID;
-import static dannyandjannymod.BasicMod.orbPath;
 
 
 public class NewPusheenOrb extends CustomOrb {
@@ -24,7 +23,7 @@ public class NewPusheenOrb extends CustomOrb {
     private static final OrbStrings orbString = CardCrawlGame.languagePack.getOrbString(ORB_ID);
     public static final String NAME = orbString.NAME;
     public static final String[] DESCRIPTIONS = orbString.DESCRIPTION;
-    private static final String IMG_PATH = orbPath("pusheen.png");
+    private static final String IMG_PATH = "pusheen.png";
     private static final float SPIRIT_WIDTH = 96.0f;
 
     private final static int BASE_PASSIVE = 2;
