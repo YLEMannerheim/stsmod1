@@ -479,5 +479,10 @@
     "NAME": "So Mean To Me",
     "DESCRIPTION": "Apply !M! Weak and !M! Vulnerable. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Apply !M! Weak and !M! Vulnerable. NL Exhaust."
+  },
+  "${modID}:AutismCard": {
+    "NAME": "Autism",
+    "DESCRIPTION": "Draw !M! more card each turn. NL Whenever you draw a Character, it costs !M! more this turn.",
+    "UPGRADE_DESCRIPTION": "Draw !M! more card each turn. NL Whenever you draw a Character, it costs !M! more this turn."
   }
 }
