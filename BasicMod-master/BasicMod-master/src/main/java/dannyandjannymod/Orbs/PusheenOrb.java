@@ -8,7 +8,9 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
+import com.megacrit.cardcrawl.vfx.combat.FrostOrbPassiveEffect;
 import com.megacrit.cardcrawl.vfx.combat.LightningOrbPassiveEffect;
+import dannyandjannymod.effects.PusheenOrbPassiveEffect;
 
 import static dannyandjannymod.BasicMod.*;
 
@@ -20,6 +22,8 @@ public class PusheenOrb extends AbstractOrb {
     private static final float ORB_WAVY_DIST = 0.05F;
     private static final float PI_4 = 12.566371F;
     private static final float ORB_BORDER_SCALE = 1.2F;
+    private float vfxIntervalMin = 0.15F;
+    private float vfxIntervalMax = 0.8F;
 
     public PusheenOrb() {
         this.ID = ORB_ID;
@@ -79,16 +83,16 @@ public class PusheenOrb extends AbstractOrb {
         this.angle += Gdx.graphics.getDeltaTime() * 180.0F;
         this.vfxTimer -= Gdx.graphics.getDeltaTime();
         if (this.vfxTimer < 0.0F) {
-            AbstractDungeon.effectList.add(new LightningOrbPassiveEffect(this.cX, this.cY));
+            AbstractDungeon.effectList.add(new PusheenOrbPassiveEffect(this.cX, this.cY));
             if (MathUtils.randomBoolean()) {
-                AbstractDungeon.effectList.add(new LightningOrbPassiveEffect(this.cX, this.cY));
+                AbstractDungeon.effectList.add(new PusheenOrbPassiveEffect(this.cX, this.cY));
             }
 
-            this.vfxTimer = MathUtils.random(0.15F, 0.8F);
+            this.vfxTimer = MathUtils.random(this.vfxIntervalMin, this.vfxIntervalMax);
         }
     }
 
-        public void playChannelSFX () {
+    public void playChannelSFX () {
             CardCrawlGame.sound.playV(NYA_KEY, 0.75f);
         }
         static {
