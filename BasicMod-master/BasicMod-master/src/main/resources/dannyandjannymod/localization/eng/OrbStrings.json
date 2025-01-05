@@ -4,5 +4,19 @@
     "DESCRIPTION": [
       "#yPassive: Do nothing. NL #yEvoke: Do nothing."
     ]
+  },
+  "BrainRotOrb": {
+    "NAME": "Brain Rot",
+    "DESCRIPTION": [
+      "#yPassive: At the end of your turn, shuffle 1 #yDazed into your draw pile. NL #yEvoke: Discard your hand."
+    ]
+  },
+  "VoicesOrb": {
+    "NAME": "Voices",
+    "DESCRIPTION": [
+      "#yPassive: At the end of your turn, take #b",
+      " damage. NL #yEvoke: Take #b",
+      " damage."
+    ]
   }
 }

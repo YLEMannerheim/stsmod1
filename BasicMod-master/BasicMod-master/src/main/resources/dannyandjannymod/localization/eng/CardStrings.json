@@ -484,5 +484,15 @@
     "NAME": "Autism",
     "DESCRIPTION": "Draw !M! more card each turn. NL Whenever you draw a Character, it costs !M! more this turn.",
     "UPGRADE_DESCRIPTION": "Draw !M! more card each turn. NL Whenever you draw a Character, it costs !M! more this turn."
+  },
+  "${modID}:KetamineCard": {
+    "NAME": "Ketamine",
+    "DESCRIPTION": "Gain !B! Block. NL Enter Chilled. NL Channel !M! Voices.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Enter Chilled. NL Channel !M! Voices."
+  },
+  "${modID}:MoodSwingCard": {
+    "NAME": "Mood Swing",
+    "DESCRIPTION": "Deal !D! damage. NL Randomly enter Depressed or Tilted. If already Depressed or Tilted, this card deals double damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Randomly enter Depressed or Tilted. If already Depressed or Tilted, this card deals double damage."
   }
 }

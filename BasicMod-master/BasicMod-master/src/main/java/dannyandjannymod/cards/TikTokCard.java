@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.vfx.BorderLongFlashEffect;
 import com.megacrit.cardcrawl.vfx.combat.DaggerSprayEffect;
 import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.CustomTags;
+import dannyandjannymod.orbs.BrainRotOrb;
 import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
@@ -46,14 +47,12 @@ public class TikTokCard extends BaseCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         this.addToBot(new VFXAction(new DaggerSprayEffect(AbstractDungeon.getMonsters().shouldFlipVfx()), 0.0F));
         this.addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
-        this.addToBot(new ShakeScreenAction(0.0F, ScreenShake.ShakeDur.LONG, ScreenShake.ShakeIntensity.HIGH));
-        this.addToBot(new VFXAction(new BorderLongFlashEffect(Color.GREEN)));
+        this.addToBot(new VFXAction(new DaggerSprayEffect(AbstractDungeon.getMonsters().shouldFlipVfx()), 0.0F));
+        this.addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
 
-        this.addToBot(new ChannelAction(new Dark()));
-        //CHANGE DARK TO BRAIN_ROT
+        this.addToBot(new ChannelAction(new BrainRotOrb()));
     }
 
 
