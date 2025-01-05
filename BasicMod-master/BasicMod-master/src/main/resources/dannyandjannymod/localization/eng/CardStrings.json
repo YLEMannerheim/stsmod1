@@ -492,7 +492,17 @@
   },
   "${modID}:MoodSwingCard": {
     "NAME": "Mood Swing",
-    "DESCRIPTION": "Deal !D! damage. NL Randomly enter Depressed or Tilted. If already Depressed or Tilted, this card deals double damage.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Randomly enter Depressed or Tilted. If already Depressed or Tilted, this card deals double damage."
+    "DESCRIPTION": "Deal !D! damage. NL Choose one: Enter Tilted or Depressed.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Choose one: Enter Tilted or Depressed."
+  },
+  "${modID}:BecomeDepressedCard": {
+    "NAME": "Depressed",
+    "DESCRIPTION": "Enter Depresssed.",
+    "UPGRADE_DESCRIPTION": "Enter Depresssed."
+  },
+  "${modID}:BecomeTiltedCard": {
+    "NAME": "Tilted",
+    "DESCRIPTION": "Enter Tilted.",
+    "UPGRADE_DESCRIPTION": "Enter Tilted."
   }
 }
