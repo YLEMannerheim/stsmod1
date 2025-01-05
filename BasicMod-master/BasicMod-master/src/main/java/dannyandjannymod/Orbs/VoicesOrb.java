@@ -32,7 +32,7 @@ public class VoicesOrb extends AbstractOrb {
 
     public VoicesOrb() {
         this.ID = ORB_ID;
-        this.img = ImageMaster.loadImage("dannyandjannymod/orbs/pusheen.png");
+        this.img = ImageMaster.loadImage("dannyandjannymod/orbs/voices.png");
         this.name = orbString.NAME;
         this.baseEvokeAmount = 4;
         this.evokeAmount = this.baseEvokeAmount;

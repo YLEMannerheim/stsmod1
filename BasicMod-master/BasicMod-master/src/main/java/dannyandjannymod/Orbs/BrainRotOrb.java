@@ -29,7 +29,7 @@ public class BrainRotOrb extends AbstractOrb {
 
     public BrainRotOrb() {
         this.ID = ORB_ID;
-        this.img = ImageMaster.loadImage("dannyandjannymod/orbs/pusheen.png");
+        this.img = ImageMaster.loadImage("dannyandjannymod/orbs/brainrot.png");
         this.name = orbString.NAME;
         this.baseEvokeAmount = 69;
         this.evokeAmount = this.baseEvokeAmount;

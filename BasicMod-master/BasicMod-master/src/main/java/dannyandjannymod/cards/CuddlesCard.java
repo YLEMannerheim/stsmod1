@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.orbs.Lightning;
 import com.megacrit.cardcrawl.vfx.combat.EmptyStanceEffect;
 import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.CustomTags;
+import dannyandjannymod.orbs.PusheenOrb;
 import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
@@ -39,7 +40,7 @@ public class CuddlesCard extends BaseCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         for(int i = 0; i < this.magicNumber; ++i) {
-            this.addToBot(new ChannelAction(new Lightning()));
+            this.addToBot(new ChannelAction(new PusheenOrb()));
         }
         this.addToBot(new NotStanceCheckAction("Neutral", new VFXAction(new EmptyStanceEffect(p.hb.cX, p.hb.cY), 0.1F)));
         this.addToBot(new ChangeStanceAction("Neutral"));

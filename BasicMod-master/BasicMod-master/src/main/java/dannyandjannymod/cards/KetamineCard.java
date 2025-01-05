@@ -31,7 +31,6 @@ public class KetamineCard extends BaseCard {
 
     public KetamineCard() {
         super(cardInfo);
-        setExhaust(true, false);
         setBlock(10, 3);
         setMagic(2);
     }

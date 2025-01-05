@@ -504,5 +504,15 @@
     "NAME": "Tilted",
     "DESCRIPTION": "Enter Tilted.",
     "UPGRADE_DESCRIPTION": "Enter Tilted."
+  },
+  "${modID}:CuteStrikeCard": {
+    "NAME": "Cute Strike",
+    "DESCRIPTION": "Deal !D! damage. Deals additional damage equal to Pusheens Channeled this combat.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Deals additional damage equal to Pusheens Channeled this combat."
+  },
+  "${modID}:CuteStrikeCard": {
+    "NAME": "Cute Strike",
+    "DESCRIPTION": "Deal !D! damage. Deals additional damage equal to Pusheens Channeled this combat.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Deals additional damage equal to Pusheens Channeled this combat."
   }
 }
