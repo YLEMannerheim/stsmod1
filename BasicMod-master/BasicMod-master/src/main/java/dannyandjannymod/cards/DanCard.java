@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.powers.WeakPower;
 import com.megacrit.cardcrawl.vfx.combat.IntimidateEffect;
 import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.powers.CalciumPower;
+import dannyandjannymod.powers.DanPower;
 import dannyandjannymod.util.CardInfo;
 
 import java.util.Iterator;
@@ -29,25 +30,16 @@ public class DanCard extends BaseCard {
 
     public static final String ID = makeID(cardInfo.baseId);
 
-    private static final int MAGIC = 2;
+    private static final int MAGIC = 2, UPG_MAGIC = 1;
 
     public DanCard() {
         super(cardInfo);
-        setMagic(MAGIC);
+        setMagic(MAGIC, UPG_MAGIC);
         setInnate(false, true);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        Iterator var1 = p.hand.group.iterator();
-        AbstractCard c;
-
-        while(var1.hasNext()) {
-            c = (AbstractCard)var1.next();
-            c.baseDamage += magicNumber;
-            c.baseBlock += magicNumber;
-            c.superFlash();
-            c.applyPowers();
-        }
+        addToBot(new ApplyPowerAction(p, p, new DanPower(p, magicNumber), magicNumber));
     }
 
     @Override

@@ -510,8 +510,8 @@
     "DESCRIPTION": "Deal !D! damage. Deals additional damage equal to Pusheens Channeled this combat.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. Deals additional damage equal to Pusheens Channeled this combat."
   },
-  "${modID}:BosnianCard": {
-    "NAME": "Bosnian",
+  "${modID}:AutoAttackCard": {
+    "NAME": "Auto Attack",
     "DESCRIPTION": "Unplayable. NL Auto. NL Deal !D! damage to ALL enemies.",
     "UPGRADE_DESCRIPTION": "Unplayable. NL Auto. NL Deal !D! damage to ALL enemies."
   },
@@ -524,5 +524,10 @@
     "NAME": "Rizz",
     "DESCRIPTION": "Unplayable. NL Auto. NL Apply !M! Weak to ALL enemies.",
     "UPGRADE_DESCRIPTION": "Unplayable. NL Auto. NL Apply !M! Weak to ALL enemies."
+  },
+  "${modID}:DanCard": {
+    "NAME": "Dan",
+    "DESCRIPTION": "At the start of your turn, give all cards in hand !M! more damage and Block until the end of combat.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, give all cards in hand !M! more damage and Block until the end of combat."
   }
 }
