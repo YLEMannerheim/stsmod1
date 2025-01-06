@@ -510,9 +510,19 @@
     "DESCRIPTION": "Deal !D! damage. Deals additional damage equal to Pusheens Channeled this combat.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. Deals additional damage equal to Pusheens Channeled this combat."
   },
-  "${modID}:CuteStrikeCard": {
-    "NAME": "Cute Strike",
-    "DESCRIPTION": "Deal !D! damage. Deals additional damage equal to Pusheens Channeled this combat.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Deals additional damage equal to Pusheens Channeled this combat."
+  "${modID}:BosnianCard": {
+    "NAME": "Bosnian",
+    "DESCRIPTION": "Unplayable. NL Auto. NL Deal !D! damage to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL Auto. NL Deal !D! damage to ALL enemies."
+  },
+  "${modID}:BagoolCard": {
+    "NAME": "Bagool",
+    "DESCRIPTION": "Unplayable. NL Auto. NL Gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL Auto. NL Gain !B! Block."
+  },
+  "${modID}:RizzCard": {
+    "NAME": "Rizz",
+    "DESCRIPTION": "Unplayable. NL Auto. NL Apply !M! Weak to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL Auto. NL Apply !M! Weak to ALL enemies."
   }
 }

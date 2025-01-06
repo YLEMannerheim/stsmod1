@@ -13,4 +13,6 @@ public class CustomTags
 
     @SpireEnum
     public static AbstractCard.CardTags CHARACTER;
+    @SpireEnum
+    public static AbstractCard.CardTags AUTO;
 }

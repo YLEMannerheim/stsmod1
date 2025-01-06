@@ -3,48 +3,50 @@ package dannyandjannymod.cards;
 import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.StrengthPower;
+import com.megacrit.cardcrawl.powers.BlurPower;
+import com.megacrit.cardcrawl.powers.VulnerablePower;
+import com.megacrit.cardcrawl.powers.WeakPower;
 import dannyandjannymod.AbstractCardEnum;
-import dannyandjannymod.CustomTags;
 import dannyandjannymod.util.AutoMod;
 import dannyandjannymod.util.CardInfo;
 
+import java.util.Iterator;
+
 import static dannyandjannymod.BasicMod.makeID;
 
-public class GutPunchCard extends BaseCard {
+public class RizzCard extends BaseCard {
     private final static CardInfo cardInfo = new CardInfo(
-            "GutPunchCard",
-            1,
-            CardType.ATTACK,
-            CardTarget.ENEMY,
-            CardRarity.COMMON,
+            "RizzCard",
+            -2,
+            CardType.SKILL,
+            CardTarget.NONE,
+            CardRarity.UNCOMMON,
             AbstractCardEnum.MILKMAN_WHITE);
 
     public static final String ID = makeID(cardInfo.baseId);
 
-    private static final int UPG_DAMAGE = 3;
-    private static final int DAMAGE = 6;
-    private static final int MAGIC = 1;
-
-    public GutPunchCard() {
+    public RizzCard() {
         super(cardInfo);
-        setDamage(DAMAGE, UPG_DAMAGE);
-        setMagic(MAGIC);
+        setMagic(1, 1);
         CardModifierManager.addModifier(this, new AutoMod());
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-        this.addToBot(new ApplyPowerAction(m, p, new StrengthPower(m, -this.magicNumber), -this.magicNumber));
+        Iterator var3 = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
+
+        while(var3.hasNext()) {
+            AbstractMonster mo = (AbstractMonster)var3.next();
+            this.addToBot(new ApplyPowerAction(mo, p, new WeakPower(mo, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+        }
     }
 
     @Override
     public AbstractCard makeCopy() { //Optional
-        return new GutPunchCard();
+        return new RizzCard();
     }
 }
