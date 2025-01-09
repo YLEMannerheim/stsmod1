@@ -35,7 +35,7 @@ public class RopeCard extends BaseCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SMASH));
-        addToBot(new ChangeStanceAction(SuicidalStance.STANCE_ID);
+        addToBot(new ChangeStanceAction(SuicidalStance.STANCE_ID));
     }
 
     @Override
