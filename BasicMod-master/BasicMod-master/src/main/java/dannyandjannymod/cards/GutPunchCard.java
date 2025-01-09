@@ -1,5 +1,6 @@
 package dannyandjannymod.cards;
 
+import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -10,6 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.CustomTags;
+import dannyandjannymod.util.AutoMod;
 import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
@@ -33,6 +35,7 @@ public class GutPunchCard extends BaseCard {
         super(cardInfo);
         setDamage(DAMAGE, UPG_DAMAGE);
         setMagic(MAGIC);
+        CardModifierManager.addModifier(this, new AutoMod());
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

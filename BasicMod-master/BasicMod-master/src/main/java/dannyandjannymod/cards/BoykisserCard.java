@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.orbs.Lightning;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import dannyandjannymod.AbstractCardEnum;
 import dannyandjannymod.CustomTags;
+import dannyandjannymod.orbs.PusheenOrb;
 import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
@@ -37,7 +38,7 @@ public class BoykisserCard extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new ApplyPowerAction(m, p, new WeakPower(m, this.magicNumber, false), this.magicNumber));
         this.addToBot(new DrawCardAction(p, 2));
-        this.addToBot(new ChannelAction(new Lightning()));
+        this.addToBot(new ChannelAction(new PusheenOrb()));
     }
 
     @Override

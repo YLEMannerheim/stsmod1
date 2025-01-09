@@ -11,7 +11,6 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.*;
 import com.megacrit.cardcrawl.powers.AbstractPower.PowerType;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import dannyandjannymod.CalcitrateBuffAction;
 import dannyandjannymod.relics.CheeseWheelRelic;
 import dannyandjannymod.util.TextureLoader;
 import sun.security.util.Debug;
@@ -80,7 +79,6 @@ public class CalciumPower extends AbstractPower {
         if (power instanceof CalciumPower && target instanceof AbstractPlayer) {
             //triggerCheeseWheelRelic(power.amount);
             triggerButterDishRelic(power.amount);
-            addToBot(new CalcitrateBuffAction(power.amount));
         }
         super.onApplyPower(power, target, source);
     }
@@ -89,7 +87,6 @@ public class CalciumPower extends AbstractPower {
     public void onInitialApplication() {
         triggerCheeseWheelRelic(this.amount);
         triggerButterDishRelic(this.amount);
-        addToBot(new CalcitrateBuffAction(this.amount));
         super.onInitialApplication();
     }
 

@@ -3,31 +3,33 @@ package dannyandjannymod.orbs;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
+import com.megacrit.cardcrawl.actions.common.DiscardAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
+import com.megacrit.cardcrawl.cards.status.Dazed;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
-import com.megacrit.cardcrawl.vfx.combat.FrostOrbPassiveEffect;
-import com.megacrit.cardcrawl.vfx.combat.LightningOrbPassiveEffect;
 import dannyandjannymod.effects.PusheenOrbPassiveEffect;
 
-import static dannyandjannymod.BasicMod.*;
+import static dannyandjannymod.BasicMod.NYA_KEY;
+import static dannyandjannymod.BasicMod.makeID;
 
-public class PusheenOrb extends AbstractOrb {
-    public static final String ORB_ID = makeID("PusheenOrb");
+public class BrainRotOrb extends AbstractOrb {
+    public static final String ORB_ID = makeID("BrainRotOrb");
     private static final OrbStrings orbString;
     private float vfxTimer = 1.0F;
     private static final float PI_DIV_16 = 0.19634955F;
     private static final float ORB_WAVY_DIST = 0.05F;
     private static final float PI_4 = 12.566371F;
     private static final float ORB_BORDER_SCALE = 1.2F;
-    private float vfxIntervalMin = 0.15F;
-    private float vfxIntervalMax = 0.8F;
+    private final float vfxIntervalMin = 0.15F;
+    private final float vfxIntervalMax = 0.8F;
 
-    public PusheenOrb() {
+    public BrainRotOrb() {
         this.ID = ORB_ID;
-        this.img = ImageMaster.loadImage("dannyandjannymod/orbs/pusheen.png");
+        this.img = ImageMaster.loadImage("dannyandjannymod/orbs/brainrot.png");
         this.name = orbString.NAME;
         this.baseEvokeAmount = 69;
         this.evokeAmount = this.baseEvokeAmount;
@@ -44,13 +46,15 @@ public class PusheenOrb extends AbstractOrb {
     }
 
     public void onEvoke() {
+        AbstractDungeon.actionManager.addToTop(new DiscardAction(AbstractDungeon.player, AbstractDungeon.player, AbstractDungeon.player.hand.size(), true));
     }
 
     public void onEndOfTurn() {
+        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDrawPileAction(new Dazed(), 1, true, true));
     }
 
     public AbstractOrb makeCopy() {
-        return new PusheenOrb();
+        return new BrainRotOrb();
     }
 
     public void render(SpriteBatch sb) {
@@ -96,6 +100,6 @@ public class PusheenOrb extends AbstractOrb {
             CardCrawlGame.sound.playV(NYA_KEY, 0.75f);
         }
         static {
-            orbString = CardCrawlGame.languagePack.getOrbString("PusheenOrb");
+            orbString = CardCrawlGame.languagePack.getOrbString("BrainRotOrb");
         }
     }

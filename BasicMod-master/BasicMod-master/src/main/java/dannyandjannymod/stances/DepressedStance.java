@@ -8,9 +8,6 @@ package dannyandjannymod.stances;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.math.MathUtils;
-import com.megacrit.cardcrawl.actions.common.EndTurnAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.CardQueueItem;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -19,8 +16,7 @@ import com.megacrit.cardcrawl.stances.AbstractStance;
 import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
 import com.megacrit.cardcrawl.vfx.stance.CalmParticleEffect;
 import com.megacrit.cardcrawl.vfx.stance.StanceAuraEffect;
-
-import java.util.ArrayList;
+import dannyandjannymod.MakeRandomCardMoreExpensiveAction;
 
 import static dannyandjannymod.BasicMod.makeID;
 
@@ -40,16 +36,8 @@ public class DepressedStance extends AbstractStance {
         this.description = "At the start of your turn, increase the cost of a random card in hand by 1 this turn.";
     }
 
-    @Override
-    public void atStartOfTurn() { // needs a new patch for atStartOfTurnPostDraw, hook into applyStartOfTurnPostDrawRelics on AbstractPlayer class
-        ArrayList<AbstractCard> cardsInHand = new ArrayList<>(AbstractDungeon.player.hand.group);
-
-        AbstractCard c = null;
-        if (!cardsInHand.isEmpty())
-            c = (AbstractCard)cardsInHand.get(AbstractDungeon.cardRandomRng.random(0, cardsInHand.size() - 1));
-
-        if (c != null)
-            c.setCostForTurn(c.costForTurn + 1);
+    static public void atStartOfTurnPostDraw() {
+        AbstractDungeon.actionManager.addToBottom(new MakeRandomCardMoreExpensiveAction());
     }
 
     public void updateAnimation() {

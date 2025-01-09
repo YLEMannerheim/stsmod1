@@ -48,6 +48,11 @@ public class SleepyPower extends AbstractPower {
     }
 
     @Override
+    public void onVictory() {
+        stopTurnTimer();
+    }
+
+    @Override
     public void onRemove() {
         // Stop the timer when the power is removed
         stopTurnTimer();
@@ -89,9 +94,9 @@ public class SleepyPower extends AbstractPower {
     public void updateDescription() {
 
         if (this.amount == 1) {
-            this.description = "After " + this.amount + " second, you fall asleep.";
+            this.description = "After #b" + this.amount + " second, you fall asleep.";
         } else {
-            this.description = "After " + this.amount + " seconds, you fall asleep.";
+            this.description = "After #b" + this.amount + " seconds, you fall asleep.";
         }
     }
 

@@ -1,21 +1,28 @@
 package dannyandjannymod.cards;
 
+import basemod.helpers.CardModifierManager;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.green.Blur;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.DexterityPower;
-import com.megacrit.cardcrawl.powers.NextTurnBlockPower;
+import com.megacrit.cardcrawl.powers.BlurPower;
+import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import dannyandjannymod.AbstractCardEnum;
+import dannyandjannymod.util.AutoMod;
 import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
 
-public class DuckAndDiveCard extends BaseCard {
+public class BagoolCard extends BaseCard {
     private final static CardInfo cardInfo = new CardInfo(
-            "DuckAndDiveCard",
-            2,
+            "BagoolCard",
+            -2,
             CardType.SKILL,
             CardTarget.NONE,
             CardRarity.COMMON,
@@ -23,21 +30,18 @@ public class DuckAndDiveCard extends BaseCard {
 
     public static final String ID = makeID(cardInfo.baseId);
 
-    private static final int BLOCK = 8;
-    private static final int UPG_BLOCK = 4;
-
-    public DuckAndDiveCard() {
+    public BagoolCard() {
         super(cardInfo);
-        setBlock(BLOCK, UPG_BLOCK);
+        setBlock(6, 2);
+        CardModifierManager.addModifier(this, new AutoMod());
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new GainBlockAction(p, p, block));
-        this.addToBot(new ApplyPowerAction(p, p, new NextTurnBlockPower(p, this.block), this.block));
+        addToBot(new GainBlockAction(p, block));
     }
 
     @Override
     public AbstractCard makeCopy() { //Optional
-        return new DuckAndDiveCard();
+        return new BagoolCard();
     }
 }

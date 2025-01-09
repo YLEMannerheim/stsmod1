@@ -96,6 +96,7 @@ public class MilkmanCharacter extends CustomPlayer {
 
         AnimationState.TrackEntry e = this.state.setAnimation(0, "IDLE_RESIZED", true);
         //e.setTime(e.getEndTime() * MathUtils.random());
+        //maxOrbs = ORB_SLOTS;
     }
 
     public ArrayList<String> getStartingDeck() {
@@ -104,14 +105,12 @@ public class MilkmanCharacter extends CustomPlayer {
         retVal.add(new MilkmanStrikeCard().cardID);
         retVal.add(new MilkmanStrikeCard().cardID);
         retVal.add(new MilkmanStrikeCard().cardID);
+        retVal.add(new MilkmanStrikeCard().cardID);
         retVal.add(new MilkmanDefendCard().cardID);
         retVal.add(new MilkmanDefendCard().cardID);
         retVal.add(new MilkmanDefendCard().cardID);
         retVal.add(new MilkmanDefendCard().cardID);
-        retVal.add(new StrongerBonesCard().cardID);
-        retVal.add(new OneTwoPunchCard().cardID);
-        retVal.add(new RankedgameCard().cardID);
-        retVal.add(new RankedgameCard().cardID);
+        retVal.add(new FluffyFluffnessCard().cardID);
         retVal.add(new RankedgameCard().cardID);
         return retVal;
     }
@@ -128,7 +127,7 @@ public class MilkmanCharacter extends CustomPlayer {
     public static final int MAX_HP = 70;
     public static final int STARTING_GOLD = 99;
     public static final int HAND_SIZE = 5;
-    public static final int ORB_SLOTS = 0;
+    public static final int ORB_SLOTS = 3;
 
     public CharSelectInfo getLoadout() { // the rest of the character loadout so includes your character select screen info plus hp and starting gold
         return new CharSelectInfo("The Milkman", "A sentient carton of milk, brought to life by the Spire. NL Manipulates future turns and battles.",

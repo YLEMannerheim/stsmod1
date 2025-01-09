@@ -33,6 +33,7 @@ public class RenCard extends BaseCard {
     public RenCard() {
         super(cardInfo);
         this.tags.add(CustomTags.CHARACTER);
+        cardsToPreview = new SoMeanToMeCard();
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

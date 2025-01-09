@@ -489,5 +489,55 @@
     "NAME": "Fresh Air",
     "DESCRIPTION": "Gain !B! Block. NL Exit your Stance.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Exit your Stance."
+  },
+  "${modID}:AutismCard": {
+    "NAME": "Autism",
+    "DESCRIPTION": "Draw !M! more card each turn. NL Whenever you draw a Character, it costs !M! more this turn.",
+    "UPGRADE_DESCRIPTION": "Draw !M! more card each turn. NL Whenever you draw a Character, it costs !M! more this turn."
+  },
+  "${modID}:KetamineCard": {
+    "NAME": "Ketamine",
+    "DESCRIPTION": "Gain !B! Block. NL Enter Chilled. NL Channel !M! Voices.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Enter Chilled. NL Channel !M! Voices."
+  },
+  "${modID}:MoodSwingCard": {
+    "NAME": "Mood Swing",
+    "DESCRIPTION": "Deal !D! damage. NL Choose one: Enter Tilted or Depressed.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Choose one: Enter Tilted or Depressed."
+  },
+  "${modID}:BecomeDepressedCard": {
+    "NAME": "Depressed",
+    "DESCRIPTION": "Enter Depresssed.",
+    "UPGRADE_DESCRIPTION": "Enter Depresssed."
+  },
+  "${modID}:BecomeTiltedCard": {
+    "NAME": "Tilted",
+    "DESCRIPTION": "Enter Tilted.",
+    "UPGRADE_DESCRIPTION": "Enter Tilted."
+  },
+  "${modID}:CuteStrikeCard": {
+    "NAME": "Cute Strike",
+    "DESCRIPTION": "Deal !D! damage. Deals additional damage equal to Pusheens Channeled this combat.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Deals additional damage equal to Pusheens Channeled this combat."
+  },
+  "${modID}:AutoAttackCard": {
+    "NAME": "Auto Attack",
+    "DESCRIPTION": "Unplayable. NL Auto. NL Deal !D! damage to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL Auto. NL Deal !D! damage to ALL enemies."
+  },
+  "${modID}:BagoolCard": {
+    "NAME": "Bagool",
+    "DESCRIPTION": "Unplayable. NL Auto. NL Gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL Auto. NL Gain !B! Block."
+  },
+  "${modID}:RizzCard": {
+    "NAME": "Rizz",
+    "DESCRIPTION": "Unplayable. NL Auto. NL Apply !M! Weak to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL Auto. NL Apply !M! Weak to ALL enemies."
+  },
+  "${modID}:DanCard": {
+    "NAME": "Dan",
+    "DESCRIPTION": "At the start of your turn, give all cards in hand !M! more damage and Block until the end of combat.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, give all cards in hand !M! more damage and Block until the end of combat."
   }
 }
