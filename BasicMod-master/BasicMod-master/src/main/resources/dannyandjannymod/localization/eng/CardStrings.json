@@ -539,5 +539,15 @@
     "NAME": "Dan",
     "DESCRIPTION": "At the start of your turn, give all cards in hand !M! more damage and Block until the end of combat.",
     "UPGRADE_DESCRIPTION": "At the start of your turn, give all cards in hand !M! more damage and Block until the end of combat."
+  },
+  "${modID}:GetOverItCard": {
+    "NAME": "Get Over It",
+    "DESCRIPTION": "Exit your Stance. NL Put a card from your discard pile on top of your draw pile.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Exit your Stance. NL Put a card from your discard pile on top of your draw pile."
+  },
+  "${modID}:BipolarCard": {
+    "NAME": "Bipolar",
+    "DESCRIPTION": "Whenever you change Stances, draw a card. NL Enter Depressed.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you change Stances, draw a card. NL Enter Depressed."
   }
 }
