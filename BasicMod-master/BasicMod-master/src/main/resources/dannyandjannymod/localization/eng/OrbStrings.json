@@ -18,5 +18,12 @@
       " damage. NL #yEvoke: Take #b",
       " damage."
     ]
+  },
+  "KidOrb": {
+    "NAME": "Kid",
+    "DESCRIPTION": [
+      "#yPassive: After playing #b",
+      " cards, gain 1 energy each turn and remove this orb. NL #yEvoke: Enter #ySuicidal."
+    ]
   }
 }

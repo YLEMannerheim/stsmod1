@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.EmptyStanceEffect;
 import dannyandjannymod.AbstractCardEnum;
+import dannyandjannymod.CustomTags;
 import dannyandjannymod.orbs.VoicesOrb;
 import dannyandjannymod.stances.ChilledStance;
 import dannyandjannymod.util.CardInfo;
@@ -34,6 +35,7 @@ public class RightFishCard extends BaseCard {
         super(cardInfo);
         setBlock(5, 3);
         setMagic(1);
+        tags.add(CustomTags.FISH);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

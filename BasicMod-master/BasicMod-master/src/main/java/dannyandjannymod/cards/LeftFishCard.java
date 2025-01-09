@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import dannyandjannymod.AbstractCardEnum;
+import dannyandjannymod.CustomTags;
 import dannyandjannymod.util.CardInfo;
 
 import static dannyandjannymod.BasicMod.makeID;
@@ -29,6 +30,7 @@ public class LeftFishCard extends BaseCard {
         super(cardInfo);
         setDamage(6, 3);
         setMagic(1);
+        tags.add(CustomTags.FISH);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
