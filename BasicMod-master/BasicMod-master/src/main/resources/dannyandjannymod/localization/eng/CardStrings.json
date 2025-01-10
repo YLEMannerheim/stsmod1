@@ -549,5 +549,20 @@
     "NAME": "Bipolar",
     "DESCRIPTION": "Whenever you change Stances, draw a card. NL Enter Depressed.",
     "UPGRADE_DESCRIPTION": "Innate. NL Whenever you change Stances, draw a card. NL Enter Depressed."
+  },
+  "${modID}:DoomscrollCard": {
+    "NAME": "Doomscroll",
+    "DESCRIPTION": "Draw !M! cards. NL Enter Depressed.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. NL Enter Depressed."
+  },
+  "${modID}:PunchWallCard": {
+    "NAME": "Punch Wall",
+    "DESCRIPTION": "Deal !D! damage. NL If you were Tilted, enter Chilled.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If you were Tilted, enter Chilled."
+  },
+  "${modID}:GuysGuysGuysCard": {
+    "NAME": "Guys Guys Guys",
+    "DESCRIPTION": "Gain !B! Block 3 times. NL Channel 3 Voices.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block 3 times. NL Channel 3 Voices."
   }
 }
