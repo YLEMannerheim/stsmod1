@@ -59,7 +59,6 @@ public class KorvalePower extends AbstractPower {
         } else {
             this.description = "At the start of your turn, add a #yChug into your hand.";
         }
-
     }
 
     static {

@@ -564,5 +564,15 @@
     "NAME": "Guys Guys Guys",
     "DESCRIPTION": "Gain !B! Block 3 times. NL Channel 3 Voices.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block 3 times. NL Channel 3 Voices."
+  },
+  "${modID}:OutletCard": {
+    "NAME": "Outlet",
+    "DESCRIPTION": "Evoke all your Orbs. Deal !D! damage for each Orb Evoked.",
+    "UPGRADE_DESCRIPTION": "Evoke all your Orbs. Deal !D! damage for each Orb Evoked."
+  },
+  "${modID}:PositiveMindsetCard": {
+    "NAME": "Positive Mindset",
+    "DESCRIPTION": "Whenever you draw an Unplayable card, draw a card.",
+    "UPGRADE_DESCRIPTION": "Whenever you draw an Unplayable card, draw !M! cards."
   }
 }
