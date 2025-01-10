@@ -1,6 +1,7 @@
 package dannyandjannymod.orbs;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -12,6 +13,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
@@ -57,12 +59,9 @@ public class KidOrb extends AbstractOrb {
     }
 
     public void onPlayCard() {
-        onEvoke();
         float speedTime = Settings.FAST_MODE ? 0F : 0.6F / (float)AbstractDungeon.player.orbs.size();
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new OrbFlareEffect(this, OrbFlareEffect.OrbFlareColor.DARK), speedTime));
-
-        evokeAmount += 2;
-        passiveAmount++; // THIS IS NOT CAUSING THE NUMBER TO GO UP SOMEHOW...
+        passiveAmount++;
 
         AbstractPlayer p = AbstractDungeon.player;
         if (passiveAmount >= 18) {
@@ -70,7 +69,7 @@ public class KidOrb extends AbstractOrb {
                 if (p.orbs.get(i) == this) {
                     int j;
                     for(j = i; j < p.orbs.size(); ++j) {
-                        Collections.swap(p.orbs, j, j - 1);
+                        Collections.swap(p.orbs, j, j - 1); // this is crashing
                     }
 
                     for(j = i; j < p.orbs.size(); ++j) {
@@ -80,6 +79,10 @@ public class KidOrb extends AbstractOrb {
             }
         } else
             updateDescription();
+    }
+
+    @Override
+    public void applyFocus() {
     }
 
     public void onEvoke() {
@@ -128,6 +131,12 @@ public class KidOrb extends AbstractOrb {
             this.vfxTimer = MathUtils.random(this.vfxIntervalMin, this.vfxIntervalMax);
         }
     }
+
+    protected void renderText(SpriteBatch sb) {
+        FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, Integer.toString(this.evokeAmount), this.cX + NUM_X_OFFSET, this.cY + this.bobEffect.y / 2.0F + NUM_Y_OFFSET - 4.0F * Settings.scale, new Color(0.2F, 1.0F, 1.0F, this.c.a), this.fontScale);
+        FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, Integer.toString(this.passiveAmount), this.cX + NUM_X_OFFSET, this.cY + this.bobEffect.y / 2.0F + NUM_Y_OFFSET + 20.0F * Settings.scale, this.c, this.fontScale);
+    }
+
 
     public void playChannelSFX () {
             CardCrawlGame.sound.playV(NYA_KEY, 0.75f);
