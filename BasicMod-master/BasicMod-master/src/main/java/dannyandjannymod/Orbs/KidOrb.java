@@ -59,23 +59,52 @@ public class KidOrb extends AbstractOrb {
     }
 
     public void onPlayCard() {
-        float speedTime = Settings.FAST_MODE ? 0F : 0.6F / (float)AbstractDungeon.player.orbs.size();
+        AbstractPlayer p = AbstractDungeon.player;
+        float speedTime = Settings.FAST_MODE ? 0F : 0.6F / (float)p.orbs.size();
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new OrbFlareEffect(this, OrbFlareEffect.OrbFlareColor.DARK), speedTime));
         passiveAmount++;
 
-        AbstractPlayer p = AbstractDungeon.player;
+        /*
         if (passiveAmount >= 18) {
-            for (int i = 0; i < p.orbs.size(); i++) {
-                if (p.orbs.get(i) == this) {
-                    int j;
-                    for(j = i; j < p.orbs.size(); ++j) {
-                        Collections.swap(p.orbs, j, j - 1); // this is crashing
-                    }
+            AbstractOrb orbSlot = new EmptyOrbSlot(((AbstractOrb)p.orbs.get(0)).cX, ((AbstractOrb)p.orbs.get(0)).cY);
 
-                    for(j = i; j < p.orbs.size(); ++j) {
-                        ((AbstractOrb)p.orbs.get(j)).setSlot(j, p.maxOrbs);
-                    }
+            int i;
+            for(i = 1; i < p.orbs.size(); ++i) { // 1 indexed
+                Collections.swap(p.orbs, i, i - 1);
+            }
+
+            p.orbs.set(p.orbs.size() - 1, orbSlot);
+
+            for(i = 0; i < p.orbs.size(); ++i) { // 0 indexed
+                ((AbstractOrb)p.orbs.get(i)).setSlot(i, p.maxOrbs);
+            }
+        }
+
+         */
+
+        if (passiveAmount >= 18) {
+            int i;
+            int orbIndex = -1;
+            for (i = 0; i < p.orbs.size(); i++) {
+                if (p.orbs.get(i) == this) {
+                    orbIndex = i;
+                    break;
                 }
+            }
+
+            if (orbIndex == -1) // only happens if something is broken!!
+                return;
+
+            AbstractOrb orbSlot = new EmptyOrbSlot(((AbstractOrb)p.orbs.get(0)).cX, ((AbstractOrb)p.orbs.get(0)).cY); // make new empty slot
+
+            for(i = orbIndex + 1; i < p.orbs.size(); ++i) {
+                Collections.swap(p.orbs, i, i - 1);
+            }
+
+            p.orbs.set(p.orbs.size() - 1, orbSlot); // overwrite kid (which is now in last slot) with an empty orb
+
+            for(i = orbIndex; i < p.orbs.size(); ++i) {
+                ((AbstractOrb)p.orbs.get(i)).setSlot(i, p.maxOrbs);
             }
         } else
             updateDescription();
