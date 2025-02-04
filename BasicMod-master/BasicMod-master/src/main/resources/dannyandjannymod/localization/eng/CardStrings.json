@@ -574,5 +574,10 @@
     "NAME": "Positive Mindset",
     "DESCRIPTION": "Whenever you draw an Unplayable card, draw a card.",
     "UPGRADE_DESCRIPTION": "Whenever you draw an Unplayable card, draw !M! cards."
+  },
+  "${modID}:DeterminationCard": {
+    "NAME": "Determination",
+    "DESCRIPTION": "When you are Tilted, your Attacks deal double damage. NL Enter Tilted.",
+    "UPGRADE_DESCRIPTION": "When you are Tilted, your Attacks deal double damage. NL Enter Tilted."
   }
 }
